@@ -11,8 +11,6 @@ In turn, to offload them I provided a (simple) design system containing type, co
 
 To improve the collaboration further I wanted the entire development team to be able to use Figma. There’s three reasons for this:
 
-I want everyone to be comfortable leaving feedback in Figma, and I wanted everyone to be able to contribute to the design.
-
 * everybody should be comfortable testing prototypes and leaving feedback early and often during the design phase
 * be able to use Figma as deliverables
 * include everyone early and let them contribute to the design
