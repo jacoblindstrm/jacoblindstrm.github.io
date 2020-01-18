@@ -1,0 +1,23 @@
+url: "https://jacoblindstrom.design" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "hello@jacoblindstrom.design" # the name of your site, e.g. ACME Corp.
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: hi@jacoblindstrom.design
+email: hi@jacoblindstrom.design
+fname: Jacob Lindström
+description: >- # this means to ignore newlines until "baseurl:"
+  I'm a Malmö based product designer who believe in design through iterative processes with users and prototypes.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+figma: "https://figma.com/@jacoblindstrom"
+dribbble:  "https://dribbble.com/jacobsvensson"
+ixd: "https://www.interaction-design.org/jacob-svensson"
+spotify: "https://open.spotify.com/user/z9v8we1abbpx7dej3vvsqj38t"
+linkedin: "https://www.linkedin.com/in/jacobsvensson-design/"
+medium: "https://medium.com/@jacobsvensso"
+instagram: "https://instagram.com/jacob.svnsn/"

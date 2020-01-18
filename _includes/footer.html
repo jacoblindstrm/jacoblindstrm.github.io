@@ -1,0 +1,8 @@
+<footer>
+    <p>✌️ {{ 'now' | date: "%Y" }} Jacob Lindström</p>
+</footer>
+<script>
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('{{ "./serviceworker.js" | relative_url }}');
+    }
+</script>

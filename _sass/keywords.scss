@@ -1,0 +1,19 @@
+.keywords {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: wrap;    
+
+    li {
+        background: var(--lightcoral);
+        color: var(--darkcoral);
+        padding: var(--button-padding);
+        margin: 0.5rem;
+        min-width: 3rem;
+        font-weight: 570;
+        white-space: nowrap;
+        border-radius: 0.3rem;
+        font-size: var(--scale-1);
+    }
+}

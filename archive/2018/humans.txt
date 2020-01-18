@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jacob Svensson -- User Experience Designer -- @recidiv
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Github Pages
+    Lazysizes https://github.com/aFarkas/lazysizes

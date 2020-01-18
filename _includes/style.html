@@ -1,0 +1,139 @@
+<style>
+    :root {
+        --backgroundcolor: hsl(0, 73%, 97%);
+        --lightcoral: hsl(5, 100%, 92%);
+        --coral: hsl(5, 99%, 71%);
+        --darkcoral: hsl(5, 62%, 51%);
+        --textcolor: hsl(222, 100%, 32%);
+        --dark: hsl(0, 33%, 7%);
+        --padding-page-bottom: 10vh;
+        --button-padding: 0.2rem 0.5rem;
+
+        /* Type scale */
+        --int: 1.333;
+        --scale0: 1rem;
+        --scale-1: calc(var(--scale0) / 1.125);
+        --scale-2: calc(var(--scale-1) / 1.125);
+        --scale1: calc(var(--scale0) * var(--int));
+        --scale2: calc(var(--scale1) * var(--int));
+        --scale3: calc(var(--scale2) * var(--int));
+        --scale4: calc(var(--scale3) * var(--int));
+        --line-height: 1.45;
+        --font: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+        --text-GRAD: 400;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --textcolor: hsl(0, 73%, 97%);
+            --dark: hsl(222, 100%, 2%);
+            --backgroundcolor: hsl(222, 100%, 13%);
+        }
+    }
+
+    html { font-size: 100%; }     /* 1rem = 16px */
+
+    @media screen and (min-width: 768px) {
+        :root {
+            --padding-page-bottom: 20vh;
+        }
+
+        html { font-size: 112.5%; } /* 1rem = 18px */
+    }
+
+    @media screen and (min-width: 2200px) {
+        html { font-size: 137.5%; } /* 1rem = 22px */
+    }
+
+    body {
+        background: var(--backgroundcolor);
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: var(--textcolor);
+        font-family: var(--font);
+        line-height: var(--line-height);
+        font-feature-settings: "ss01" on, "ss02" on, "ss06" on, "ss07" on, 'GRAD' var(--text-GRAD);
+        /* font-variant-numeric: diagonal-fractions tabular-nums; */
+    }
+
+    main {
+        min-height: calc(100vh - 4rem);
+    }
+
+    header,
+    footer {
+        z-index: 100;
+        width: 90%;
+        margin: auto 5%;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+    }
+
+    footer {
+        padding-bottom: 1rem;
+    }
+
+    .landing-hero {
+        margin-left: 10vw;
+    }
+
+    .landing-hero h1 {
+        font-size: var(--scale3);
+        text-align: left;
+        margin-left: 0;
+        max-width: 800px;
+        margin-bottom: 0rem;
+    }
+
+    .landing-hero h2 {
+        font-size: var(--scale0);
+    }
+
+    .landing-hero a,
+    .landing-hero a:visited {
+        color: var(--coral);
+    }
+
+    a,
+    a:visited {
+        color: inherit;
+          -webkit-text-decoration-style: wavy;
+        text-decoration-style: wavy;
+        transition: all ease-in-out 0.25s;
+    }
+
+    a:hover {
+        text-decoration-color: var(--coral);
+    }
+
+    a:focus,
+    a:active {
+        color: var(--coral);
+    }
+
+    h1 {
+        text-align: center;
+        margin: 15rem auto 5.325rem;
+        max-width: 40rem;
+        width: 90%;
+        font-size: var(--scale2);
+    }
+
+    @media screen and (min-width: 768px) {
+        h1 { 
+            margin: 11.5rem auto 5.325rem;
+        }
+    }
+/*
+    @media screen and (min-width: var(--screen-l)) {
+        h1 { font-size: var(--scale2); }
+    }
+    @media screen and (min-width: var(--screen-mx)) {
+        h1 { font-size: var(--scale2); }
+    } */
+
+</style>
