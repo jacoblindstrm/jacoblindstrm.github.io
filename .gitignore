@@ -4,4 +4,4 @@ _site
 .jekyll-metadata
 vendor
 Gemfile
-Gemfile_REMOVETHIS
+Gemfile.lock

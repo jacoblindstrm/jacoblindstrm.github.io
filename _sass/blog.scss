@@ -132,26 +132,15 @@
 }
 
 .lists {
-    display: grid;
-    grid-template: var(--scale2) / auto;
 
     h2 {
-        transform: rotate(-90deg);
-        text-align: right;
-        grid-area: 1 / 1;
-        margin: 0;
         margin-top: var(--scale2);
         line-height: 1;
         height: var(--scale2);        
     }
 
-    ul,
-    p {
-        grid-area: auto / 2;
-    }
-
     ul {
-        margin-top: 2.8rem;
+        margin-top: 0;
         border-top: solid calc(2rem / 3);
         padding-top: 1rem;
         padding-left: 0.95rem;
@@ -167,4 +156,25 @@
         list-style-type: "\01F449";
         padding-left: 0.5rem;
     } 
+
+    @media (min-width: $screen-m) {
+        display: grid;
+        grid-template: var(--scale2) / auto;
+
+        h2 {
+            transform: rotate(-90deg);
+            text-align: right;
+            grid-area: 1 / 1;
+            margin: 0;        
+        }
+
+        ul,
+        p {
+            grid-area: auto / 2;
+        }
+
+        ul {
+            margin-top: 2.8rem;
+        }
+    }
 }
