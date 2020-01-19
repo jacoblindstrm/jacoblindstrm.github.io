@@ -5,13 +5,11 @@ date:   2020-01-12 20:36:47 +0100
 categories: post
 tags: [workshop, design tools, collaboration]
 ---
-Being a lone wolf designer at the company can be exhausting. You’ll need to gather feedback and iterate quickly a few projects simultaneously. To offload myself I’m fortunate to work alongside great front end developers who can mock and iterate on ideas and designs.
+Being a lone wolf designer at the company can be exhausting. You’ll need to gather feedback and quickly iterate a few projects simultaneously. To offload myself I’m fortunate to work alongside great front end developers who can mock and iterate on ideas and designs.
 
 In turn, to offload them I provided a (simple) design system containing type, colors and our most common components. I did this in Figma, which is my go to tool, as a shared library.
 
 To improve the collaboration further I wanted the entire development team to be able to use Figma. There’s three reasons for this:
-
-I want everyone to be comfortable leaving feedback in Figma, and I wanted everyone to be able to contribute to the design.
 
 * everybody should be comfortable testing prototypes and leaving feedback early and often during the design phase
 * be able to use Figma as deliverables
