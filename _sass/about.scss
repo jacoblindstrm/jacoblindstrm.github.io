@@ -53,10 +53,11 @@
             -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
         margin-bottom: -3.5rem;
-        z-index: -1;
+        mix-blend-mode: darken; // for footer text 
 
         @media (prefers-color-scheme: dark) { 
             background: linear-gradient(180deg, var(--darkcoral) -30%, var(--backgroundcolor) 130%);
+            mix-blend-mode: lighten; // for footer text 
         }
 
         h2 {
