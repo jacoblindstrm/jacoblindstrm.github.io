@@ -125,36 +125,48 @@
         background-repeat: no-repeat;
         margin-right: 0.5em;
         vertical-align: middle;
+        fill: var(--textcolor);
     }
     
     ul.external-links li.ixd-foundation::before {
-        background-image: url('../icons/interactiondesignfoundation.svg');
+        background-image: url(var(--icon-ixdf));
     }
     
     ul.external-links li.dribbble::before {
-        background-image: url('../icons/dribbble.svg');
+        background-image: url(var(--icon-dribbble));
     }
     
     ul.external-links li.medium::before {
-        background-image: url('../icons/medium.svg');
+        background-image: url(var(--icon-medium));
     }
     
     ul.external-links li.instagram::before {
-        background-image: url('../icons/instagram.svg');
+        background-image: url(var(--icon-instagram));
     }
     
     ul.external-links li.spotify::before {
-        background-image: url('../icons/spotify.svg');
+        background-image: url(var(--icon-spotify));
+    }
+
+    ul.external-links li.figma::before {
+        background-image: url(var(--icon-figma));
+    }
+
+    ul.external-links li.linkedin::before {
+        background-image: url(var(--icon-linkedin));
+    }
+    ul.external-links li.twitter::before {
+        background-image: url(var(--icon-twitter));
     }
     
-    @media (prefers-color-scheme: dark) {
-        /* color for icons */
-        ul.external-links li::before {
-                -webkit-filter: hue-rotate(130deg) saturate(0.5) brightness(7.7);
-            filter: hue-rotate(130deg) saturate(0.5) brightness(7.7);
+    // @media (prefers-color-scheme: dark) {
+    //     /* color for icons */
+    //     ul.external-links li::before {
+    //             -webkit-filter: hue-rotate(130deg) saturate(0.5) brightness(7.7);
+    //         filter: hue-rotate(130deg) saturate(0.5) brightness(7.7);
             
-        }
-    }
+    //     }
+    // }
 }
 
 @media (min-width: $screen-l) {

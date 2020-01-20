@@ -7,6 +7,9 @@ $screen-m: 768px;
 $screen-l: 1440px;
 $screen-xl: 2400px;
 
+// Helpers
+@import "icons";
+
 // Commons
 @import "main";
 @import "type";
