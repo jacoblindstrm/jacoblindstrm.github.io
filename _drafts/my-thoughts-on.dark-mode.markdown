@@ -17,7 +17,7 @@ HIG / Material
 
 Type (grade)
 
-Colors
+Colors (ambient sensor, night swift, elevation/depth)
 
 Contrast
 
