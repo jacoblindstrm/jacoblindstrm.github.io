@@ -129,34 +129,35 @@
     }
     
     ul.external-links li.ixd-foundation::before {
-        background-image: url(var(--icon-ixdf));
+        background-image: var(--icon-ixdf);
     }
     
     ul.external-links li.dribbble::before {
-        background-image: url(var(--icon-dribbble));
+        background-image: var(--icon-dribbble);
     }
     
     ul.external-links li.medium::before {
-        background-image: url(var(--icon-medium));
+        background-image: var(--icon-medium);
     }
     
     ul.external-links li.instagram::before {
-        background-image: url(var(--icon-instagram));
+        background-image: var(--icon-instagram);
     }
     
     ul.external-links li.spotify::before {
-        background-image: url(var(--icon-spotify));
+        background-image: var(--icon-spotify);
     }
 
     ul.external-links li.figma::before {
-        background-image: url(var(--icon-figma));
+        background-image: var(--icon-figma);
     }
 
     ul.external-links li.linkedin::before {
-        background-image: url(var(--icon-linkedin));
+        background-image: var(--icon-linkedin);
     }
+    
     ul.external-links li.twitter::before {
-        background-image: url(var(--icon-twitter));
+        background-image: var(--icon-twitter);
     }
     
     // @media (prefers-color-scheme: dark) {
