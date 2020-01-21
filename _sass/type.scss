@@ -4,7 +4,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        --text-GRAD: 485;
+        --text-GRAD: 4;
     }
 }
 
@@ -58,33 +58,33 @@ strong {
     font-weight: 570;
 }
 
-article .body a {
-    text-decoration: none;
-    position: relative;
-}
+// article .body a {
+//     text-decoration: none;
+//     position: relative;
+// }
 
-article .body a::before {
-    content: "";
-    background: var(--coral);
-    position: absolute;
-    top: 65%;
-    height: calc(var(--scale0) / 2);
-    width: 100%;
-    transition: all 0.2s ease;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-        -webkit-clip-path: polygon(0% 0%, 35% 15%, 100% 0%, 100% 85%, 0% 100%);
-    clip-path: polygon(0% 0%, 35% 15%, 100% 0%, 100% 85%, 0% 100%);
+// article .body a::before {
+//     content: "";
+//     background: var(--coral);
+//     position: absolute;
+//     top: 65%;
+//     height: calc(var(--scale0) / 2);
+//     width: 100%;
+//     transition: all 0.2s ease;
+//     mix-blend-mode: multiply;
+//     pointer-events: none;
+//         -webkit-clip-path: polygon(0% 0%, 35% 15%, 100% 0%, 100% 85%, 0% 100%);
+//     clip-path: polygon(0% 0%, 35% 15%, 100% 0%, 100% 85%, 0% 100%);
 
-    @media (prefers-color-scheme: dark) { 
-       z-index: -1;
-       mix-blend-mode: normal;
-    }
-}
+//     @media (prefers-color-scheme: dark) { 
+//        z-index: -1;
+//        mix-blend-mode: normal;
+//     }
+// }
 
-article .body a:hover::before {
-    top: 40%;
-    height: calc((var(--scale0) / 2) * 1.25);
-        -webkit-clip-path: polygon(0% 0%, 40% 25%, 100% 0%, 100% 75%, 5% 100%);
-    clip-path: polygon(0% 0%, 40% 25%, 100% 0%, 100% 75%, 5% 100%);
-}
+// article .body a:hover::before {
+//     top: 40%;
+//     height: calc((var(--scale0) / 2) * 1.25);
+//         -webkit-clip-path: polygon(0% 0%, 40% 25%, 100% 0%, 100% 75%, 5% 100%);
+//     clip-path: polygon(0% 0%, 40% 25%, 100% 0%, 100% 75%, 5% 100%);
+// }

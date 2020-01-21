@@ -102,20 +102,20 @@
             }
         }
 
-        a {
-                -webkit-text-decoration-style: wavy;
-            text-decoration-style: wavy;
-            text-decoration-line: underline;
-            transition: all 0.25s ease;
+        // a {
+        //         -webkit-text-decoration-style: wavy;
+        //     text-decoration-style: wavy;
+        //     text-decoration-line: underline;
+        //     transition: all 0.25s ease;
 
-            &::before {
-                content: none;
-            }
+        //     &::before {
+        //         content: none;
+        //     }
 
-            &:hover {
-                text-decoration-color: var(--coral);
-            }
-        }
+        //     &:hover {
+        //         text-decoration-color: var(--coral);
+        //     }
+        // }
 
         @media (max-width: floor($screen-m - 1)) {
             h2,
