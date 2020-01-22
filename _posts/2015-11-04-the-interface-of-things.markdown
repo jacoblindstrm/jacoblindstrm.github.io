@@ -13,7 +13,7 @@ The main topic of the discussion was control. How could we control all these obj
 
 We have a responsibility to improve everyday life, and that is not to remote control as many things as possible from the sofa. We should be able to live life without our watch reminding us to *stand for a while*.
 
-<!--break-->
+<!--more-->
 ## Does the interface improve the experience?
 
 There are great examples out there. [Nest](https://nest.com/) was, as always, mentioned as a great product. At the talk the intuitive knob-like interface was praised — we forgot what make the Nest so great. Although the Nest has an physical interface, I rarely have to use it. As Steve Jobs would have said; it just works. It adopts and learns how I’d like my indoor climate.We ended up talking about voice and gesture interfaces for the Nest. Would gesture or sound really improve Nest? I don’t think so, because it’s the lack of interface that makes it great.

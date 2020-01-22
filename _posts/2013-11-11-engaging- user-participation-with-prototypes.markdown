@@ -13,7 +13,7 @@ The UCD approach highlights the importance to involve users in the design proces
 
 In CoDesign prototypes tend to be used differently. They are not only shared with the participants earlier in the design process, but also used as invitations to participation, and to collaboratively iterate the design. Prototypes invite the user into a collaborative design process where prototypes are built togheter with the participants. This could make it easier to criticize and modify the design by the participants. Furthermore, in CoDesign prototype better explores scenarios of the participants point of view and they are invited to modify the prototypes to explore further possibilities. Whereas, in UCD the designers tend to be the experts using their and their teams insights (Halse 2010, Simonsen & Robertson 2012).
 
-<!--break-->
+<!--more-->
 ## **Prototypes as Invitations**
 
 In our CoDesign project on sustainable transportation we used prototypes to engage participants. In a similar manner to UCD, we used the prototypes to learn about the different users and stakeholders in our project. But like in CoDesign our prototypes also worked like invitations. We designed several invitations to reach drivers. We designed invitations in the form of a poster and a post on social media, both of which gave little to no response. This was a problem that we could solve by using our design skills.

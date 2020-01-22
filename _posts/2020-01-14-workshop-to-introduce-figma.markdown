@@ -17,7 +17,7 @@ To improve the collaboration further I wanted the entire development team to be 
 
 To achieve this I hosted a workshop for the development team of six. The workshop was two hours and consisted of three parts. 
 
-<!--break-->
+<!--more-->
 ## Introduction
 The experience with design tools like Figma varies greatly between individual developers, some of whom had never used a tool as such. Therefore, a short introduction describing the purpose of the tool and why we choose Figma over Sketch or Adobe XD was necessary. 
 

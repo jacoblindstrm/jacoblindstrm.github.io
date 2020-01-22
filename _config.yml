@@ -10,6 +10,7 @@ title: "hello@jacoblindstrom.design" # the name of your site, e.g. ACME Corp.
 title: hi@jacoblindstrom.design
 email: hi@jacoblindstrom.design
 fname: Jacob Lindström
+excerpt_separator: <!--more-->
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a Malmö based product designer who believe in design through iterative processes with users and prototypes.
 baseurl: "" # the subpath of your site, e.g. /blog
