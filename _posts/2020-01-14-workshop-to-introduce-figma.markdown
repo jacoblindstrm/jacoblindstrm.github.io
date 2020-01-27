@@ -26,7 +26,7 @@ I generally described and showed the most important actions and features, such a
 I won’t go into more detail since others have written better and much more about onboarding design tools and their features. 
 
 ## Hands on (let’s play)
-I find it hard to pick up tools without trying them, and after all this was supposed to be a workshop. All of the participants had prepared an account for Figma before the workshop and brought their computers. (it’s really convenient that Figma runs in the browser!)
+I find it hard to pick up tools without trying them, and after all this was supposed to be a workshop. All of the participants had prepared an account for Figma before the workshop and brought their computers. (For this part it’s really convenient that Figma runs in the browser!)
 
 For the core of the workshop I prepared a game of Pictionary. The participants worked in pairs in Figma (two users in one file). One would draw a word the other would guess using the commenting feature. Read the rules of Pictionary if you’re not familiar with them.
 
@@ -35,7 +35,7 @@ We ran a couple of turns before we ended up using the projector where all partic
 Before wrapping up, we experimented with the prototyping feature to mashup different “answers” into sequences.
 
 ## Summary
-We ended the workshop with a brief discussion around the workshop and Figma. Could they understand the tool better? Would they be more comfortable giving design feedback to designers? What could improvements could be made to the workshop? 
+We ended the workshop with a brief discussion around the workshop and Figma. Could they understand the tool better? Would they be more comfortable giving design feedback to designers? What improvements could be made to the workshop? 
 
 ## Take aways
 It’s too early to tell if any of my overlaying goals are met, but I believe the developers will give better feedback. Figmas commenting feature is very useful, since anyone can test your prototype and leave feedback at specific places - and the feedback is kept inside the design tool, not in Slack or email.
