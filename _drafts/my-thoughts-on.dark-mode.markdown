@@ -29,7 +29,7 @@ Implementing
 
 ——
 
-## Further reading
+## Dig deeper
 
 [Design Details: 317: Designing for Dark Mode](https://spec.fm/podcasts/design-details/310206)
 
