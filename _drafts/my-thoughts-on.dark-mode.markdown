@@ -9,23 +9,30 @@ Intro, why dark mode. what it is.
 
 <!--break-->
 
+## Context
 Context / app with default elements vs website. 
 
 HIG / Material
 
 
+## Type
 
 Type (grade)
 
+## Colors
 Colors (ambient sensor, night swift, elevation/depth)
 
-Contrast
+## Contrast
+Contrast and high contrast
 
 
 
 Light vs dark
 
+## Implementing on the web
+
 Implementing 
+
 
 ——
 
