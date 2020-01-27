@@ -25,8 +25,6 @@ I generally described and showed the most important actions and features, such a
 
 I won’t go into more detail since others have written better and much more about onboarding design tools and their features. 
 
-However, I’ll drop some links below on the subject. 
-
 ## Hands on (let’s play)
 I find it hard to pick up tools without trying them, and after all this was supposed to be a workshop. All of the participants had prepared an account for Figma before the workshop and brought their computers. (it’s really convenient that Figma runs in the browser!)
 
