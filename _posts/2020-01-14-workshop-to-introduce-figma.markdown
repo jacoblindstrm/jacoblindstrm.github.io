@@ -7,7 +7,7 @@ tags: [workshop, design tools, collaboration]
 ---
 Being a lone designer at the company can be exhausting. You’ll need to gather feedback and quickly iterate a few projects simultaneously. To offload myself I’m fortunate to work alongside great front end developers who can mock and iterate on ideas and designs.
 
-In turn, to offload them I provided a (simple) design system containing type, colors and our most common components. I did this in Figma, which is my go to tool, as a shared library.
+In turn, to offload them I provided a (simple) design system containing type, colors and our most common components. I did this in (Figma)[https://www.figma.com/], which is my go to tool, as a shared library.
 
 To improve the collaboration further I wanted the entire development team to be able to use Figma. There’s three reasons for this:
 
