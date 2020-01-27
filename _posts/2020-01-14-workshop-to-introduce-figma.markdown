@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Increase collaboration between teams with Figma"
+title:  "Increasing collaboration between teams with Figma"
 date:   2020-01-12 20:36:47 +0100
 categories: post
 tags: [workshop, design tools, collaboration]
