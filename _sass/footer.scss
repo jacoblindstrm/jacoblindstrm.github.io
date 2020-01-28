@@ -4,4 +4,13 @@ footer {
   @media (min-width: $screen-m) {
     text-align: left;
   }
+
+  @media (max-width: floor($screen-m - 1)) and (prefers-color-scheme: light) {
+      position: relative;
+
+      p {
+        position: absolute;
+        width: 100%;
+      }
+  }
 }
