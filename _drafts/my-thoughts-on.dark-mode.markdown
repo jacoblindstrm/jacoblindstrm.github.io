@@ -38,7 +38,8 @@ Implementing
 
 ——
 
-## Further into the dark
+## Into the dark
+The following resources are worth diving into.
 
 [Design Details: 317: Designing for Dark Mode](https://spec.fm/podcasts/design-details/310206)
 
