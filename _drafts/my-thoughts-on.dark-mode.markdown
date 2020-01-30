@@ -14,7 +14,7 @@ Context / app with default elements vs website.
 
 HIG / Material
 
-I'm the context I'll design for is different than yours (probably easier too). I'll origin from the redesign of my personal brand and website.
+The context I'll design for is different than yours (probably easier too). I'll origin from the redesign of my personal brand and website.
 
 
 ## Type
