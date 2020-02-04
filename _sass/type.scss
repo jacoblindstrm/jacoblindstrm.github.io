@@ -4,7 +4,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        --text-GRAD: 4;
+        --text-GRAD: 480;
     }
 }
 
@@ -15,7 +15,7 @@ h1 {
 h2,
 h3,
 h4 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 p {
