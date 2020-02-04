@@ -5,7 +5,7 @@ date:
 categories: post
 tags: [visual design, ui]
 ---
-Intro, why dark mode. what it is.
+Without having too much experiences designing dark interfaces I'm going to share my thoughts on dark mode. However, I've read and listened to many different resources for the subject. I'll try and summarize and share my thoughts here.
 
 <!--break-->
 
@@ -13,6 +13,8 @@ Intro, why dark mode. what it is.
 Context / app with default elements vs website. 
 
 HIG / Material
+
+The context I'll design for is different than yours (probably easier too). I'll origin from the redesign of my personal brand and website.
 
 
 ## Type
@@ -36,7 +38,8 @@ Implementing
 
 ——
 
-## Further into the dark
+## Into the dark
+The following resources are worth diving into.
 
 [Design Details: 317: Designing for Dark Mode](https://spec.fm/podcasts/design-details/310206)
 
