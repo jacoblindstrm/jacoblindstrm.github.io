@@ -5,7 +5,8 @@ date:
 categories: post
 tags: [visual design, ui]
 ---
-Without having too much experiences designing dark interfaces I'm going to share my thoughts on dark mode. However, I've read and listened to many different resources for the subject. I'll try and summarize and share my thoughts here.
+
+Right now I do most my reading and writing on my phone in bed at night when the rest of the family is sleeping. This make me really appreciate dark mode and Safari Reader(?) which I gave a dark palette and use on all sites not providing a dark alternative. But what should one consider when designing for dark mode? I’ll cover a few things such as color and type here.
 
 <!--break-->
 
