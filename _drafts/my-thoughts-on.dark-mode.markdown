@@ -18,11 +18,14 @@ The context I'll design for is different than yours (probably easier too). I'll 
 
 
 ## Type
+I find bolder fonts slightly easier to read on a dark background. Variable fonts can be effective when designing for dark palettes. We could use ***grad*** to thicken the font without causing the text to reflow. However, I've only found a limited fonts supporting this today, one is Apples system font San Francisco.
 
 Type (grade)
 
 ## Colors
 Colors (ambient sensor, night swift, elevation/depth)
+
+In dark mode the darkest color should be at the bottom, and each new layer is brighter. We move from dark to light. 
 
 Spotify iOS example of elevation.
 Spotify's iOS app is a great example of using colors to increase the depth of the UI. They use a gradient or image at the top that turns to black when information is presented. The navigation and [PLAY BAR] is a dark grey, makes it appear above....
