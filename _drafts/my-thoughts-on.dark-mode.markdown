@@ -24,6 +24,11 @@ Type (grade)
 ## Colors
 Colors (ambient sensor, night swift, elevation/depth)
 
+Spotify iOS example of elevation.
+Spotify's iOS app is a great example of using colors to increase the depth of the UI. They use a gradient or image at the top that turns to black when information is presented. The navigation and [PLAY BAR] is a dark grey, makes it appear above....
+
+[Cat Power artist screen]
+
 ## Contrast
 Contrast and high contrast
 
