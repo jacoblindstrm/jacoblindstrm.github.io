@@ -11,6 +11,11 @@ body > header {
 body > header {
     margin-top: 1.5rem;
     justify-content: space-between;
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
 }
 
 body > header,
@@ -35,7 +40,13 @@ body > header h1 {
         background: var(--textcolor);
             -webkit-clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
         clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
+        //transition: 0.7s all clip-path;
     }
+
+    // &:hover::before {
+    //         -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 50%, 50% 0);
+    //     clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
+    // }
 }
 
 nav {
