@@ -9,17 +9,17 @@ body {
 }
 
 article.post h1 {
-    font-size: var(--scale4);
+    font-size: var(--scale3);
 }
 
 h2 {
-    font-size: var(--scale3);
-}
-h3 {
     font-size: var(--scale2);
 }
-h4 {
+h3 {
     font-size: var(--scale1);
+}
+h4 {
+    font-size: var(--scale0);
 }
 
 h2,

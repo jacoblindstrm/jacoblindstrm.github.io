@@ -18,6 +18,7 @@
         --scale2: calc(var(--scale1) * var(--int));
         --scale3: calc(var(--scale2) * var(--int));
         --scale4: calc(var(--scale3) * var(--int));
+        --scale5: calc(var(--scale4) * var(--int));
         --line-height: 1.45;
         --font: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
         --text-GRAD: 400;
@@ -63,14 +64,14 @@
         min-height: calc(100vh - 4rem);
     }
 
-    header,
+    body > header,
     footer {
         z-index: 100;
         width: 90%;
         margin: auto 5%;
     }
 
-    header {
+    body > header {
         position: absolute;
         top: 0;
     }
@@ -84,7 +85,7 @@
     }
 
     .landing-hero h1 {
-        font-size: var(--scale3);
+        font-size: var(--scale4);
         text-align: left;
         margin-left: 0;
         max-width: 800px;
@@ -98,7 +99,7 @@
     @media screen and (min-width: 1900px) {
         .landing-hero h1 { 
             margin-top: 30vh; 
-            font-size: var(--scale4);
+            font-size: var(--scale5);
             max-width: 1200px;
         }
 
