@@ -1,16 +1,10 @@
 article.post {
   width: 90%;
   margin: auto;
-  max-width: 35rem;
   padding-bottom: var(--padding-page-bottom);
 
   h2 {
     margin-top: 3rem;
-  }
-
-  time {
-    font-size: var(--scale-1);
-    opacity: 0.8;
   }
 
   ul {

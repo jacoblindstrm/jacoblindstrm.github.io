@@ -1,5 +1,5 @@
 nav ul,
-header {
+body > header {
     display: flex;
     align-items: flex-start;
 
@@ -8,17 +8,17 @@ header {
     }
 }
 
-header {
+body > header {
     margin-top: 1.5rem;
     justify-content: space-between;
 }
 
-header,
-header h1 {
+body > header,
+body > header h1 {
     font-size: var(--scale0);
 }
 
-header h1 {
+body > header h1 {
     margin-top: 0.3rem;
     text-align: left;
 

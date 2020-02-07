@@ -3,13 +3,15 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/Article">
     <h1 itemprop="headline">{{ page.title }}</h1>
-    <time itemnprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    <div class="article-body" itemprop="articleBody">{{ page.content }}</div>
-    <ul class="keywords" itemprop="keywords">
-        {% for tag in page.tags  %}
-        <li>{{ tag }}</li>
-        {% endfor %}
-    </ul>
-    <footer>Any thoughts or comments? Please, <a href="{{ site.twitter }}" alt="" rel="noopener">tweet</a> or send me an <a href="mailto:conversation@jacoblindstrom.design?subject={{ page.title }}" alt="">email</a>!</footer>
+    <div class="limit">
+        <time temnprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        <div class="article-body" itemprop="articleBody">{{ page.content }}</div>
+        <ul class="keywords" itemprop="keywords">
+            {% for tag in page.tags  %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+        <footer>Any thoughts or comments? Please, <a href="{{ site.twitter }}" alt="" rel="noopener">tweet</a> or send me an <a href="mailto:conversation@jacoblindstrom.design?subject={{ page.title }}" alt="">email</a>!</footer>
+    </div>
 </article>
 

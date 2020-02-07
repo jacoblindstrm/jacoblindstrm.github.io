@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post resume limit" itemscope itemtype="http://schema.org/Article">
+    <header>
+        <div>
+            <h1>{{ site.fname }}</h1>
+            <h2>{{ site.workTitle }}</h2>
+        </div>
+        <ul>
+            <li>{{ site.email }}</li>
+            <li>{{ site.phone }}</li>
+            <li>{{ site.url }}</li>
+            <li>{{ site.dribbble }}</li>
+            <li>{{ site.linkedin }}</li>
+        </ul>
+    </header>
+    <div class="article-body" itemprop="articleBody">{{ page.content }}</div>
+</article>
+
