@@ -44,6 +44,15 @@ p {
     }
 }
 
+p.extra-spacing {
+    margin-top: 1.5rem;
+    text-indent: 0;
+
+    @media (min-width: $screen-m) {
+        margin-top: 2.5rem;
+    }
+}
+
 .lead {
     font-size: var(--scale1);
     margin-bottom: 1rem;
