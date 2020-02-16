@@ -117,16 +117,18 @@
 
     a,
     a:visited {
-        box-shadow: inset 0 -0.4rem 0 var(--coral);
+        box-shadow: inset 0 -0.1rem 0 transparent;
         transition: all ease-in-out 0.15s;
-        text-decoration: none;
+        text-decoration-color: var(--coral);
+        text-decoration-thickness: 0.15rem;
         color: inherit;
     }
 
     a:hover,
     a:active,
     a:focus {
-        box-shadow: inset 0 -0.6rem 0 var(--coral);
+        box-shadow: inset 0 -0.4rem 0 var(--coral);
+        animation: anchorPulse 0.25s ease alternate-reverse infinite;
     }
 
     aside a,
@@ -138,6 +140,7 @@
         text-decoration-style: wavy;
         text-decoration-line: underline;
         transition: all 0.25s ease;
+        animation: none;
     }
 
     aside a:hover,
@@ -176,6 +179,71 @@
     @media screen and (min-width: 1900px) {
         h1 { 
             margin: 13.5rem auto 7.325rem;
+        }
+    }
+
+    main {
+        animation: appearUp 0.75s ease-out;
+    }
+
+    header h1,
+    header {
+        animation: freeze 0.75s linear;
+    }
+
+    .bio aside {
+        animation: invert 0.75s 0.15s linear;
+    }
+
+    @keyframes appearUp {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20vh);
+        }
+
+        30% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes freeze {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes invert {
+        0% {
+            transform: translateY(-20vh);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes anchorPulse {
+        0% {
+            box-shadow: inset 0 -0.3rem 0 var(--coral);
+        }
+
+        100% {
+            box-shadow: inset 0 -0.4rem 0 var(--coral);
         }
     }
 

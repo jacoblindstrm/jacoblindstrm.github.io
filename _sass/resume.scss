@@ -1,5 +1,4 @@
 article.resume {
-
   max-width: 50rem;
 
   header {
@@ -8,73 +7,87 @@ article.resume {
     margin-top: 15rem;
 
     @media screen and (min-width: 768px) {
-        margin-top: 11.5rem;
+          margin-top: 11.5rem;
     }
 
     @media screen and (min-width: 1400px) {
-      margin-top: 12.5rem;
-      flex-flow: row;
+        margin-top: 12.5rem;
+        flex-flow: row;
     }
 
     @media screen and (min-width: 1900px) {
-      margin-top: 13.5rem;
+        margin-top: 13.5rem;
     }
 
     h1,
     h2 {
-      margin: 0;   
-      text-align: left;   
+        margin: 0;   
+        text-align: left;   
     }
 
     h1 {
-      font-size: var(--scale5);
-      margin-bottom: 1rem;
-      line-height: 1;
+        font-size: var(--scale5);
+        margin-bottom: 1rem;
+        line-height: 1;
     }
 
     h2 {
-      margin-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 
     ul {
-      list-style: none;
-      margin: 0.5rem 0 0;
-      padding: 0;
-      font-size: var(--scale-1);
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0;
+        font-size: var(--scale-1);
+        white-space: nowrap;
 
-      li {
-        margin-bottom: 0.2rem;
-      }
+        li {
+            margin-bottom: 0.2rem;
+        }
     }
   }
 
   .article-body {
     margin-top: 5rem;
 
-    @media screen and (min-width: 1400px) {
-      display: flex;
-      justify-content: space-between;
+    @media screen and (min-width: $screen-l) {
+        display: flex;
+        justify-content: space-between;
 
-      section {
-        padding-right: 1rem;
-      }
+        section {
+            flex-grow: 1;
+            flex-basis: 0;
+
+            &:first-child {
+                padding-right: 1rem;
+
+                @media (min-width: $screen-l) {
+                    padding-right: 3rem;
+                }
+            }
+        }
+        }
     }
-  }
 
-  h3, 
-  h4 {
-      margin-bottom: 0;
-  }
+    h3, 
+    h4 {
+        margin-bottom: 0;
+    }
 
-  h3 {
-    margin-top: 3rem;
-  }
+    h3 {
+        margin-top: 3rem;
+    }
 
-  h4 + h4 {
-    margin-top: 0.5rem;
-  }
+    p + h4 {
+        margin-top: 3rem;
+    }
 
-  p {
-    margin-left: 0;
-  }
+    h4 + h4 {
+        margin-top: 0.5rem;
+    }
+
+    p {
+        margin-left: 0;
+    }
 }
