@@ -15,6 +15,49 @@ article.post {
     }
   }
 
+  img {
+    max-width: 90%;
+    max-height: 75vh;
+    margin: 1rem 0;
+
+    &.center {
+    }
+
+    &.left {
+      @media (min-width: $screen-m) {
+        margin: 0 1.5rem 1rem -3rem;
+        float: left;
+      }
+    }
+
+    &.right {
+
+      @media (min-width: $screen-m) {
+        margin: 0 -3rem 1rem 1.5rem;
+        float: right;
+      }
+    }
+  }
+
+  code {
+    max-width: 100%;
+    background: white;
+    display: block;
+    padding: 1rem;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.4rem;
+    white-space: pre-wrap;
+
+    @media (prefers-color-scheme: dark) {
+      background: var(--dark);
+      box-shadow: none;
+      border: 1px solid var(--dark);
+
+    }
+
+  }
+
   .article-body > p:first-child{
       text-indent: 0;
 
@@ -35,5 +78,9 @@ article.post {
       text-align: center;
       margin: 2rem auto;
       width: 25%;
+  }
+
+  footer {
+    clear: both;
   }
 }
