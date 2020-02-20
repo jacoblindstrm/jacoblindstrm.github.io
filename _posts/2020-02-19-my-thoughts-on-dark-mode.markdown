@@ -92,8 +92,8 @@ The same goes for *high-contrast* (note that the -ms prefix is required today). 
 ## Into the dark
 The following resources are worth diving into.
 
-[Design Details: 317: Designing for Dark Mode](https://spec.fm/podcasts/design-details/310206)
+🎧 [Design Details: 317: Designing for Dark Mode](https://spec.fm/podcasts/design-details/310206)
 
-[UX Matters: Dark Isn’t Just a Mode :](https://www.uxmatters.com/mt/archives/2020/01/dark-isnt-just-a-mode.php)
+📄 [UX Matters: Dark Isn’t Just a Mode](https://www.uxmatters.com/mt/archives/2020/01/dark-isnt-just-a-mode.php)
 
-[24ways: An Introduction to Variable Fonts](https://24ways.org/2019/an-introduction-to-variable-fonts/)
+📃 [24ways: An Introduction to Variable Fonts](https://24ways.org/2019/an-introduction-to-variable-fonts/)
