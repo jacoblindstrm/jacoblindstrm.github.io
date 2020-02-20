@@ -42,7 +42,7 @@ Spotify's iOS app is a great example of using colors to increase the depth of th
 ## Contrast
 As I mentioned above, make sure all of your modes have enough contrast to make your content accessible to all. However, some user might require or prefer higher contrast. 
 
-Maybe high-contrast could be the black and white color scheme? The (currently) experimental media query has three different values, including color scheme preferences. I think we could combine prefer-color-scheme and high-contrast media queries instead.
+Maybe high-contrast could be that black and white color scheme many argue for that dark mode is? The (currently) experimental media query has three different values, including color scheme preferences. I think we could combine *prefer-color-scheme* and *high-contrast* media queries instead.
 
 
 ## Implementing on the web
@@ -52,7 +52,7 @@ Implementing dark mode on the web is pretty easy, especially if you have a rigid
 * light
 * dark
 
-The same goes for high-contrast (note that the ms prefix is required today). Warp your styles with *-ms-high-contrast* media query. It has three values:
+The same goes for *high-contrast* (note that the -ms prefix is required today). Warp your styles with *-ms-high-contrast* media query. It has three values:
 
 * active
 * black-on-white
