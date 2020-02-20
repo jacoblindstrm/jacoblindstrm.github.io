@@ -13,18 +13,18 @@ What’s your light mode context? Does your light mode follow any guidelines, su
 
 If you’re designing for a website or an app by following any internal or brand guidelines I believe it’s a good idea to design a dark alternative to those guidelines. Is it possible to have a dark version of your light palette and keep the same emotion? Remember that not all colors work very well as a tinted black. Be creative!
 
-And always always keep contrast and accessibility in mind. Use tools as [Stark](https://www.getstark.co) to make sure all your users can access your content and that you comply to the [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) guidelines.
+And always always keep contrast and accessibility in mind. Use tools as [Stark](https://www.getstark.co) to make sure all your users can access your content and that you comply with the [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) guidelines.
 
 Other services, such as Netflix, already have a dark UI to fit their context - should they provide a light mode?
 
 <!--more-->
 
 ## Type
-I find bolder fonts slightly easier to read on a dark background. Variable fonts can be effective when designing for dark palettes. It’s possible to use *grad* to thicken the font without causing the text to reflow. However, I've only found a limited fonts supporting this today, one is Apples system font San Francisco. This could be applied to high contrast (Microsoft Edge only at the time of writing) modes too.
+I find bolder fonts slightly easier to read on a dark background. Variable fonts can be effective when designing for dark palettes. It’s possible to use *grad* to thicken the font without causing the text to reflow. However, I've only found a limited number of fonts supporting this today, one is Apples system font San Francisco. You could use this technique to increase the contrast in high contrast mode too (Microsoft Edge only at the time of writing).
 
 ![darkmode-GRAD](/assets/posts/darkmode-GRAD.png){:class="center"}
 
-The images above show Apples San Fransisco in light mode with *grad* 400 and dark mode with *grad* 480.
+The image above shows Apples San Fransisco in light mode with *grad* 400 and dark mode with *grad* 480.
 
 [Firefox has a great tool](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_fonts) which let you inspect the font and make changes to it in real time.
 
