@@ -44,10 +44,10 @@ Several month later we recived a call from our contact at Sunfleet. He told us t
 
 ## **References**
 
-Boer, L & Donovan, J (2012). Provotypes for Participatory Innovation. In: *Proceedings of the Designing Interactive Systems Conference* (DIS ‘12). ACM, NY. http://doi.acm.org/10.1145/2317956.2318014
+📄 Boer, L & Donovan, J (2012). Provotypes for Participatory Innovation. In: *Proceedings of the Designing Interactive Systems Conference* (DIS ‘12). ACM, NY. http://doi.acm.org/10.1145/2317956.2318014
 
-Halse, Joachim (red.) (2010). *Rehearsing the Future.* København: The Danish Design School Press
+📓 Halse, Joachim (red.) (2010). *Rehearsing the Future.* København: The Danish Design School Press
 
-Sharp, Helen & Rogers,Yvonne & Preece, Jennifer (2007). *Interaction Design: Beyond Human-Computer Interaction.* 2. ed. Hoboken, N.J.: Wiley
+📗 Sharp, Helen & Rogers,Yvonne & Preece, Jennifer (2007). *Interaction Design: Beyond Human-Computer Interaction.* 2. ed. Hoboken, N.J.: Wiley
 
-Simonsen, Jesper & Robertson, Toni (red.) (2012). *Routledge International Handbook of Participatory Design.* New York: Routledge
+📕 Simonsen, Jesper & Robertson, Toni (red.) (2012). *Routledge International Handbook of Participatory Design.* New York: Routledge
