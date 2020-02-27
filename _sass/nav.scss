@@ -77,5 +77,23 @@ nav {
                 margin-right: 0;
             }
         }
+
+        @media screen and (max-width: $screen-m) {
+
+            li a {
+                min-width: 10vw;
+                text-align: right;
+                border-bottom: 0.1rem solid var(--coral);
+                display: block;
+            }
+
+            li:nth-child(1) a {
+                min-width: 20vw;
+            }
+
+            li:nth-child(2) a {
+                min-width: 30vw;
+            }
+        }
     }
 }
