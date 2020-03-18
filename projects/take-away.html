@@ -1,0 +1,106 @@
+---
+permalink: /take-away-mmx/
+---
+<!DOCTYPE html>
+<html lang="SE_sv">
+  <head>
+    <title>Take Away Malmö</title>
+    <style>
+        :root {
+            --backgroundcolor: white;
+            --textcolor: black;
+
+            /* Type scale */
+            --int: 1.333;
+            --scale0: 1rem;
+            --scale-1: calc(var(--scale0) / 1.125);
+            --scale-2: calc(var(--scale-1) / 1.125);
+            --scale1: calc(var(--scale0) * var(--int));
+            --scale2: calc(var(--scale1) * var(--int));
+            --scale3: calc(var(--scale2) * var(--int));
+            --scale4: calc(var(--scale3) * var(--int));
+            --scale5: calc(var(--scale4) * var(--int));
+            --line-height: 1.45;
+            --font: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+            --text-GRAD: 400;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --textcolor: white;
+                --backgroundcolor: hsl(222, 100%, 2%);
+                --text-GRAD: 480;
+            }
+        }
+
+        html { font-size: 100%; }     /* 1rem = 16px */
+
+        body {
+            background: var(--backgroundcolor);
+            margin: 0;
+            padding: 0;
+            color: var(--textcolor);
+            font-family: var(--font);
+            font-size: var(--scale0);
+            font-kerning: normal;
+            line-height: var(--line-height);
+            font-feature-settings: "ss01" on, "ss02" on, "ss06" on, "ss07" on;
+            font-variation-settings: "GRAD" var(--text-GRAD);
+            /* font-variant-numeric: diagonal-fractions tabular-nums; */
+        }
+
+        main {
+            margin: 10vh auto 15vh;
+            width: 95%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: var(--scale5);
+            margin-top: calc(3 * calc(1.45 * var(--scale2)));
+            margin-bottom: calc(1.45 * var(--scale2));
+        }
+        h2 {
+            font-size: var(--scale4);
+            margin-top: calc(3 * calc(1.45 * var(--scale1)));
+            margin-bottom: calc(1.45 * var(--scale1));
+        }
+        h3 {
+            font-size: var(--scale3);
+            margin-top: calc(3 * calc(1.45 * var(--scale0)));
+            margin-bottom: calc(1.45 * var(--scale0));
+        }
+        h4 {
+            font-size: var(--scale2);
+        }
+
+        p {
+            margin-bottom: calc(1.45 * var(--scale0));
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <article>
+            <h2><a href="http://pastrybyjoellindqvist.se">Mat & Chokladstudion</a></h2>
+            <p>Amiralsgatan 6</p>
+            <p>Vi lagar vegetariska luncher på det bästa som säsongen
+                och närområdet erbjuder. Både som take away och som bordsservering!
+                Luncherna är ofta helt veganska men ibland smyger det in sig lite härliga
+                ekologiska ägg och smör och då har vi alltid ett veganskt och minst lika gott alternativ!</p>
+            <p>Det går även utmärkt att ringa in och lägga undan dagens lunch och hämta ända fram till 18.00!</p>
+            <p>Dagens lunch kostar 110 kr eller 100 kr om du tar take away!</p>
+            <p><strong>070 5087027</strong></p>
+        </article>
+        
+        <article>
+            <h2><a href="http://pastrybyjoellindqvist.se">Pizza Dal Sud</a></h2>
+            <p>Ringgatan 1B / Claesgatan 8 (Mitt Mölan)</p>
+            <p>Pizza Dal Sud serverar italienska surdegspizzor. Hantverkspizzor där degen fått jäsa i minst 10 timmar och arbetas på rätt sätt för att skapa den där bubbliga kanten som man i Italien kallar ”Cornicione”.</p>
+            <p>Ringgatan: <strong>040-190098</strong> / Claesgatan <strong>040-190028</strong></p>
+        </article>
+        
+
+    </main>
+  </body>
+</html>
