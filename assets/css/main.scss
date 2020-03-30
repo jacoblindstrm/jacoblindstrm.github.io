@@ -8,6 +8,7 @@ $screen-l: 1400px;
 $screen-xl: 1900px;
 
 // Helpers
+@import "animations";
 @import "icons";
 
 // Commons
@@ -19,6 +20,7 @@ $screen-xl: 1900px;
 @import "keywords";
 
 // Pages
+@import "work";
 @import "about";
 @import "blog";
 @import "post";
