@@ -1,4 +1,16 @@
 <style>
+
+    @font-face {
+        font-family: "Moderat";
+        src: url("/assets/fonts/Moderat-Regular.woff2") format("woff2");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Moderat";
+        src: url("/assets/fonts/Moderat-Bold.woff2") format("woff2");
+        font-weight: bold;
+    }
+
     :root {
         --backgroundcolor: hsl(0, 73%, 97%);
         --lightcoral: hsl(5, 100%, 92%);
@@ -12,7 +24,7 @@
 
         /* Type scale */
         --int: 1.333;
-        --scale0: 1rem;
+        --scale0: 1.03rem;
         --scale-1: calc(var(--scale0) / 1.125);
         --scale-2: calc(var(--scale-1) / 1.125);
         --scale1: calc(var(--scale0) * var(--int));
@@ -20,8 +32,8 @@
         --scale3: calc(var(--scale2) * var(--int));
         --scale4: calc(var(--scale3) * var(--int));
         --scale5: calc(var(--scale4) * var(--int));
-        --line-height: 1.45;
-        --font: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+        --line-height: 1.6;
+        --font: "Moderat",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
         --text-GRAD: 400;
     }
 
@@ -56,7 +68,9 @@
         color: var(--textcolor);
         font-family: var(--font);
         line-height: var(--line-height);
-        font-feature-settings: "ss01" on, "ss02" on, "ss06" on, "ss07" on;
+        font-size: var(--scale0);
+        font-kerning: normal;
+        font-variant-ligatures: discretionary-ligatures;        
         font-variation-settings: "GRAD" var(--text-GRAD);
         /* font-variant-numeric: diagonal-fractions tabular-nums; */
     }
@@ -87,6 +101,8 @@
 
     .landing-hero h1 {
         font-size: var(--scale3);
+        line-height: 1.2;
+        letter-spacing: -0.01em;
         text-align: left;
         margin-left: 0;
         max-width: 800px;
