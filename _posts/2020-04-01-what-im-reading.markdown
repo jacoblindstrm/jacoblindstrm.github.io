@@ -23,13 +23,12 @@ tags: [visual design, ui, css]
 ## On the web:
 - 📱 [How can digital government contribute to the UN’s Sustainable Development Goals?](https://public.digital/2019/08/22/how-can-digital-government-contribute-to-the-uns-sustainable-development-goals/)
 - 📱 [The Definitive Guide to Asking Follow-up Questions](https://medium.com/eightshapes-llc/the-definitive-guide-to-asking-follow-up-questions-5bfcddfa8a2e)
-- Becoming a Product designer: requirements
+- 📱 [Becoming a Product designer: requirements](https://paper.dropbox.com/published/Becoming-a-Product-designer-requirements-T2TC8MP45MlCG7sqrPhofQw)
 - 📱 [Oliver Reichenstein from iA, on the need for an ethical and philosophical approach in digital design](https://medium.com/demagsign/oliver-reichenstein-from-ia-on-the-need-for-an-ethical-and-philosophical-approach-in-digital-c57f2d00738)
-- Your best work will be invisible
+- 📱 [Your best work will be invisible](https://tannerchristensen.com/blog/2019/1/5/your-best-work-will-be-invisible)
 - 📺 [Empathy reifies disability stigmas](https://interaction19.ixda.org/program/keynote--liz-jackson/)
-
-- Intercom’s fundamentals of good interaction design
-- Why Designing Affordances Is Apple’s Secret Design Superpower
+- 📱 [Intercom’s fundamentals of good interaction design](https://www.intercom.com/blog/fundamentals-good-interaction-design/)
+- 📱 [Why Designing Affordances Is Apple’s Secret Design Superpower](https://magenta.as/why-designing-affordances-is-apples-secret-design-superpower-2327a9d04106)
 - Nothing to see here
 - Mental models for designers
 - “The stories we tell and the stories other tell us shape our work, our beliefs, and that’s what shapes us, as designers and people.”
