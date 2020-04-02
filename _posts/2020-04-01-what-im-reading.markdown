@@ -8,6 +8,7 @@ tags: [visual design, ui, css]
 
 # What I'm reading.
 
+## Books
 - <abbr title="Currently reading">📖</abbr> [The Beauty of Everyday Things](https://www.penguin.co.uk/books/311/311112/the-beauty-of-everyday-things/9780241366356.html) by Soetsu Yanagi  
 - <abbr title="Currently reading">📖</abbr> [Cross-Cultural Design](https://abookapart.com/products/cross-cultural-design) by Senongo Akpem  
 - <abbr title="Finished">📓</abbr> [Expressive Design Systems](https://abookapart.com/products/expressive-design-systems) by Yesenia Perez-Cruz  
@@ -20,7 +21,7 @@ tags: [visual design, ui, css]
 - 📚 More to be added.
 
 
-## On the web:
+## Articles, pappers, and talks
 - 📱 [How can digital government contribute to the UN’s Sustainable Development Goals?](https://public.digital/2019/08/22/how-can-digital-government-contribute-to-the-uns-sustainable-development-goals/)
 - 📱 [The Definitive Guide to Asking Follow-up Questions](https://medium.com/eightshapes-llc/the-definitive-guide-to-asking-follow-up-questions-5bfcddfa8a2e)
 - 📱 [Becoming a Product designer: requirements](https://paper.dropbox.com/published/Becoming-a-Product-designer-requirements-T2TC8MP45MlCG7sqrPhofQw)
