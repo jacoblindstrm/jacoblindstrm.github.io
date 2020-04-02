@@ -48,6 +48,10 @@ p.extra-spacing {
     margin-top: 1.5rem;
     text-indent: 0;
 
+    + p {
+        text-indent: 0;
+    }
+
     @media (min-width: $screen-m) {
         margin-top: 2.5rem;
     }
