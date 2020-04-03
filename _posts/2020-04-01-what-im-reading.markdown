@@ -3,7 +3,6 @@ layout: list
 title:  "What I'm reading"
 date: 2020-02-19 00:00:00 +0100   
 categories: list
-tags: [visual design, ui, css]
 ---
 
 # What I'm reading.
@@ -18,6 +17,8 @@ tags: [visual design, ui, css]
 - <abbr title="Finished">📓</abbr> [Change by Design](https://www.ideo.com/post/change-by-design) by Tim Brown  
 - <abbr title="Finished">📓</abbr> [Emotional Design](https://www.amazon.com/Emotional-Design-Love-Everyday-Things/dp/0465051367) by Don Norman  
 - <abbr title="Finished">📓</abbr> [Design of Everyday Things](https://mitpress.mit.edu/books/design-everyday-things) by Don Norman  
+- <abbr title="Finished">📓</abbr> [Just Enough Research](https://abookapart.com/products/just-enough-research) by Erika Hall  
+
 - 📚 More to be added.
 
 
@@ -51,5 +52,6 @@ tags: [visual design, ui, css]
 - The Art of Emotion — Norman’s 3 Levels of Emotional Design
 - Designing teamwork: How our customers helped shape the future of Slack
 - 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e).
+
 
 - *📖 currently reading, 📓 read , 📺 talk watched, 📄 technical paper read, 📱 blog / web article read.*
