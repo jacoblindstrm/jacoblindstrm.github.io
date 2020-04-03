@@ -18,7 +18,7 @@ categories: list
 - <abbr title="Finished">📓</abbr> [Emotional Design](https://www.amazon.com/Emotional-Design-Love-Everyday-Things/dp/0465051367) by Don Norman  
 - <abbr title="Finished">📓</abbr> [Design of Everyday Things](https://mitpress.mit.edu/books/design-everyday-things) by Don Norman  
 - <abbr title="Finished">📓</abbr> [Just Enough Research](https://abookapart.com/products/just-enough-research) by Erika Hall  
-
+- <abbr title="Finished">📓</abbr> [Rehearsing the Future](https://adk.elsevierpure.com/en/publications/rehearsing-the-future) by Joachim Halse, Eva Brandt (Editors)
 - 📚 More to be added.
 
 
