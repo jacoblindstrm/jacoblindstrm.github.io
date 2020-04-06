@@ -14,7 +14,7 @@ workTitle: Product Designer
 phone: +4673 53 55 921
 excerpt_separator: <!--more-->
 description: >- # this means to ignore newlines until "baseurl:"
-  I’m Jacob, a Interaction&nbsp;Designer living in Malmö. I believe in design through iterative processes with users and prototypes.
+  I’m Jacob, an Interaction&nbsp;Designer living in Malmö. I believe in design through iterative processes with users and prototypes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacoblindstrom.design" # the base hostname & protocol for your site, e.g. http://example.com
 figma: "https://figma.com/@jacoblindstrom"
