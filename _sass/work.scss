@@ -40,6 +40,7 @@
         object-fit: cover;
     }
 
+    iframe,
     video {
         border: 0.25rem solid var(--coral);
         background: var(--coral);
@@ -48,6 +49,8 @@
         grid-column: 1 / last;
         grid-row: 6 / span 5;
         width: 90vw;
+        height: 53vw;
+        pointer-events: none;
 
         @media (max-width: floor($screen-m - 1)) {
             margin: 0 5vw 0;
@@ -91,10 +94,12 @@
     @media (min-width: $screen-m) {
         grid-template: repeat(15, 5rem) / repeat(18, calc(100vw / 18));
         
+        iframe,
         video {
             grid-column: 4 / span 10;
             grid-row: 6 / span 6;
             width: 65vw;
+            height: 38vw;
         }
 
         picture:first-child {

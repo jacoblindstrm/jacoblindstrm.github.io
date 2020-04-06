@@ -44,15 +44,6 @@ body > header h1 {
         clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
         transition: 0.25s all ease-in-out;
     }
-
-    // &:hover::before {
-    //     transform: rotate(90deg);
-    // }
-
-    // &:hover::before {
-    //         -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 50%, 50% 0);
-    //     clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
-    // }
 }
 
 nav {
@@ -81,6 +72,12 @@ nav {
             
             &:last-child {
                 margin-right: 0;
+            }
+
+            &.active {
+                &::before {
+                    content: "→";
+                }
             }
         }
 
