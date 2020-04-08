@@ -5,16 +5,10 @@ self.addEventListener('install', installEvent => {
             jacobsvenssondesignCache.addAll([
                 '.',
                 '/index.html',
+                '/work/index.html',
                 '/blog/index.html',
                 '/about/index.html',
                 '/assets/css/main.css',
-                '/assets/images/pattern_blue.svg',
-                '/assets/images/pattern.svg',
-                '/assets/icons/interactiondesignfoundation.svg',
-                '/assets/icons/instagram.svg',
-                '/assets/icons/medium.svg',
-                '/assets/icons/dribbble.svg',
-                '/assets/icons/spotify.svg'
             ]);
         }),
     );

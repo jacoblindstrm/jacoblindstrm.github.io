@@ -61,6 +61,7 @@ nav {
 
         li {
             margin: 0;
+            white-space: nowrap;
 
             @media screen and (min-width: $screen-m) {
                 margin: auto calc(1.875rem / 2); 
@@ -84,7 +85,6 @@ nav {
         @media screen and (max-width: $screen-m) {
 
             li {
-                white-space: nowrap;
                 text-align: right;
                 display: block;
             }

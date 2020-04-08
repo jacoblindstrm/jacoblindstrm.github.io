@@ -25,7 +25,8 @@ h4 {
 h2,
 h3,
 h4 {
-    margin-bottom: 1rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 p {
@@ -84,6 +85,41 @@ strong {
 time {
     font-size: var(--scale-1);
     opacity: 0.8;
+}
+
+figcaption {
+    font-size: var(--scale-1);
+}
+
+blockquote {
+    
+    text-align: center;
+    line-height: 1;
+    margin: 3em auto;
+    max-width: 45rem;
+
+    p {
+        font-size: var(--scale2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p::before {
+        font-size: 2em;
+        vertical-align: middle;
+        content: '\201C';
+    }
+
+    p::after {
+        font-size: 2em;
+        vertical-align: middle;
+        content: '\201D';
+    }
+
+    footer {
+        font-size: var(--scale-1);
+        text-align: right;
+    }
 }
 
 // article .body a {
