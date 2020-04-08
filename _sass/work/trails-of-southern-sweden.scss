@@ -80,26 +80,28 @@
     }
 
     #introduction {
-        padding: 0;
-        margin-top: 5vh;
-        background: 
-            url(https://images.unsplash.com/photo-1574625329755-173bd84d1106?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80),
-            rgba(0,0,0,0.3);
-        background-position: left center;
-        background-attachment: fixed;
-        background-size: cover;
-            -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 91%);
-        clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 91%);
+        @media (min-width: $screen-m) {
+            padding: 0;
+            margin-top: 5vh;
+            background: 
+                url(https://images.unsplash.com/photo-1574625329755-173bd84d1106?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80),
+                rgba(0,0,0,0.3);
+            background-position: left center;
+            background-attachment: fixed;
+            background-size: cover;
+                -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 91%);
+            clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 91%);
 
-        .narrow {
-            padding: 35vh var(--padding-horizontal);
-            width: 40vw;
-            background: white;
-            color: black;        
+            .narrow {
+                padding: 35vh var(--padding-horizontal);
+                width: 40vw;
+                background: white;
+                color: black;        
 
-            @media (prefers-color-scheme: dark) {
-                background: var(--dark);
-                color: var(--textcolor);
+                @media (prefers-color-scheme: dark) {
+                    background: var(--dark);
+                    color: var(--textcolor);
+                }
             }
         }
     }
