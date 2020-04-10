@@ -23,6 +23,7 @@ categories: list
 
 
 ## Articles, pappers, and talks
+- 📄 [Notes on Design Practice: Stories and Prototypes as Catalysts for Communication](http://www.pliant.org/personal/Tom_Erickson/Stories.html) by Thomas Erickson
 - 📱 [How can digital government contribute to the UN’s Sustainable Development Goals?](https://public.digital/2019/08/22/how-can-digital-government-contribute-to-the-uns-sustainable-development-goals/)
 - 📱 [The Definitive Guide to Asking Follow-up Questions](https://medium.com/eightshapes-llc/the-definitive-guide-to-asking-follow-up-questions-5bfcddfa8a2e)
 - 📱 [Becoming a Product designer: requirements](https://paper.dropbox.com/published/Becoming-a-Product-designer-requirements-T2TC8MP45MlCG7sqrPhofQw)
