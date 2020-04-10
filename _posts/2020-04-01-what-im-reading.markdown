@@ -9,7 +9,7 @@ categories: list
 
 ## Books
 - <abbr title="Currently reading">📖</abbr> [The Beauty of Everyday Things](https://www.penguin.co.uk/books/311/311112/the-beauty-of-everyday-things/9780241366356.html) by Soetsu Yanagi  
-- <abbr title="Currently reading">📖</abbr> [Cross-Cultural Design](https://abookapart.com/products/cross-cultural-design) by Senongo Akpem  
+- <abbr title="Finished">📓</abbr> [Cross-Cultural Design](https://abookapart.com/products/cross-cultural-design) by Senongo Akpem  
 - <abbr title="Finished">📓</abbr> [Expressive Design Systems](https://abookapart.com/products/expressive-design-systems) by Yesenia Perez-Cruz  
 - <abbr title="Finished">📓</abbr> [Ruined by Design](https://www.ruinedby.design) by Mike Monterio  
 - <abbr title="Finished">📓</abbr> [Shape of Design](https://shapeofdesignbook.com) by Frank Chimero  
