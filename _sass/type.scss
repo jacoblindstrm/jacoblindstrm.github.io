@@ -71,6 +71,7 @@ figcaption {
 
     p {
         display: inline;
+        color: var(--blue);
         background: var(--coral);
         box-shadow: 0.5rem 0 0 var(--coral), -0.5rem 0 0 var(--coral);
         box-decoration-break: clone;
