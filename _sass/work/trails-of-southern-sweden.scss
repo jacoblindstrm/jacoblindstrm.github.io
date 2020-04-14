@@ -95,6 +95,7 @@
                     border: 0.25rem solid var(--coral);
                     width: 75%;
                     margin-top: -2rem;
+                    margin-left: -1rem;
 
                     @media (min-width: $screen-m) {
                         grid-column: 1 / 3;
