@@ -3,6 +3,7 @@ layout: list
 title:  "What I'm reading"
 date: 2020-02-19 00:00:00 +0100   
 categories: list
+permalink: /reading
 ---
 
 # What I'm reading.
