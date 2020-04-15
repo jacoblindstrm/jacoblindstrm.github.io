@@ -69,7 +69,29 @@
     } 
     
     figure {
+
+        &.left-side {
+            width: 60%;
+            float: left;
+            padding: 0 1rem;
+
+            img {
+                border: 0.5rem solid var(--textcolor);
+            }
+        }
         
+        &.half {
+            @media (min-width: $screen-m) {
+                margin: 4rem auto;
+                display: flex; 
+
+                &.bottom figcaption {
+                    align-items: flex-end;
+                    margin-bottom: -1rem;
+                }
+            }
+        }
+
         &.stack {
             margin: 4rem -5vw;
             padding: 3rem 2rem;
