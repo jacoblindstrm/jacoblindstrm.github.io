@@ -72,8 +72,12 @@
 
         &.left-side {
             width: 60%;
-            float: left;
-            padding: 0 1rem;
+            marginal: auto;
+            
+            @media (min-width: $screen-m) {
+               float: left;
+               padding: 0 1rem;
+            }
 
             img {
                 border: 0.5rem solid var(--textcolor);
