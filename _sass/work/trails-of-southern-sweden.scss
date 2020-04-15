@@ -71,12 +71,13 @@
     figure {
 
         &.left-side {
-            width: 60%;
+            width: 80%;
             marginal: auto;
             
             @media (min-width: $screen-m) {
                float: left;
                padding: 0 1rem;
+               width: 60%;
             }
 
             img {
