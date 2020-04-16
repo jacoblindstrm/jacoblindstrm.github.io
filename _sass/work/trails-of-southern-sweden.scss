@@ -67,12 +67,116 @@
         padding: var(--padding-vertical) var(--padding-horizontal);
         box-sizing: border-box;
     } 
+
+    @media (max-width: $screen-m) {
+        .collage-wrapper {
+            max-width: 100vw;
+            overflow-y: scroll;
+            margin-right: -5vw;
+            margin-left: -5vw;
+        }
+    }
+
+    .collage {
+        margin-top: 25vh;
+
+        figure:first-child {
+           img {
+                border: 0.5rem solid var(--blue);
+            }
+        }
+
+        figure:nth-child(2) {
+            img {
+                border: 0.5rem solid var(--coral);
+            }
+        }
+
+        figure:nth-child(3) {
+            img {
+                border: 0.5rem solid var(--blue);
+            }
+        }
+
+        @media (max-width: $screen-m) {
+            overflow-y: scroll;
+            scroll-snap-type: x mandatory;
+            //max-width: 100vw;
+            width: 300vw;
+            display: flex;
+
+            figure, blockquote {
+                scroll-snap-align: start;
+                width: 100vw;
+            }
+
+            figure:first-child {
+                
+             }
+     
+             figure:nth-child(2) {
+                margin-left: -5rem;
+                margin-top: 8rem;
+             }
+     
+             figure:nth-child(3) {
+                 margin-left: -3rem;
+             }
+
+             blockquote {
+                 align-self: center;
+                 margin-left: -20rem;
+                 margin-right: 5vw;
+             }
+        }
+
+        @media (min-width: $screen-m) {
+            display: grid;
+            grid-template: repeat(8, 10rem) auto / repeat(4, 25%);
+            overflow: hidden;
+
+            figure:first-child {
+                grid-area: 1 / span 2;
+
+                img {
+                    border: 0.5rem solid var(--blue);
+                }
+            }
+
+            figure:nth-child(2) {
+                grid-area: 3 / 2 / auto / 5;
+                margin-top: 2rem;
+
+                figcaption {
+                    text-align: right;
+                    max-width: none;
+                }
+                
+                img {
+                    border: 0.5rem solid var(--coral);
+                }
+            }
+
+            figure:nth-child(3) {
+                grid-area: 6 / 3 / auto / 5;
+                margin-top: 4rem;
+
+                img {
+                    border: 0.5rem solid var(--blue);
+                }
+            }
+
+            blockquote {
+                grid-area: 1 / 3 / auto / 5;
+                margin-top: 2rem;
+            }
+        }
+    }
     
     figure {
 
         &.left-side {
             width: 80%;
-            marginal: auto;
             
             @media (min-width: $screen-m) {
                float: left;
@@ -194,10 +298,6 @@
     }
 
     #outcome {
-        blockquote {
-            margin: 25vh auto;
-        }
-
         ul {
             list-style: none;
             padding-left: 0;
