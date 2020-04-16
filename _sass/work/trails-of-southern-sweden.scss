@@ -71,8 +71,8 @@
     @media (max-width: $screen-m) {
         .collage-wrapper {
             max-width: 100vw;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
             margin-right: -5vw;
             margin-left: -5vw;
         }
