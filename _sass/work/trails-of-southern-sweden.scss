@@ -110,6 +110,10 @@
              figure:nth-child(3) {
                  margin-left: -3rem;
                  width: 135vw;
+ 
+                 img {
+                     z-index: -1;
+                 }
              }
 
              blockquote {
