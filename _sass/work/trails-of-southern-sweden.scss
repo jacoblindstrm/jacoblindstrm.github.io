@@ -10,12 +10,6 @@
 
     position: relative;
 
-    // article {
-    //     max-height: 100vh;
-    //     overflow-y: scroll;
-    //     scroll-snap-type: y proximity;
-    // }
-
     h1 {
         text-align: left;
         margin: 0;
@@ -62,7 +56,6 @@
     }
 
     section {
-        // scroll-snap-align: start;
         min-height: 100vh;
         padding: var(--padding-vertical) var(--padding-horizontal);
         box-sizing: border-box;
@@ -100,7 +93,7 @@
         }
 
         @media (max-width: $screen-m) {
-            width: 300vw;
+            width: 350vw;
             display: flex;
 
             figure, blockquote {
@@ -120,11 +113,12 @@
      
              figure:nth-child(3) {
                  margin-left: -3rem;
+                 width: 135vw;
              }
 
              blockquote {
-                 align-self: center;
-                 justify-self: flex-end;
+                 align-self: flex-end;
+                 width: 120vw;
                  margin-left: -20rem;
                  margin-right: 5vw;
              }
