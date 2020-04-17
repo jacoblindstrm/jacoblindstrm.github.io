@@ -74,57 +74,11 @@
 
         h2 {
             font-weight: 570;
-            margin-top: 1rem;
-            margin-bottom: 0.25rem;
 
             @media (min-width: $screen-m) {
                 font-size: var(--scale0);
             }
         }
-
-        p {
-            margin: 0 auto;
-            text-indent: calc(var(--scale0) * var(--line-height));
-
-            + h2 {
-                margin-right: 0.3rem;
-            }
-        }
-        
-
-        h1 + p,
-        h1 + h2,
-        h2 + p,
-        h3 + p {
-            text-indent: 0;
-        }
-
-        h1 + p,
-        h1 + h2 {
-
-            &::first-letter {
-                font-size: 3.4em;
-                float: left;
-                margin-top: 0.1em;
-                line-height: 0.6; // for Safari
-                padding-right: 0.1em;
-            }
-        }
-
-        // a {
-        //         -webkit-text-decoration-style: wavy;
-        //     text-decoration-style: wavy;
-        //     text-decoration-line: underline;
-        //     transition: all 0.25s ease;
-
-        //     &::before {
-        //         content: none;
-        //     }
-
-        //     &:hover {
-        //         text-decoration-color: var(--coral);
-        //     }
-        // }
 
         @media (max-width: floor($screen-m - 1)) {
             h2,
