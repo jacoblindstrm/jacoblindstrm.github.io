@@ -19,6 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacoblindstrom.design" # the base hostname & protocol for your site, e.g. http://example.com
 figma: "https://figma.com/@jacoblindstrom"
 dribbble:  "https://dribbble.com/jacoblindstrom"
+github: "https://github.com/jacoblindstrm"
 ixd: "https://www.interaction-design.org/jacob-svensson"
 spotify: "https://open.spotify.com/user/z9v8we1abbpx7dej3vvsqj38t"
 linkedin: "https://www.linkedin.com/in/jacobsvensson-design/"
