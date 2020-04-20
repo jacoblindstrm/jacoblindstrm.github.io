@@ -91,3 +91,10 @@ nav {
         }
     }
 }
+
+@media print {
+    nav ul,
+    body > header {
+        display: none;
+    }
+}

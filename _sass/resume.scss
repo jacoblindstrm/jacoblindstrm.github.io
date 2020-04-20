@@ -51,7 +51,7 @@ article.resume {
   .article-body {
     margin-top: 5rem;
 
-    @media screen and (min-width: $screen-l) {
+    @media (min-width: $screen-l) {
         display: flex;
         justify-content: space-between;
 
@@ -75,19 +75,19 @@ article.resume {
         margin-bottom: 0;
     }
 
-    h3 {
-        margin-top: 3rem;
-    }
+    // h3 {
+    //     margin-top: 3rem;
+    // }
 
-    p + h4 {
-        margin-top: 3rem;
-    }
+    // p + h4 {
+    //     margin-top: 3rem;
+    // }
 
     h4 + h4 {
         margin-top: 0.5rem;
     }
 
-    p {
-        margin-left: 0;
-    }
+    // p {
+    //     margin-left: 0;
+    // }
 }
