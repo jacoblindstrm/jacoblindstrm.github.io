@@ -38,7 +38,7 @@ permalink: /reading
 - 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
 - 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
 
-
+<!---
 
 - Nothing to see here
 - Mental models for designers
@@ -55,10 +55,13 @@ permalink: /reading
 - Smoother & sharper shadows with layered box-shadows
 - The best tips for giving formal feedback
 
+
+
 - Insanely fast redesign exercises
 - A checklist to improve your product UI
 - The Art of Emotion — Norman’s 3 Levels of Emotional Design
 - Designing teamwork: How our customers helped shape the future of Slack
 
+--->
 
 - *📖 currently reading, 📓 read , 📺 talk watched, 📄 technical paper read, 📱 blog / web article read.*
