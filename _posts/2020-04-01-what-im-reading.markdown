@@ -55,7 +55,7 @@ permalink: /reading
 - A checklist to improve your product UI
 - The Art of Emotion — Norman’s 3 Levels of Emotional Design
 - Designing teamwork: How our customers helped shape the future of Slack
-- 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e).
+- 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
 
 
 - *📖 currently reading, 📓 read , 📺 talk watched, 📄 technical paper read, 📱 blog / web article read.*
