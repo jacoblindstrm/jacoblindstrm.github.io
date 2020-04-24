@@ -33,8 +33,13 @@ permalink: /reading
 - 📱 [Your best work will be invisible](https://tannerchristensen.com/blog/2019/1/5/your-best-work-will-be-invisible)
 - 📺 [Empathy reifies disability stigmas](https://interaction19.ixda.org/program/keynote--liz-jackson/) by Liz Jackson
 - 📱 [Intercom’s fundamentals of good interaction design](https://www.intercom.com/blog/fundamentals-good-interaction-design/)
-- 📱 [Why Designing Affordances Is Apple’s Secret Design Superpower](https://magenta.as/why-designing-affordances-is-apples-secret-design-superpower-2327a9d04106)
+- 📱 [Why Designing Affordances Is Apple’s Secret Design Superpower](https://magenta.as/why-designing-affordances-is-apples-secret-design-superpower-2327a9d04106) by John Brownlee
 - 📱 [CSS for internationalisation](https://www.chenhuijing.com/blog/css-for-i18n/) by Chen Hui Jing
+- 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
+- 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
+
+
+
 - Nothing to see here
 - Mental models for designers
 - “The stories we tell and the stories other tell us shape our work, our beliefs, and that’s what shapes us, as designers and people.”
@@ -49,13 +54,11 @@ permalink: /reading
 - 5 online graphic design exercises to boost your skills
 - Smoother & sharper shadows with layered box-shadows
 - The best tips for giving formal feedback
-- 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
 
 - Insanely fast redesign exercises
 - A checklist to improve your product UI
 - The Art of Emotion — Norman’s 3 Levels of Emotional Design
 - Designing teamwork: How our customers helped shape the future of Slack
-- 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
 
 
 - *📖 currently reading, 📓 read , 📺 talk watched, 📄 technical paper read, 📱 blog / web article read.*
