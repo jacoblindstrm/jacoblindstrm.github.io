@@ -21,6 +21,8 @@ permalink: /reading
 - <abbr title="Finished">📓</abbr> [Design of Everyday Things](https://mitpress.mit.edu/books/design-everyday-things) by Don Norman  
 - <abbr title="Finished">📓</abbr> [Just Enough Research](https://abookapart.com/products/just-enough-research) by Erika Hall  
 - <abbr title="Finished">📓</abbr> [Rehearsing the Future](https://adk.elsevierpure.com/en/publications/rehearsing-the-future) by Joachim Halse, Eva Brandt (Editors)
+- 📓 [
+Interaction Design: Beyond Human-Computer Interaction](https://www.amazon.com/Interaction-Design-Beyond-Human-Computer/dp/0470665769) by Helen Sharpe, Yvonne Rogers and Jenny Preece 
 - 📚 More to be added.
 
 
