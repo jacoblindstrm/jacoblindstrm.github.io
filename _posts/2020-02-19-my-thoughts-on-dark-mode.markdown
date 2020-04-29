@@ -42,8 +42,9 @@ Spotify's iOS app is a great example of using colors to increase the depth of th
 ## Contrast
 As I mentioned above, make sure all of your modes have enough contrast to make your content accessible to all. However, some user might require or prefer higher contrast. 
 
-Maybe high-contrast could be that black and white color scheme many argue for that dark mode is? The (currently) experimental media query has three different values, including color scheme preferences. I think we could combine *prefer-color-scheme* and *high-contrast* media queries instead.
-
+Maybe [prefers-contrast](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast) could be that black and white color scheme many argue for that dark mode is? The (currently) experimental media query has three different values, including color scheme preferences. I think we could combine *[prefers-color-scheme](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme)* and *prefers-contrast* media queries instead.
+ 
+Soon we'll might be able to adjust our contrast and colors based on the ambient light. [Light-level](https://drafts.csswg.org/mediaqueries-5/#descdef-media-light-level) is in media queries 5.
 
 ## Implementing on the web
 Implementing dark mode on the web is pretty easy, especially if you have a rigid system and are using CSS custom properties. Warp your mode specific styles inside the *prefers-color-scheme* media query. The media query takes three values: 
@@ -52,11 +53,17 @@ Implementing dark mode on the web is pretty easy, especially if you have a rigid
 * light
 * dark
 
-The same goes for *high-contrast* (note that the -ms prefix is required today). Warp your styles with *-ms-high-contrast* media query. It has three values:
+The same goes for *prefers-contrast*. Warp your styles with *prefers-contrast* media query. It has three values:
 
-* active
-* black-on-white
-* white-on-black
+* no-preference
+* high
+* low
+
+And *light-level* also has three values:
+
+* normall
+* dim
+* washed
 
 ```css
 :root {
@@ -71,7 +78,7 @@ The same goes for *high-contrast* (note that the -ms prefix is required today). 
   }
 }
 
-@media (-ms-high-contrast: active) {
+@media (prefers-contrast: high) {
   :root {
     --backgroundcolor: white;
     --color: black;
@@ -79,7 +86,7 @@ The same goes for *high-contrast* (note that the -ms prefix is required today). 
 }
 
 // You could propably do this:
-@media (prefers-color-scheme: dark) and (-ms-high-contrast: active) {
+@media (prefers-color-scheme: dark) and (prefers-contrast: high) {
   :root {
     --backgroundcolor: black;
     --color: white;
