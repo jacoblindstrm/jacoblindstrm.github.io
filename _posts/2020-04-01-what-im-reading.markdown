@@ -41,6 +41,7 @@ This is a growing selection of content I can recommend reading.
 - 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
 - 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
 - 📱 [The Sliding Scale of Giving a Fuck](https://capwatkins.com/blog/the-sliding-scale-of-giving-a-fuck) by Cap Watkins
+- 📱 [Incrementally Correct Personal Websites](https://brianlovin.com/overthought/incrementally-correct-personal-websites) by Brian Lovin
 
 <!---
 
