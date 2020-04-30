@@ -40,6 +40,7 @@ This is a growing selection of content I can recommend reading.
 - 📱 [CSS for internationalisation](https://www.chenhuijing.com/blog/css-for-i18n/) by Chen Hui Jing
 - 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
 - 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
+- 📱 [The Sliding Scale of Giving a Fuck](https://capwatkins.com/blog/the-sliding-scale-of-giving-a-fuck) by Cap Watkins
 
 <!---
 
