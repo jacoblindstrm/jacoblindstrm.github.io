@@ -42,11 +42,12 @@ This is a growing selection of content I can recommend reading.
 - 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
 - 📱 [The Sliding Scale of Giving a Fuck](https://capwatkins.com/blog/the-sliding-scale-of-giving-a-fuck) by Cap Watkins
 - 📱 [Incrementally Correct Personal Websites](https://brianlovin.com/overthought/incrementally-correct-personal-websites) by Brian Lovin
+- 📱 [Mental models for designers](https://dropbox.design/article/mental-models-for-designers) by Wes O'Haire
+
 
 <!---
 
 - Nothing to see here
-- Mental models for designers
 - “The stories we tell and the stories other tell us shape our work, our beliefs, and that’s what shapes us, as designers and people.”
 
 - An interview with Facebook product designer Debashish Paul
