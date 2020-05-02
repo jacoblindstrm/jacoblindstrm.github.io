@@ -43,7 +43,7 @@ This is a growing selection of content I can recommend reading.
 - 📱 [The Sliding Scale of Giving a Fuck](https://capwatkins.com/blog/the-sliding-scale-of-giving-a-fuck) by Cap Watkins
 - 📱 [Incrementally Correct Personal Websites](https://brianlovin.com/overthought/incrementally-correct-personal-websites) by Brian Lovin
 - 📱 [Mental models for designers](https://dropbox.design/article/mental-models-for-designers) by Wes O'Haire
-
+- 📱 [Everything you need to know about layout grids in Figma](https://www.figma.com/blog/everything-you-need-to-know-about-layout-grids-in-figma/) by Thomas Lowry
 
 <!---
 
