@@ -29,7 +29,7 @@ permalink: /reading
 This is a growing selection of content I can recommend reading.
 
 - 📱 [Adapting to remote research](https://uxdesign.cc/adapting-to-remote-research-fa84b13bc9ab) by Cynthia Risse
-
+- 📱 [As a designer, you probably don't like the words "it's great"​](https://www.linkedin.com/pulse/designer-you-probably-dont-like-words-its-great-kajsa-westman/) by Kajsa Westman
 - 📱 [CSS for internationalisation](https://www.chenhuijing.com/blog/css-for-i18n/) by Chen Hui Jing
 - 📱 [Design Doesn’t Scale](https://medium.com/@hellostanley/design-doesnt-scale-4d81e12cbc3e) by Stanley Wood
 - 📱 [Redesign: Looking at Letters](https://frankchimero.com/blog/2020/looking-at-letters/) by Frank Chimero
@@ -37,7 +37,6 @@ This is a growing selection of content I can recommend reading.
 - 📱 [Incrementally Correct Personal Websites](https://brianlovin.com/overthought/incrementally-correct-personal-websites) by Brian Lovin
 - 📱 [Mental models for designers](https://dropbox.design/article/mental-models-for-designers) by Wes O'Haire
 - 📱 [Everything you need to know about layout grids in Figma](https://www.figma.com/blog/everything-you-need-to-know-about-layout-grids-in-figma/) by Thomas Lowry
-- 📱 [As a designer, you probably don't like the words "it's great"​](https://www.linkedin.com/pulse/designer-you-probably-dont-like-words-its-great-kajsa-westman/) by Kajsa Westman
 - 📄 [Notes on Design Practice: Stories and Prototypes as Catalysts for Communication](http://www.pliant.org/personal/Tom_Erickson/Stories.html) by Thomas Erickson
 - 📱 [How can digital government contribute to the UN’s Sustainable Development Goals?](https://public.digital/2019/08/22/how-can-digital-government-contribute-to-the-uns-sustainable-development-goals/)
 - 📱 [The Definitive Guide to Asking Follow-up Questions](https://medium.com/eightshapes-llc/the-definitive-guide-to-asking-follow-up-questions-5bfcddfa8a2e)
@@ -73,4 +72,4 @@ This is a growing selection of content I can recommend reading.
 
 --->
 
-- *📖 currently reading, 📓 read , 📺 talk watched, 📄 technical paper read, 📱 blog / web article read.*
+*📖 currently reading, 📓 read , 📺 talk watched, 📄 technical paper read, 📱 blog / web article read.*
