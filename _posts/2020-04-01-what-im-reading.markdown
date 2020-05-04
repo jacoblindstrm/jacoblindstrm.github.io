@@ -44,6 +44,7 @@ This is a growing selection of content I can recommend reading.
 - 📱 [Incrementally Correct Personal Websites](https://brianlovin.com/overthought/incrementally-correct-personal-websites) by Brian Lovin
 - 📱 [Mental models for designers](https://dropbox.design/article/mental-models-for-designers) by Wes O'Haire
 - 📱 [Everything you need to know about layout grids in Figma](https://www.figma.com/blog/everything-you-need-to-know-about-layout-grids-in-figma/) by Thomas Lowry
+- 📱 [As a designer, you probably don't like the words "it's great"​](https://www.linkedin.com/pulse/designer-you-probably-dont-like-words-its-great-kajsa-westman/) by Kajsa Westman
 
 <!---
 
