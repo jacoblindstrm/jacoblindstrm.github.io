@@ -21,13 +21,14 @@ permalink: /reading
 - <abbr title="Finished">📓</abbr> [Design of Everyday Things](https://mitpress.mit.edu/books/design-everyday-things) by Don Norman  
 - <abbr title="Finished">📓</abbr> [Just Enough Research](https://abookapart.com/products/just-enough-research) by Erika Hall  
 - <abbr title="Finished">📓</abbr> [Rehearsing the Future](https://adk.elsevierpure.com/en/publications/rehearsing-the-future) by Joachim Halse, Eva Brandt (Editors)
-- 📓 [
-Interaction Design: Beyond Human-Computer Interaction](https://www.amazon.com/Interaction-Design-Beyond-Human-Computer/dp/0470665769) by Helen Sharpe, Yvonne Rogers and Jenny Preece 
+- 📓 [Interaction Design: Beyond Human-Computer Interaction](https://www.amazon.com/Interaction-Design-Beyond-Human-Computer/dp/0470665769) by Helen Sharpe, Yvonne Rogers and Jenny Preece 
 - 📚 More to be added.
 
 
 ## Articles, pappers, and talks
 This is a growing selection of content I can recommend reading.
+
+- 📱 [Adapting to remote research](https://uxdesign.cc/adapting-to-remote-research-fa84b13bc9ab) by Cynthia Risse
 - 📄 [Notes on Design Practice: Stories and Prototypes as Catalysts for Communication](http://www.pliant.org/personal/Tom_Erickson/Stories.html) by Thomas Erickson
 - 📱 [How can digital government contribute to the UN’s Sustainable Development Goals?](https://public.digital/2019/08/22/how-can-digital-government-contribute-to-the-uns-sustainable-development-goals/)
 - 📱 [The Definitive Guide to Asking Follow-up Questions](https://medium.com/eightshapes-llc/the-definitive-guide-to-asking-follow-up-questions-5bfcddfa8a2e)
