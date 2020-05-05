@@ -4,7 +4,7 @@
     h1 {
         border: none;
         margin: 0;
-        
+        font-size: 5vw;
         line-height: 1;
         text-transform: uppercase;
         display: grid;
@@ -127,12 +127,12 @@
         z-index: 1;
         background: var(--pale);
         overflow: visible;
-        position: relative;      
-        padding-top: 15.0625rem;
+        position: relative;    
+        padding-top: 60vw;
         
         @media (max-width: floor($screen-m - 1)) {
                 -webkit-clip-path: polygon(0 0, 100% 26%, 100% 150%, -100% 150%, -100% 5%);
-            clip-path: polygon(0 0, 100% 26%, 100% 150%, -100% 150%,  -100% 5%);
+            clip-path: polygon(0 0, 100% 65vw, 100% 150%, -100% 150%,  -100% 5%);
             margin-bottom: 8rem;
 
             h2,
@@ -144,7 +144,8 @@
         @media (min-width: $screen-m) {
             
             grid-column: 3 / -2;
-            grid-row: 11 / 76;
+            grid-row: 11 / 80;
+            padding-top: 36vw;
 
             @media (max-width: floor($screen-l - 1)) {
 
@@ -167,6 +168,10 @@
                     }
                 }
             }
+        }
+
+        @media (min-width: 1280px) {
+            grid-row: 11 / 85;
         }
 
         @media (min-width: $screen-l) {
@@ -240,12 +245,18 @@
             grid-row: 43;
             white-space: nowrap;
             line-height: 0;
+            margin-top: 6vw;
+        }
+
+        @media (min-width: 1280px) {
+            grid-row: 45;
         }
 
         @media (min-width: $screen-l) {
             grid-column: 7;
             grid-row: 6;
             line-height: 2.2;
+            margin-top: 0;
         }
 
         @media (min-width: $screen-xl) {
