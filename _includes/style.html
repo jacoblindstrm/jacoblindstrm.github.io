@@ -16,6 +16,7 @@
         --lightcoral: hsl(5, 100%, 92%);
         --coral: hsl(5, 99%, 71%);
         --blue: hsl(222, 100%, 32%);
+        --pale: hsl(360, 71%, 92%);
         --darkcoral: hsl(5, 62%, 51%);
         --textcolor: hsl(222, 100%, 32%);
         --dark: hsl(0, 33%, 7%);
@@ -42,7 +43,22 @@
             --textcolor: hsl(0, 73%, 97%);
             --dark: hsl(222, 100%, 2%);
             --backgroundcolor: hsl(222, 100%, 13%);
+            --pale: hsl(222, 100%, 32%);
             --text-GRAD: 480;
+        }
+    }
+
+    @media (prefers-contrast: high) {
+        :root {
+            --backgroundcolor: white;
+            --textcolor: black
+        }
+    }
+
+    @media (prefers-contrast: high) and (prefers-color-scheme: dark){
+        :root {
+            --backgroundcolor: black;
+            --textcolor: white
         }
     }
 
@@ -86,6 +102,36 @@
         min-height: calc(100vh - 4rem);
     }
 
+    .grid {
+        display: grid;
+	    grid-template-columns: repeat(4, calc((100% - 3rem) / 4));
+        grid-auto-rows: 0.5rem;
+        margin: 0 1rem;
+        gap: 0.5rem 1rem;
+        max-width: 100vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(8, calc((100% - 10rem) / 8));
+            gap: 0.5rem 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .grid {
+            grid-template-columns: repeat(12, calc((100% - 16rem) / 12));
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 1900px) {
+        .grid {
+            grid-template-columns: repeat(16, calc((100% - 22rem) / 16));
+        }
+    }
+
+
     body > header,
     footer {
         z-index: 100;
@@ -100,42 +146,6 @@
 
     footer {
         padding-bottom: 1rem;
-    }
-
-    .landing-hero {
-        margin-left: 5vw;
-    }
-
-    .landing-hero h1 {
-        line-height: 1.35;
-        letter-spacing: -0.01em;
-        text-align: left;
-        margin-left: 0;
-        max-width: 850px;
-        margin-bottom: 0rem;        
-    }
-
-    .landing-hero h2 {
-        font-size: var(--scale0);
-    }
-
-    @media screen and (min-width: 1440px) {
-        .landing-hero h1 { 
-            font-size: var(--scale4);
-        }
-
-    }
-
-    @media screen and (min-width: 1900px) {
-        .landing-hero h1 { 
-            margin-top: 30vh; 
-            font-size: var(--scale5);
-            max-width: 1200px;
-        }
-
-        .landing-hero h2 {
-            font-size: var(--scale1);
-        }
     }
 
     a,
@@ -154,8 +164,8 @@
         animation: anchorPulse 0.25s ease alternate-reverse infinite;
     }
 
-    aside a,
-    aside a:visited,
+    .bio aside a,
+    .bio aside a:visited,
     header a,
     header a:visited {
         box-shadow: none;
@@ -163,13 +173,13 @@
         text-decoration: none;
     }
 
-    aside a:hover,
+    .bio aside a:hover,
     header a:hover {
         text-decoration-color: var(--coral);
     }
 
-    aside a:focus,
-    aside a:active,
+    .bio aside a:focus,
+    aside a:active, */
     header a:focus,
     header a:active {
         color: var(--coral);

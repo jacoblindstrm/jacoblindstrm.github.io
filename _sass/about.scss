@@ -234,7 +234,7 @@
     }
 }
 
-@media (min-width $screen-xl) {
+@media (min-width: $screen-xl) {
     .bio {
         aside {
             grid-area: 1 / 6 / last-line / end;
