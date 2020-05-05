@@ -129,6 +129,22 @@
         overflow: visible;
         position: relative;    
         padding-top: 60vw;
+
+        .email {
+            white-space: nowrap;
+
+            .pointing-hand {
+                font-size: 2em;
+                vertical-align: middle;
+                line-height: 0;
+            }
+
+            &:hover {
+                .pointing-hand {
+                    animation: pointingFingers 1s ease infinite forwards; 
+                }
+            }
+        }
         
         @media (max-width: floor($screen-m - 1)) {
                 -webkit-clip-path: polygon(0 0, 100% 26%, 100% 150%, -100% 150%, -100% 5%);

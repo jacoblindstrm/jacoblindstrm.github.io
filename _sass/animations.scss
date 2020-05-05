@@ -4,3 +4,17 @@
     65% { transform: rotate(-3deg); }
     100% { transform: rotate(14deg); }
   } 
+
+  @keyframes pointingFingers {
+    0% {
+        color: var(--textcolor);
+    }
+
+    80% {
+      color: var(--coral);
+    }
+
+    100% {
+      color: var(--textcolor);
+    }
+}
