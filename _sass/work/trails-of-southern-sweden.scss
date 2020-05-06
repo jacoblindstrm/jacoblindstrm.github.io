@@ -281,8 +281,7 @@
             .narrow {
                 padding: 35vh var(--padding-horizontal);
                 width: 40vw;
-                background: white;
-                color: black;        
+                background: white;      
 
                 @media (prefers-color-scheme: dark) {
                     background: var(--dark);
