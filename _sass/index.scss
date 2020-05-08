@@ -2,6 +2,7 @@
     
 
     h1 {
+        color: var(--blue);
         border: none;
         margin: 0;
         font-size: 5vw;
@@ -18,6 +19,10 @@
 
         position: relative;
 
+        @media (prefers-color-scheme: dark) {
+            color: var(--textcolor);
+        }
+
         @media (max-width: floor($screen-m - 1)) {
             font-size: var(--scale1);
         }
@@ -30,7 +35,7 @@
         @media (min-width: $screen-l) {
             grid-column: 2;
             grid-row-start: 8;
-            width: 42.564583vw;
+            width: 42vw;
             height: 46.215278vw;
             font-size: 4em;
         }
@@ -59,10 +64,6 @@
                 bottom: 0.5rem;
                 left: 0.5rem;
                 right: 0.5rem;
-            }
-
-            @media (max-width: floor($screen-l - 1)) {
-                bottom: 1.1rem;
             }
 
             @media (max-width: $screen-xxl) {
@@ -137,10 +138,16 @@
         grid-column: 2 / -1;
         grid-row: 2 / 82;
         z-index: 1;
-        background: var(--pale);
+        background: var(--pale-green);
+        color: var(--midnight-green);
         overflow: visible;
         position: relative;    
         padding-top: 60vw;
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--textcolor);
+            background: var(--blue);
+        }
 
         .email {
             white-space: nowrap;
@@ -273,42 +280,40 @@
 
     .nicetomeet {
         
+        color: var(--blue);
+
+        @media (prefers-color-scheme: dark) {
+            color: var(--coral);
+        }
+
         @media (max-width: floor($screen-m - 1)) {
             display: none;
         } 
 
         @media (min-width: $screen-m) {
-            text-transform: uppercase;
-            transform-origin: 0 0;
-            transform: rotate(90deg);
-            letter-spacing: -0.05em;
             font-size: var(--scale1);
-            opacity: 0.8;
-            color: var(--coral);
             z-index: 2;
             pointer-events: none;
-            grid-column: 4;
-            grid-row: 43;
+            grid-column: 3;
+            grid-row: 45;
             white-space: nowrap;
-            line-height: 0;
             margin-top: 6vw;
         }
 
         @media (min-width: 1280px) {
-            grid-row: 45;
+            grid-row: 49;
         }
 
         @media (min-width: $screen-l) {
-            grid-column: 7;
+            grid-column: 6;
             grid-row: 6;
-            line-height: 2.2;
             margin-top: 0;
+            width: 110%; // to align with grid, remove all space of font.
         }
 
         @media (min-width: $screen-xxl) {
-            grid-column: 6;
+            grid-column: 5;
             grid-row: 16;
-            line-height: 1.5;
         }
     }
 }
