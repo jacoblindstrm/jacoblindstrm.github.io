@@ -13,8 +13,10 @@
 
     :root {
         --backgroundcolor: hsl(0, 73%, 97%);
-        --lightcoral: hsl(5, 100%, 92%);
+
         --coral: hsl(5, 99%, 71%);
+        --pale-coral: hsl(5, 100%, 98%);
+        --soft-coral: hsl(5, 100%, 89%);        
         --darkcoral: hsl(5, 62%, 51%);
         
         --midnight-green: hsl(183, 50%, 25%);
@@ -105,6 +107,32 @@
         font-variant-ligatures: discretionary-ligatures;        
         font-variation-settings: "GRAD" var(--text-GRAD);
         /* font-variant-numeric: diagonal-fractions tabular-nums; */
+    }
+
+    .background-lemon {
+        --backgroundcolor: var(--pale-lemon);
+    }
+
+    .background-green {
+        --backgroundcolor: var(--pale-green);
+    }
+
+    .background-coral {
+        --backgroundcolor: var(--pale-coral);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .background-lemon {
+        --backgroundcolor: hsl(222, 100%, 13%);;
+    }
+
+    .background-green {
+        --backgroundcolor: hsl(222, 100%, 13%);;
+    }
+
+    .background-coral {
+        --backgroundcolor: hsl(222, 100%, 13%);;
+    }
     }
 
     main {

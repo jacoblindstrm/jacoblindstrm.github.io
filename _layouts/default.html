@@ -6,7 +6,7 @@
     {% include style.html %}
     <link rel="stylesheet" href="{{ "./assets/css/main.css" | relative_url }}">
   </head>
-  <body>
+  <body {% if page.background %} class="background-{{ page.background }}"{% endif %}>
     {% include header.html %}
 
     <main>    

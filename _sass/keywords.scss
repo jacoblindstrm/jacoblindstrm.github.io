@@ -6,7 +6,7 @@
     flex-flow: wrap;    
 
     li {
-        background: var(--lightcoral);
+        background: var(--pale-coral);
         color: var(--darkcoral);
         padding: var(--button-padding);
         margin: 0.25rem;
@@ -15,7 +15,6 @@
         white-space: nowrap;
         border-radius: 0.3rem;
         font-size: var(--scale-1);
-        text-align: center;
-        background: var(--lightcoral);       
+        text-align: center;  
     }
 }
