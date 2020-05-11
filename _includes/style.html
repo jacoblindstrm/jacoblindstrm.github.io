@@ -122,17 +122,18 @@
     }
 
     @media (prefers-color-scheme: dark) {
+        
         .background-lemon {
-        --backgroundcolor: hsl(222, 100%, 13%);;
-    }
+         --backgroundcolor: hsl(222, 100%, 13%);
+        }
 
-    .background-green {
-        --backgroundcolor: hsl(222, 100%, 13%);;
-    }
+        .background-green {
+            --backgroundcolor: hsl(222, 100%, 13%);
+        }
 
-    .background-coral {
-        --backgroundcolor: hsl(222, 100%, 13%);;
-    }
+        .background-coral {
+            --backgroundcolor: hsl(222, 100%, 13%);
+        }
     }
 
     main {
@@ -172,8 +173,16 @@
     body > header,
     footer {
         z-index: 100;
-        width: 90%;
-        margin: auto 5%;
+        width: calc(100% - 4rem);
+        margin: auto 2rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+        body > header,
+        footer {
+            width: calc(100% - 8rem);
+            margin: auto 4rem;
+        }
     }
 
     body > header {
@@ -182,7 +191,7 @@
     }
 
     footer {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 
     a,
@@ -216,7 +225,7 @@
     }
 
     .bio aside a:focus,
-    aside a:active, */
+    aside a:active,
     header a:focus,
     header a:active {
         color: var(--coral);

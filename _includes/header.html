@@ -1,9 +1,9 @@
 {% if page.hideHeader %}
-<header class="flex-end">
+<header class="flex-end" role="banner">
     {% include nav.html %}
 </header>
 {% else %}
-<header>
+<header role="banner">
     <h1><a href="/" title="">{{ site.fname }}</a></h1>
     {% include nav.html %}
 </header>
