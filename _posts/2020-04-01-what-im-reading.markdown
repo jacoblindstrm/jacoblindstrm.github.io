@@ -30,6 +30,7 @@ A selection of the books on design and related subjects I've read.
 ## Articles, pappers, and talks
 This is a growing selection of content I can recommend reading.
 
+- [Being Unhappy with Your Creative Work](https://creativesomething.net/post/60749379034/being-unhappy-with-your-creative-work) *by Tanner Christensen*
 - 📱 [The Pragmatic Designer’s 10 Things](https://medium.com/@udanium/the-pragmatic-designer-s-10-things-a9f5c30288e2) <em>by Uday Gajendar</em>
 - 📱 [Adapting to remote research](https://uxdesign.cc/adapting-to-remote-research-fa84b13bc9ab) *by Cynthia Risse*
 - 📱 [As a designer, you probably don't like the words "it's great"​](https://www.linkedin.com/pulse/designer-you-probably-dont-like-words-its-great-kajsa-westman/) *by Kajsa Westman*
