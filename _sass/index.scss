@@ -185,6 +185,10 @@
             grid-row: 11 / 80;
             padding-top: 36vw;
 
+            @media (prefers-color-scheme: dark) {
+                background: var(--blue);
+            }
+
             @media (max-width: floor($screen-l - 1)) {
 
                 margin-bottom: 3rem;

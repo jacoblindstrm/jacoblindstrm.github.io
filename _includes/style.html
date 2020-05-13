@@ -300,11 +300,18 @@
     .transition-up {
         transform: translateY(0);
         transition: transform 0.6s ease-out;
+        animation: appearUp 0.6 ease-out;
+    }
+
+    .transition-from-right {
+        transform: translateX(0);
+        transition: transform 0.6s ease-out;
     }
 
     .transition-scale-1 {
         transform: scale(1);
         transition: transform 0.3s ease-out;
+        animation: appearUp 0.6 ease-out;
     }
 
     .transition-scale-2 {
@@ -316,9 +323,18 @@
         transform: translateY(20vh);
     }
 
+    .is-animating .transition-from-right {  
+        transform: translateX(40vw);
+    }
+
     .is-animating.is-leaving .transition-up {
         transform: translateY(40vh);
     }
+
+    .is-animating.is-leaving .transition-from-right {  
+        transform: translateX(60vw);
+    }
+
 
     .is-animating .transition-fade {        
         opacity: 0;
@@ -374,6 +390,16 @@
         100% {
             transform: translateY(0);
             opacity: 1;
+        }
+    }
+
+    @keyframes scale {
+        0% {
+            transform: scale(0.4);
+        }
+
+        100% {
+            transform: scale(1);
         }
     }
 
