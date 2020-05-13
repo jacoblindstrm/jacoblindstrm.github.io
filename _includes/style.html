@@ -96,6 +96,7 @@
 
     body {
         background: var(--backgroundcolor);
+        transition: background-color 0.25s ease;
         min-height: 100vh;
         margin: 0;
         padding: 0;
@@ -161,6 +162,8 @@
     }
 
     main {
+        padding-top: 1px; /* hack */
+        height: 100%;
         min-height: calc(100vh - 4rem);
     }
 
@@ -248,13 +251,6 @@
         text-decoration-color: var(--coral);
     }
 
-    .bio aside a:focus,
-    aside a:active,
-    header a:focus,
-    header a:active {
-        color: var(--coral);
-    }
-
     h1 {
         text-align: center;
         margin: 15rem auto 5.325rem;
@@ -290,8 +286,50 @@
         }
     }
 
-    main {
-        animation: appearUp 0.75s ease-out;
+    .transition-fade {
+       opacity: 1;
+       transition: opacity 0.25s ease-in, background-color 0.3s ease-in-out;
+    }
+
+    .transition-up {
+        transform: translateY(0);
+        transition: transform 0.6s ease-out;
+    }
+
+    .transition-scale-1 {
+        transform: scale(1);
+        transition: transform 0.3s ease-out;
+    }
+
+    .transition-scale-2 {
+        transform: scale(1);
+        transition: transform 0.3s 0.25s ease-out;
+    }
+    
+    .is-animating .transition-up {  
+        transform: translateY(20vh);
+    }
+
+    .is-animating.is-leaving .transition-up {
+        transform: translateY(40vh);
+    }
+
+    .is-animating .transition-fade {        
+        opacity: 0;
+    }
+
+    .is-animating.is-leaving .transition-fade {
+        opacity: 0;
+    }
+
+    .is-animating .transition-scale-1,
+    .is-animating .transition-scale-2 {        
+        transform: scale(0.5);
+    }
+
+    .is-animating.is-leaving .transition-scale-1,
+    .is-animating.is-leaving .transition-scale-2 {
+        transform: scale(0.2);
     }
 
     header h1,

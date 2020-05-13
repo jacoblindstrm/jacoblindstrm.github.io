@@ -9,11 +9,13 @@
   <body {% if page.background %} class="background-{{ page.background }}"{% endif %}>
     {% include header.html %}
 
-    <main>    
+    <main id="swup" class="transition-fade" {% if page.background %} data-background-color="{{ page.background }}"{% endif %}>    
         {{ content }}
     </main>
 
     {% include footer.html %}
+
+    <script src="{{ "./assets/js/swup.js" | relative_url }}"></script> 
     <script src="{{ "./assets/js/index.js" | relative_url }}"></script>
   </body>
 </html>
