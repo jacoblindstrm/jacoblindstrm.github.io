@@ -17,5 +17,10 @@
 
     <script src="{{ "./assets/js/swup.js" | relative_url }}"></script> 
     <script src="{{ "./assets/js/index.js" | relative_url }}"></script>
+    <script>
+      if (navigator.serviceWorker) {
+          navigator.serviceWorker.register('{{ "./serviceworker.js" | relative_url }}');
+      }
+    </script>
   </body>
 </html>

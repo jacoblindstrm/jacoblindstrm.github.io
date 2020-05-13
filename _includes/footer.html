@@ -1,10 +1,23 @@
 <footer class="x-small">
     <p>✌️ {{ 'now' | date: "%Y" }} {{ site.fname }} ·&nbsp;Designed and developed with love, coffee, and web&nbsp;standards.</p>
 </footer>
-<script>
-    if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('{{ "./serviceworker.js" | relative_url }}');
-    }
-</script>
-
 <div id="Cursor" class="cursor"></div>
+<div id="Terrazzo" class="terrazzo">
+    <svg width="94" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0)">
+          <circle class="fade-1" cx="63" cy="14" r="7" fill="#FE776A"/>
+          <circle class="fade-2" cx="5" cy="44" r="5" fill="#22C7CE"/>
+          <circle class="fade-1" cx="53" cy="52" r="2.5" stroke="#FE776A"/>
+          <circle class="fade-2" cx="27" cy="32" r="3" fill="#FEF691"/>
+          <path class="fade-1" d="M28.08 50.239l1.681 8.283-7.493-2.146 5.811-6.137z" fill="#002FA1"/>
+          <path class="fade-3" d="M2.982 84.54l1.647-6.46 4.34 5.06-5.987 1.4z" stroke="#FE776A"/>
+          <path class="fade-3" d="M78.594 34.421l11.292-1.78-2.761 9.389-8.531-7.609z" fill="#22C7CE"/>
+          <path class="fade-2" d="M33.868 12.13l-7.154-6.38 9.469-1.493-2.315 7.874z" stroke="#FEF691"/>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <path fill="#fff" d="M0 0h93.403v87.786H0z"/>
+          </clipPath>
+        </defs>
+      </svg>
+</div>

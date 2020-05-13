@@ -9,6 +9,8 @@ self.addEventListener('install', installEvent => {
                 '/blog/index.html',
                 '/about/index.html',
                 '/assets/css/main.css',
+                '/assets/js/swup.css',
+                '/assets/js/index.css',
             ]);
         }),
     );

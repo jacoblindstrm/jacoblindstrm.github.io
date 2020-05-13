@@ -28,3 +28,31 @@
 .flex-end {
   justify-content: flex-end;
 }
+
+.terrazzo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  transition: transform ease 0.5s, opacity ease 0.2s;
+  transform: scale(0);           
+  transform-origin: center;
+
+  .fade-1 {
+    transform: scale(0);
+    transition: transform 0.4s ease-out;
+  }
+
+  &.playing {
+    opacity: 1;
+
+    .fade-1 {
+      transform: scale(1);
+   }
+
+    .fade-3 {
+       animation: rotate 0.5s linear;
+    }
+  }
+}
