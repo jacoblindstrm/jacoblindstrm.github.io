@@ -79,17 +79,6 @@
         height: 75vw;
         grid-column: 6;
     }
-
-    svg {
-        grid-column: 7 / -2;
-        grid-row: 13 / -1;
-        fill: var(--dark);
-    }
-
-    .wayfinder {
-        transform-origin: center;
-        animation: wayfinding 5s ease infinite alternate-reverse;
-    }
     
     @media (min-width: $screen-m) {
         grid-template: repeat(15, 5rem) / repeat(18, calc(100vw / 18));
@@ -150,10 +139,6 @@
 
         picture:first-child {
             border: 0.5rem solid var(--coral);
-        }
-
-        svg {
-            fill: var(--pale-coral);
         }
     }
 }

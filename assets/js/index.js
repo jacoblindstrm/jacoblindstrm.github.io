@@ -1,6 +1,13 @@
-//import Swup from 'swup';
-const swup = new Swup(); // only this line when included with script tag
+document.addEventListener('swup:enabled', event => {
+    //import Swup from 'swup';
+    const swup = new Swup(); // only this line when included with script tag
+
+});
+
 document.addEventListener('swup:contentReplaced', event => {
+
+    window.scrollTo(0,0);
+
     // 1. remove active class from all links
     const body = document.getElementsByTagName('body')[0];
     const navLi = document.querySelectorAll('header nav li');

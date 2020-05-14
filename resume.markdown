@@ -15,7 +15,7 @@ permalink: /about/resume/
     <p>Projects vary from small interactions to product wide redesigns.</p>
     <h4>Product Manager</h4>
     <time datetime="2017-01">January 2017</time><time datetime="2019-01"> - January 2019</time>
-    <p>Responsible for product strategy togheter with CEO. Creating and maintaining product road map coordinating with the different teams.</p>
+    <p>Responsible for product strategy together with CEO. Creating and maintaining product road map coordinating with the different teams.</p>
     <h4>Front-end Developer / Interaction Designer</h4>
     <time datetime="2013-11">November 2013</time><time datetime="2017-01"> - January 2017</time>
     <p>Creating production code using HTML/CSS, Javascript and PHP. Using Github, package managers, and automated testing.</p>
@@ -28,16 +28,16 @@ permalink: /about/resume/
 </section>    
 <section>
     <h2>Education</h2>
-    <h3>Malmö University</h3>
-    <h4>B.Sc. Interaction Design</h4>
-    <time datetime="2010">2010</time><time datetime="2013"> - 2013</time>
-    <p>Interaction designers aim to create experiences with products, services and environments which are not just useful and usable, but very often pleasurable, expressive and desirable. Learning interaction design is a matter of building a repertoire of methods, skills and theoretical perspectives. Importantly, we also develop a sensitivity to the critical role of stakeholders in design, the implications of design in society and  interaction aesthetics.</p>
-
     <h3>Interaction Design Foundation<h3>
     <h4>UX Management: Strategy and Tactics</h4>
     <h4>Psychology of Interaction Design: The Ultimate Guide</h4>
     <time datetime="2019">2019</time><time datetime="2020"> - 2020</time>
     <p>Online UX design courses by experts, with industry-recognized certificates. I took advanced courses to deepen my understanding of psychology in the field of interaction design. I did this while working full time.</p>
+
+    <h3>Malmö University</h3>
+    <h4>B.Sc. Interaction Design</h4>
+    <time datetime="2010">2010</time><time datetime="2013"> - 2013</time>
+    <p>Interaction designers aim to create experiences with products, services and environments which are not just useful and usable, but very often pleasurable, expressive and desirable. Learning interaction design is a matter of building a repertoire of methods, skills and theoretical perspectives. Importantly, we also develop a sensitivity to the critical role of stakeholders in design, the implications of design in society and  interaction aesthetics.</p>
 
     <h3>Umeå University</h3>
     <h4>Web programming</h4>
