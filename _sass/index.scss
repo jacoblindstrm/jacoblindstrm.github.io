@@ -25,6 +25,7 @@
 
         @media (max-width: floor($screen-m - 1)) {
             font-size: var(--scale1);
+            display: none; // temporary
         }
 
         @media (min-width: $screen-m) {
