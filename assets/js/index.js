@@ -61,7 +61,7 @@ document.addEventListener('swup:contentReplaced', event => {
 
         setTimeout(() => {
             terrazzo.classList.remove('playing');
-        }, 500)
+        }, 1000)
 
     }
 
@@ -80,8 +80,8 @@ document.addEventListener('swup:contentReplaced', event => {
                 scale = 0.35;
             } else if (globalAcceleration > 2000 || globalAcceleration < -2000) {
                 scale = 0.2;
-            }      
-        }  
+            }
+        }
 
         //currentEvent=event;
         event = event || window.event; // IE-ism       
