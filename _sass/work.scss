@@ -34,9 +34,11 @@
     }
 
     svg {
-        grid-row: 55 / 75;
+        grid-row: 65 / 78;
         grid-column: 1 / 5;
         max-width: 100%;
+        fill: var(--textcolor);
+        Z-index: -1;
     }
 
     aside {
