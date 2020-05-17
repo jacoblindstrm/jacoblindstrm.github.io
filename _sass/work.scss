@@ -29,8 +29,6 @@
 
     .lead {
         margin-top: 0;
-        columns: auto 2;
-        column-gap: 1rem;
     }
 
     svg {
@@ -94,6 +92,11 @@
         svg {
             grid-row: 41 / 70;
             grid-column: 1 / -1;
+        }
+
+        .lead {
+            columns: auto 2;
+            column-gap: 1rem;
         }
     }
 
