@@ -147,7 +147,7 @@
 
         h1 {
             margin: 0 0 0 calc(100vw/4 - 0.5rem);
-            font-size: var(--scale1);
+            font-size: var(--scale-2);
             text-align: left;
             width: auto;
 
@@ -156,7 +156,6 @@
             }
 
             @media (min-width: $screen-m) {
-                font-size: var(--scale-2);
                 position: absolute;
                 top: 2rem;
                 right: 1.5rem;
