@@ -52,16 +52,21 @@ document.addEventListener('swup:contentReplaced', event => {
 
         cursor.style.opacity = `1`;
         updatePosition(event, cursor, true);
+        // addSprinklle()
     }
 
     function handleClick(event) {
 
-        updatePosition(event, terrazzo, false);
-        terrazzo.classList.add('playing');
+        // updatePosition(event, terrazzo, false);
+        // terrazzo.classList.add('playing');
 
-        setTimeout(() => {
-            terrazzo.classList.remove('playing');
-        }, 1000)
+        // setTimeout(() => {
+        //     terrazzo.classList.remove('playing');
+        // }, 1000)
+        for(var i = 0; i < 6; i++) {
+            createElement(event);
+        }
+        
 
     }
 
@@ -83,7 +88,43 @@ document.addEventListener('swup:contentReplaced', event => {
             }
         }
 
-        //currentEvent=event;
+        const pos = getMousePosition(event);
+
+        el.style.transform = `translateX(${pos.pageX}px) translateY(${pos.pageY - scrollYPos}px) scale(${scale})`;
+    }
+       
+    document.documentElement.onmousemove=function(event){
+         currentEvent=event;
+    }
+
+    // create div
+    // random shape
+    // random color
+    // Place in DOM
+    // Play animation
+    // Remove div
+
+    function createElement(event) {
+        const div = document.createElement('div');       
+        const color = getRandomColor();
+        const size = getRandomSize();
+        const pos = getMousePosition(event);
+
+        div.style.cssText = `background: var(${color}); border-radius: 100%; width: ${size}rem; height: ${size}rem; opacity: 0;`;
+        div.classList.add(`cursor_sparks`);
+        div.style.transform = `translateX(${pos.pageX + randomIntFromInterval(1,40)}px) translateY(${pos.pageY - scrollYPos  + randomIntFromInterval(1,40)}px)`;
+
+        // append
+        terrazzo.appendChild(div);
+
+        div.addEventListener('animationend', () => {
+            div.remove();
+        });
+    }
+
+   
+
+    function getMousePosition(event) {
         event = event || window.event; // IE-ism       
 
         // If pageX/Y aren't available and clientX/Y are,
@@ -102,15 +143,8 @@ document.addEventListener('swup:contentReplaced', event => {
               (doc && doc.clientTop  || body && body.clientTop  || 0 );
         }
 
-        el.style.transform = `translateX(${event.pageX}px) translateY(${event.pageY - scrollYPos}px) scale(${scale})`;
+        return event;
     }
-
-       
-    document.documentElement.onmousemove=function(event){
-         currentEvent=event;
-    }
-
-    
     
     setInterval(function(){       
 
@@ -131,8 +165,29 @@ document.addEventListener('swup:contentReplaced', event => {
                 updatePosition(currentEvent, cursor);
             }
         }
-        
+
+        if (speed > 10) {
+            createElement(currentEvent);
+        }
         prevEvent=currentEvent;
         prevSpeed=speed;
     }, 100);
+
+
+    function getRandomColor() {
+        const colors = ["--vibrant-green", "--lemon", "--coral", "--blue"];
+        return colors[Math.floor(Math.random() * colors.length)];
+
+    }
+
+    function getRandomSize() {
+        const sizes = ["0.8", "1", "1.2", "0.6"];
+        return sizes[Math.floor(Math.random() * sizes.length)];
+
+    }
+
+    function randomIntFromInterval(min, max) { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
 })();

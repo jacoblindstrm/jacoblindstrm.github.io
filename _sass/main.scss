@@ -29,37 +29,25 @@
   justify-content: flex-end;
 }
 
-.terrazzo {
+.cursor_sparks {
   position: fixed;
-  top: -4rem;
-  left: -4rem;
-  z-index: 10;
-  opacity: 0;
-  transition: transform ease 0.8s, opacity ease 0.35s;
-  transform: scale(0);           
-  transform-origin: center;
-  width: 12rem;
-  height: 12rem;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  animation: sparks 0.7s 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: difference;
 
-  svg {
-    height: 100%;
-    width: 100%;
+  &.circle {
+    border-radius: 100%;
   }
-
-  .fade-1 {
-    transform: scale(0);
-    transition: transform 0.6s ease-out;
+  .oval {
+    background: transparent !important;
+    border: 2px solid inherit;
   }
-
-  &.playing {
-    opacity: 1;
-
-    .fade-1 {
-      transform: scale(1);
-   }
-
-    .fade-3 {
-       animation: rotate 1s linear infinite;
-    }
+  .triangle {
+    background: transparent !important;
+    border: 2px solid inherit;
   }
 }
