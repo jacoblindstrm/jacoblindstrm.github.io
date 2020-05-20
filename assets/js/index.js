@@ -49,20 +49,11 @@ document.addEventListener('swup:contentReplaced', event => {
     document.onclick = handleClick;
     
     function handleMouseMove(event) {
-
         cursor.style.opacity = `1`;
         updatePosition(event, cursor, true);
-        // addSprinklle()
     }
 
     function handleClick(event) {
-
-        // updatePosition(event, terrazzo, false);
-        // terrazzo.classList.add('playing');
-
-        // setTimeout(() => {
-        //     terrazzo.classList.remove('playing');
-        // }, 1000)
         for(var i = 0; i < 6; i++) {
             createElement(event);
         }
@@ -96,13 +87,6 @@ document.addEventListener('swup:contentReplaced', event => {
     document.documentElement.onmousemove=function(event){
          currentEvent=event;
     }
-
-    // create div
-    // random shape
-    // random color
-    // Place in DOM
-    // Play animation
-    // Remove div
 
     function createElement(event) {
         const div = document.createElement('div');       
@@ -187,7 +171,11 @@ document.addEventListener('swup:contentReplaced', event => {
     }
 
     function randomIntFromInterval(min, max) { // min and max included 
-        return Math.floor(Math.random() * (max - min + 1) + min);
+        let num = Math.floor(Math.random() * (max - min + 1) + min);
+        
+        num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
+
+        return num;
     }
 
 })();
