@@ -30,6 +30,7 @@ A selection of the books on design and related subjects I've read.
 ## Articles, pappers, and talks
 This is a growing selection of content I can recommend reading.
 
+- 📱 [Give it Five Minutes](https://signalvnoise.com/posts/3124-give-it-five-minutes) *by Jason Fried*
 - 📱 [How Spotify Organises Work in Figma to Improve Collaboration](https://spotify.design/article/how-spotify-organises-work-in-figma-to-improve-collaboration) *by Cliona O’Sullivan and Barton Smith*
 - 📱 [How Apple reinvented the cursor for iPad](https://techcrunch.com/2020/05/06/how-apple-reinvented-the-cursor-for-ipad/) *by Matthew Panzarino*
 - 📱 [Being Unhappy with Your Creative Work](https://creativesomething.net/post/60749379034/being-unhappy-with-your-creative-work) *by Tanner Christensen*
