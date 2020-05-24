@@ -81,7 +81,7 @@ Weekly or biweekly I held “fika” feedback sessions letting anyone critique m
 
 After any feedback session I shared a link to the Figma prototype in our Slack channel. This gave everyone a chance to add feedback in writing.
 
-A little less frequently I did user test on potential users to validate key questions. - such as the how the navigation worked.
+A little less frequently I did user test on potential users to validate key questions. - such as how the navigation worked.
 
 This phase is immensely important to drive the project forward.
 
