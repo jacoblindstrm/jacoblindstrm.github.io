@@ -45,19 +45,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--coral);
+        background: var(--lemon);
         padding: 5rem 1rem var(--padding-page-bottom);
         color: var(--textcolor);
         grid-column: 1 / end;
         grid-row: 70 / 106;
             -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
-        mix-blend-mode: darken; // for footer text 
         margin: 0 -1rem 0;
 
         @media (prefers-color-scheme: dark) { 
             background: linear-gradient(180deg, var(--darkcoral) -30%, var(--backgroundcolor) 130%);
-            mix-blend-mode: lighten; // for footer text 
         }
 
         h2 {

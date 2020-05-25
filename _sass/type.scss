@@ -13,10 +13,10 @@ article.post h1 {
 }
 
 h2 {
-    font-size: var(--scale2);
+    font-size: var(--scale1);
 }
 h3 {
-    font-size: var(--scale1);
+    font-size: var(--scale0);
 }
 h4 {
     font-size: var(--scale0);
@@ -30,7 +30,7 @@ h4 {
 }
 
 p {
-    margin: 1em auto;
+    margin: 0 auto 1em;
 }
 
 p.extra-spacing {
