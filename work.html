@@ -7,7 +7,7 @@ background: green
 
 <div id="work">
     <section class="case hoodin grid transition-up">
-        <h2>Redesigning Hoodin</h2>
+        <h2>Redesigning Hoodin<sup>01</sup></h2>
         <aside>
             <dl>
                 <div>
@@ -32,42 +32,51 @@ background: green
           </svg>
           
     </section>
-    <section class="case trails-of-southern-sweden topography">
+    <section class="case grid trails-of-southern-sweden topography">
         <picture class="ani-scale-1">
             <img 
                 itemprop="image"
-                srcset="{{ "/assets/cases/trails-of-southern-sweden/images/banner-one.png" | relative_url }} 375w,
-                        {{ "/assets/cases/trails-of-southern-sweden/images/banner-one.png" | relative_url }} 896w,
-                        {{ "/assets/cases/trails-of-southern-sweden/images/banner-one.png" | relative_url }} 1792w,
-                        {{ "/assets/cases/trails-of-southern-sweden/images/banner-one.png" | relative_url }} 2688w"
+                srcset="{{ "/assets/cases/trails-of-southern-sweden/images/skaneleden-map.png" | relative_url }} 375w,
+                        {{ "/assets/cases/trails-of-southern-sweden/images/skaneleden-map.png" | relative_url }} 896w,
+                        {{ "/assets/cases/trails-of-southern-sweden/images/skaneleden-map.png" | relative_url }} 1792w,
+                        {{ "/assets/cases/trails-of-southern-sweden/images/skaneleden-map.png" | relative_url }} 2688w"
                 sizes="(min-width: 700px) 35vw,
                         (min-width: 1280px) 500px,
                         100vw"
-                src="{{ "/assets/cases/images/trails-of-southern-sweden/banner-one.png" | relative_url }}" 
+                src="{{ "/assets/cases/images/trails-of-southern-sweden/skaneleden-map.png" | relative_url }}" 
                 alt="Image of the map of the Trails of Southern Sweden service." 
                 loading="eager"
             />
         </picture>
-        <picture class="ani-scale-2">
-            <img 
-                itemprop="image"
-                srcset="{{ "/assets/cases/trails-of-southern-sweden/images/banner-two.png" | relative_url }} 375w,
-                        {{ "/assets/cases/trails-of-southern-sweden/images/banner-two.png" | relative_url }} 896w,
-                        {{ "/assets/cases/trails-of-southern-sweden/images/banner-two.png" | relative_url }} 1792w,
-                        {{ "/assets/cases/trails-of-southern-sweden/images/banner-two.png" | relative_url }} 2688w"
-                sizes="(min-width: 700px) 35vw,
-                        (min-width: 1280px) 500px,
-                        100vw"
-                src="{{ "/assets/cases/images/trails-of-southern-sweden/banner-two.png" | relative_url }}" 
-                alt="Image of the map of the Trails of Southern Sweden service."
-                loading="eager"
-            />
-        </picture>
-        <iframe src="https://player.vimeo.com/video/404766171?autoplay=1&controls=0&sidedock=0&loop=1" width="640" height="372" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="transition-up"></iframe>
+        <h2>Trails of Southern Sweden<sup>02</sup></h2>
+        <aside>
+            <dl>
+                <div>
+                    <dt>Role</dt>
+                    <dd>UX Design</dd>
+                    <dd>Project Managment</dd>
+                    <dd>Front End Development</dd>
+                </div>
+                <div>
+                    <dt>Deliverables</dt>
+                    <dd>Information Architecture</dd>
+                    <dd>Interaction Design</dd>
+                    <dd>Ideation</dd>
+                </div>
+            </dl>
+        </aside>
         <div class="summary">
-            <h2>Trails of Southern Sweden</h2>
             <p class="lead">Trails of Southern Sweden is a collection of hike and bicycle trails, each with its own website and domain. Some trails are as long as 1200 km with several sub trails. My main responsibility were user experience design, including interaction design, and information&nbsp;architecture.</p>
             <a href="{{ "/work/trails-of-southern-sweden/" | relative_url }}" alt="">Full case study →</a>
         </div>
+
+        
+        <iframe src="https://player.vimeo.com/video/404766171?autoplay=1&controls=0&sidedock=0&loop=1" width="640" height="372" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="transition-up"></iframe>
+    </section>
+    <section class="other case grid">
+        <h2>Other work<sup>03</sup></h2>
+        {% for work in site.data.work %}
+        <h3>{{ work.client }}</h3>
+        {% endfor %}
     </section>
 </div>

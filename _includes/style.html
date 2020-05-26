@@ -205,18 +205,27 @@
     }
 
 
-    body > header,
-    footer {
+    body > header {
         z-index: 100;
-        width: calc(100% - 4rem);
-        margin: auto 2rem;
+        width: calc(100% - 2rem);
+        margin: auto 1rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        background: var(--backgroundcolor);
     }
 
     @media screen and (min-width: 1400px) {
-        body > header,
+        body > header {
+            width: calc(100% - (8.4vw * 2));
+            margin: auto 8.4vw;
+        }
+
         footer {
-            width: calc(100% - 8rem);
-            margin: auto 4rem;
+            padding: 4rem 8.4vw;
         }
     }
 

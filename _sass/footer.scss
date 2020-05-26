@@ -1,18 +1,17 @@
 footer {
   text-align: center;
-  padding: 3rem 0 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 
   @media (min-width: $screen-m) {
     text-align: left;
-  }
 
-  @media (max-width: floor($screen-m - 1)) and (prefers-color-scheme: light) {
-      position: relative;
-
-      p {
-        position: absolute;
-        width: 100%;
-      }
+    p:first-child {
+      margin-left: -2ch;
+    }
   }
 }
 
