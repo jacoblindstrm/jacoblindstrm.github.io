@@ -12,8 +12,8 @@ permalink: /take-away-mmx/
 
     <style>
         :root {
-            --backgroundcolor: white;
-            --textcolor: black;
+            --color-bg: white;
+            --color-base: black;
 
             /* Type scale */
             --int: 1.333;
@@ -32,8 +32,8 @@ permalink: /take-away-mmx/
 
         @media (prefers-color-scheme: dark) {
             :root {
-                --textcolor: white;
-                --backgroundcolor: hsl(222, 100%, 2%);
+                --color-base: white;
+                --color-bg: hsl(222, 100%, 2%);
                 --text-GRAD: 480;
             }
         }
@@ -41,10 +41,10 @@ permalink: /take-away-mmx/
         html { font-size: 100%; }     /* 1rem = 16px */
 
         body {
-            background: var(--backgroundcolor);
+            background: var(--color-bg);
             margin: 0;
             padding: 0;
-            color: var(--textcolor);
+            color: var(--color-base);
             font-family: var(--font);
             font-size: var(--scale0);
             font-kerning: normal;

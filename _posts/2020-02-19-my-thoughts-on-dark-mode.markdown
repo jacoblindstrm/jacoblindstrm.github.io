@@ -67,20 +67,20 @@ And *light-level* also has three values:
 
 ```css
 :root {
-  --backgroundcolor: white;
+  --color-bg: white;
   --color: darkblue;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --backgroundcolor: darkblue;
+    --color-bg: darkblue;
     --color: white;
   }
 }
 
 @media (prefers-contrast: high) {
   :root {
-    --backgroundcolor: white;
+    --color-bg: white;
     --color: black;
   }
 }
@@ -88,7 +88,7 @@ And *light-level* also has three values:
 // You could propably do this:
 @media (prefers-color-scheme: dark) and (prefers-contrast: high) {
   :root {
-    --backgroundcolor: black;
+    --color-bg: black;
     --color: white;
   }
 }

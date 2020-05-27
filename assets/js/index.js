@@ -9,13 +9,8 @@ document.addEventListener('swup:contentReplaced', event => {
     window.scrollTo(0,0);
 
     // 1. remove active class from all links
-    const body = document.getElementsByTagName('body')[0];
     const navLi = document.querySelectorAll('header nav li');
     const navLinks = document.querySelectorAll('header nav li a');
-    const backgroundColor = document.getElementById('swup').dataset.backgroundColor;
-
-    body.classList.remove(...body.classList);
-    body.classList.add(`background-${backgroundColor}`);
 
     //navLi.classList.remove('active');
     navLi.forEach(li => {

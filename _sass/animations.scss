@@ -2,7 +2,7 @@
 
 @keyframes pointingFingers {
     0% {
-        color: var(--textcolor);
+        color: var(--color-base);
     }
 
     80% {
@@ -10,7 +10,7 @@
     }
 
     100% {
-      color: var(--textcolor);
+      color: var(--color-base);
     }
 }
 

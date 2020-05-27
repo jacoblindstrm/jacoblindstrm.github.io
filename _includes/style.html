@@ -12,13 +12,29 @@
     }
 
     :root {
+       --font-default: clamp(18px, 1.4vw, 22px);
+        --font-s: 0.87rem;
+        --font-l: 1.4rem;
+        --font-line-height: 1.5;
+        --spacing-s: 0.2rem;
+        --spacing-m: 1rem;
+        --spacing-l: 2rem;
+        --spacing-xl: 4rem;
+        --spacing-max-width: 35rem;
+
+        /* --color-bg: #63696E;
+        --color-base: #EDE6E3;
+        --color-mid: #EDE6E3;
+        --color-dim: #72767e; */
+
+
         --coral: hsl(5, 99%, 71%);
         --soft-coral: hsl(5, 100%, 89%);   
         --pale-coral: hsl(5, 100%, 98%);     
         --darkcoral: hsl(5, 62%, 51%);
         
         --vibrant-green: hsl(183, 100%, 32%);
-        --midnight-green: hsl(183, 50%, 25%);
+        --midnight-green: hsl(183, 50%, 20%);
         --soft-green: hsl(183, 23%, 80%);
         --pale-green: hsl(183, 23%, 95%);
 
@@ -30,8 +46,10 @@
         --dark: hsl(0, 33%, 7%);
 
         --pale: hsl(1, 100%, 89%);
-        --textcolor: black;
-        --backgroundcolor: var(--pale-green);      
+
+        --color-base: black;
+        --color-bg: var(--pale-green);
+
         --padding-page-bottom: 10vh;
         --button-padding: 0.2rem 0.5rem;
 
@@ -52,31 +70,35 @@
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --textcolor: var(--pale-coral);
-            --backgroundcolor: var(--dark);
+            --color-base: var(--pale-green);
+            --color-bg: hsl(183, 23%, 5%);
+
+            --blue: hsl(222, 100%, 20%);
             --pale: hsl(222, 100%, 32%);
+
+            --soft-green: var(--midnight-green);
             --text-GRAD: 480;
         }
     }
 
     @media (prefers-contrast: high) {
         :root {
-            --backgroundcolor: white;
-            --textcolor: black
+            --color-bg: white;
+            --color-base: black
         }
     }
 
     @media (prefers-contrast: high) and (prefers-color-scheme: dark){
         :root {
-            --backgroundcolor: black;
-            --textcolor: white
+            --color-bg: black;
+            --color-base: white
         }
     }
 
     @media print {
         :root {
-            --backgroundcolor: transparent;
-            --textcolor: black;
+            --color-bg: transparent;
+            --color-base: black;
         }
     }
 
@@ -87,7 +109,7 @@
             --padding-page-bottom: 20vh;
         }
 
-        html { font-size: 112.5%; } /* 1rem = 18px */
+       html { font-size: 112.5%; } /* 1rem = 18px */
     }
 
     @media screen and (min-width: 1900px) {
@@ -95,21 +117,21 @@
     }
 
     body {
-        background: var(--backgroundcolor);
+        background: var(--color-bg);
         transition: background-color 0.25s ease;
         min-height: 100vh;
         margin: 0;
         padding: 0;
-        color: var(--textcolor);
+        color: var(--color-base);
         font-family: var(--font);
         line-height: var(--line-height);
-        font-size: var(--scale0);
+        font-size: var(--font-default);
         font-kerning: normal;
         font-variant-ligatures: discretionary-ligatures;        
         font-variation-settings: "GRAD" var(--text-GRAD);
         /* font-variant-numeric: diagonal-fractions tabular-nums; */
 
-        --cursor-stroke: var(--textcolor);
+        --cursor-stroke: var(--color-base);
         --cursor-size: 3rem;
         --cursor-position: -1.5rem;
         --cursor-stroke-width: 2px;
@@ -140,33 +162,6 @@
         pointer-events: none;
         transform: scale(0);           
         transform-origin: center;
-    }
-
-    .background-lemon {
-        --backgroundcolor: var(--pale-lemon);
-    }
-
-    .background-green {
-        --backgroundcolor: var(--pale-green);
-    }
-
-    .background-coral {
-        --backgroundcolor: var(--pale-coral);
-    }
-
-    @media (prefers-color-scheme: dark) {
-
-        .background-lemon {
-         --backgroundcolor: hsl(222, 100%, 13%);
-        }
-
-        .background-green {
-            --backgroundcolor: hsl(222, 100%, 13%);
-        }
-
-        .background-coral {
-            --backgroundcolor: hsl(222, 100%, 13%);
-        }
     }
 
     main {
@@ -215,7 +210,7 @@
         padding: 2rem 1rem;
         box-sizing: border-box;
         width: 100%;
-        background: var(--backgroundcolor);
+        background: var(--color-bg);
     }
 
     @media screen and (min-width: 1400px) {
@@ -273,36 +268,13 @@
     }
     
     h1 {
-        text-align: center;
-        margin: 15rem auto 5.325rem;
-        max-width: 40rem;
-        width: 90%;
-        font-size: var(--scale2);
+        margin-top: var(--spacing-xl);
+        margin-bottom: var(--spacing-m);
     }
 
     h1,
     h2 {
         line-height: 1.35;
-    }
-
-    
-
-    @media screen and (min-width: 768px) {
-        h1 { 
-            margin: 11.5rem auto 5.325rem;
-        }
-    }
-
-    @media screen and (min-width: 1400px) {
-        h1 { 
-            margin: 12.5rem auto 6.325rem;
-        }
-    }
-
-    @media screen and (min-width: 1900px) {
-        h1 { 
-            margin: 13.5rem auto 7.325rem;
-        }
     }
 
     .transition-fade {
@@ -315,17 +287,6 @@
         transition: transform 0.6s ease-out;
         animation: appearUp 0.6 ease-out;
     }
-
-    /* .transition-to-shape {
-            -webkit-clip-path: polygon(0 50%, 0 100%, 65% 100%, 65% 80%, 90% 80%, 90% 90%, 65% 90%, 64% 100%, 100% 100%, 100% 50%, 50% 0);
-        clip-path: polygon(0 50%, 0 100%, 65% 100%, 65% 80%, 90% 80%, 90% 90%, 65% 90%, 64% 100%, 100% 100%, 100% 50%, 50% 0);
-        transition: all 0.3s ease-out;
-    }
-
-    .is-animating .transition-to-shape {  
-            -webkit-clip-path: circle(25%);
-            clip-path: circle(25%);
-    } */
 
     .ani-from-right {
         transform: translateX(0);

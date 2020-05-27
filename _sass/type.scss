@@ -9,55 +9,45 @@ body {
 }
 
 article.post h1 {
-    font-size: var(--scale3);
+    font-size: var(--font-l);
 }
 
 h2 {
-    font-size: var(--scale1);
+    font-size: var(--font-l);
 }
 h3 {
-    font-size: var(--scale0);
+    font-size: var(--font-default);
 }
 h4 {
-    font-size: var(--scale0);
+    font-size: var(--font-default);
 }
 
 h2,
 h3,
 h4 {
-    margin-top: 2em;
-    margin-bottom: 0.5em;
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-s);
 }
 
 p {
-    margin: 0 auto 1em;
+    margin: 0 auto var(--spacing-m);
 }
 
 p.extra-spacing {
-    margin-top: 1.5em;
-
-    @media (min-width: $screen-m) {
-        margin-top: 2.5em;
-    }
+    margin-top: var(--spacing-l);
 }
 
 .lead {
-    font-size: var(--scale0);
-    margin-bottom: 1em;
-    text-indent: 0;
-}
-
-.superbig {
-    font-size: var(--scale2);
-    line-height: calc(var(--line-height) * 1.2);
+    //font-size: var(--scale0);
+    margin-bottom: var(--spacing-m);
 }
 
 .small {
-    font-size: var(--scale-1);
+    font-size: var(--font-s);
 }
 
 .x-small {
-    font-size: var(--scale-2);
+    font-size: var(--font-s);
 }
 
 strong {
@@ -65,12 +55,12 @@ strong {
 }
 
 time {
-    font-size: var(--scale-1);
+    font-size: var(--font-s);
     opacity: 0.8;
 }
 
 figcaption {
-    font-size: var(--scale-1);
+    font-size: var(--font-s);
     max-width: 600px;
 
     p {
@@ -85,7 +75,7 @@ figcaption {
 dt {
     text-transform: uppercase;
     letter-spacing: 0.01em;
-    font-size: var(--scale-1);
+    font-size: var(--font-s);
     font-weight: 570;
 }
 
@@ -96,11 +86,10 @@ dd {
 blockquote {    
     text-align: center;
     line-height: 1;
-    margin: 3em auto;
+    margin: var(--spacing-xl) auto;
     max-width: 45rem;
 
     p {
-        font-size: var(--scale2);
         margin-left: auto;
         margin-right: auto;
     }
@@ -118,7 +107,7 @@ blockquote {
     }
 
     footer {
-        font-size: var(--scale-1);
+        font-size: var(--font-s);
         text-align: right;
     }
 }

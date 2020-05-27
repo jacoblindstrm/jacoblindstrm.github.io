@@ -39,7 +39,7 @@ body > header h1 {
         margin-right: 0.5rem;
         height: var(--scale0);
         width: var(--scale0);
-        background: var(--textcolor);
+        background: var(--color-base);
             -webkit-clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
         clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
         transition: 0.25s all ease-in-out;

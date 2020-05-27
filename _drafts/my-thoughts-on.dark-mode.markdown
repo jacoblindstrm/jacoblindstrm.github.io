@@ -62,13 +62,13 @@ The same goes for high-contrast (note that the ms prefix is required today). War
 
 ```css
 :root {
-  --backgroundcolor: white;
+  --color-bg: white;
   --color: darkblue;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --backgroundcolor: darkblue;
+    --color-bg: darkblue;
     --color: white;
   }
 }
@@ -76,14 +76,14 @@ The same goes for high-contrast (note that the ms prefix is required today). War
 // You could propably do this:
 @media (-ms-high-contrast: active) {
   :root {
-    --backgroundcolor: white;
+    --color-bg: white;
     --color: black;
   }
 }
 
 @media (prefers-color-scheme: dark) and (-ms-high-contrast: active) {
   :root {
-    --backgroundcolor: black;
+    --color-bg: black;
     --color: white;
   }
 }

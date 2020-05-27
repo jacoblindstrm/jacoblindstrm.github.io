@@ -180,7 +180,7 @@
             }
 
             img {
-                border: 0.5rem solid var(--textcolor);
+                border: 0.5rem solid var(--color-base);
             }
         }
         
@@ -285,7 +285,7 @@
 
                 @media (prefers-color-scheme: dark) {
                     background: var(--dark);
-                    color: var(--textcolor);
+                    color: var(--color-base);
                 }
             }
         }

@@ -1,9 +1,15 @@
 footer {
   text-align: center;
+  margin-top: var(--spacing-xl);
+  background: var(--soft-green);
 
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  p:first-child {
+    margin-bottom: var(--spacing-s);
   }
 
   @media (min-width: $screen-m) {
