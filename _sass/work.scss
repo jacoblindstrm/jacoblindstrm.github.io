@@ -392,7 +392,7 @@
 
 .other {
 
-    margin-bottom: -4rem;
+    margin: 0 -1rem -4rem;
     background: var(--coral);
 
     @media (prefers-color-scheme: dark) {
@@ -420,6 +420,8 @@
     }
 
     @media (min-width: $screen-m) {
+        
+        margin: 0 auto -4rem;
 
         h2 {
             grid-area: 8 / 6 / 30 / -1;
