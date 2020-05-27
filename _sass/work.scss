@@ -224,14 +224,13 @@
         z-index: 10;
     }
 
+    h2 {
+         grid-row: 14;
+    }
+
     .summary {
         grid-column: 1 / -1;        
-        grid-row: 32 / 52;
-
-        @media (min-width: 376px) {
-            grid-row: 32 / 52;
-        }
-        
+        grid-row: 36 / 52;
         @media (min-width: 600px) {
             grid-column: 1 / -2;
             grid-row: 28 / 52;
@@ -245,7 +244,7 @@
 
     aside {
         grid-column: 1 / -1;
-        grid-row: 16 / 32;
+        grid-row: 20 / 36;
 
         @media (min-width: 376px) {
             grid-row: 16 / 32;
@@ -275,7 +274,7 @@
         z-index: 3;
         box-shadow: 3px 6px 3px rgba(0,0,0,0.25);
         grid-column: 1 / -1;
-        grid-row: 50 / 82;
+        grid-row: 60 / 82;
         width: 87vw;
         height: 50vw;
         pointer-events: none;
