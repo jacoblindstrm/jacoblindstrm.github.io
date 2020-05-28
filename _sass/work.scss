@@ -48,6 +48,7 @@
             padding: 0;
             margin: 0;
             gap:  var(--spacing-m);
+            font-size: var(--font-s);
 
             div {
                 width: calc(50% - 0.5rem);
@@ -231,6 +232,7 @@
     .summary {
         grid-column: 1 / -1;        
         grid-row: 36 / 52;
+
         @media (min-width: 600px) {
             grid-column: 1 / -2;
             grid-row: 28 / 52;
@@ -298,8 +300,8 @@
             background: var(--soft-lemon);
             opacity: 0.95;
             width: 71.5vw;
-            height: 40rem;
-            top: 11rem;
+            height: 54rem;
+            top: 13rem;
             left: -1rem;
 
             @media (prefers-color-scheme: dark) {
@@ -400,22 +402,29 @@
     }
 
     h2 {
-        grid-area: 8 / 2 / 30 / -1;
+        grid-area: 8 / 1 / 30 / -1;
     }
 
     h3 {
         font-size: var(--scale2);
         font-weight: normal;
-        grid-area: 12 / 2 / 18 / end;
+        grid-column: 1 / -1;
+        grid-row: 12 / 18;
 
         &:nth-child(3) {
-            grid-area: 18 / 2 / 23 / end;
+            grid-row: 18 / 23;
         }
         &:nth-child(4) {
-            grid-area: 24 / 2 / 30 / end;
+            grid-row: 24 / 30;
         }
         &:nth-child(5) {
-            grid-area: 30 / 2 / 52 / end;
+            grid-row: 30 / 52;
+        }
+    }
+
+    @media (max-width: floor($screen-m - 1)) {
+        h2, h3 {
+            justify-self: center;
         }
     }
 
@@ -424,34 +433,22 @@
         margin: 0 auto -4rem;
 
         h2 {
-            grid-area: 8 / 6 / 30 / -1;
+            grid-area: 15 / 3 / 40 / 3;
             writing-mode: vertical-lr;
+            line-height: 1;
+            margin-left: -0.3rem;
         }
 
         h3 {
             font-size: var(--scale2);
+            grid-column: 4 / -1;
         }
     }
 
     @media (min-width: $screen-l) {
-
-        h2 {
-            grid-area: 16 / 2 / 40 / 3;
-        }
-
+       
         h3 {
             font-size: var(--scale3);
-            grid-area: 12 / 4 / 18 / -1;
-
-            &:nth-child(3) {
-                grid-area: 18 / 4 / 23 / -1;
-            }
-            &:nth-child(4) {
-                grid-area: 24 / 4 / 30 / -1;
-            }
-            &:nth-child(5) {
-                grid-area: 30 / 4 / 52 / -1;
-            }
         }
     }
 }
