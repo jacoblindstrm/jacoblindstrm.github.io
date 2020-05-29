@@ -46,15 +46,15 @@ body > header h1 {
         background-image: url(../images/header/normal@3x.png);
         background-image: 
             -webkit-image-set(
-                url(../images/header/normal@2x.png) 2x,
                 url(../images/header/normal@1x.png) 1x,
+                url(../images/header/normal@2x.png) 2x,
                 url(../images/header/normal@3x.png) 3x,
             );
         background-image: 
             image-set(
-                url(../images/header/normal@1x.webp) 1x,
-                url(../images/header/normal@2x.webp) 2x,
-                url(../images/header/normal@3x.webp) 3x,
+                url(../images/header/normal@1x.png) 1x,
+                url(../images/header/normal@2x.png) 2x,
+                url(../images/header/normal@3x.png) 3x,
             );
         display: inline-block;
         margin-right: var(--spacing-s);
