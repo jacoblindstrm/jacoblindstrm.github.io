@@ -33,16 +33,44 @@ body > header h1 {
         margin: 0;
     }
 
+    @media (max-width: floor($screen-m - 1)) {
+        a {
+            vertical-align: top;
+        }
+
+    }
+
     &::before {
         content: "";
+        background-color: var(--soft-green);
+        background-image: url(../images/header/normal@3x.png);
+        background-image: 
+            -webkit-image-set(
+                url(../images/header/normal@2x.png) 2x,
+                url(../images/header/normal@1x.png) 1x,
+                url(../images/header/normal@3x.png) 3x,
+            );
+        background-image: 
+            image-set(
+                url(../images/header/normal@1x.webp) 1x,
+                url(../images/header/normal@2x.webp) 2x,
+                url(../images/header/normal@3x.webp) 3x,
+            );
         display: inline-block;
-        margin-right: 0.5rem;
-        height: var(--scale0);
-        width: var(--scale0);
-        background: var(--color-base);
-            -webkit-clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
-        clip-path: polygon(0 50%, 0 100%, 100% 100%, 100% 50%, 50% 0);
+        margin-right: var(--spacing-s);
         transition: 0.25s all ease-in-out;
+        width: 2rem;
+        height: 2rem;
+        background-size: 75%;
+        background-position: center;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        margin-top: -0.2rem;
+        border-radius: 100%;
+    }
+
+    &:hover::before {
+        animation: backgroundColorLoop 2s ease-in-out infinite;
     }
 }
 

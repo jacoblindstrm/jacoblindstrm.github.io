@@ -35,3 +35,18 @@
     opacity: 0;
   }
 }
+
+@keyframes backgroundColorLoop {
+  0% {
+    background-color: var(--coral);
+  }
+  25% {
+    background-color: var(--blue);
+  }
+  50% {
+    background-color: var(--lemon);
+  }
+  75% {
+    background-color: var(--vibrant-green);
+  }
+}
