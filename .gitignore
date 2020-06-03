@@ -6,3 +6,6 @@ _site
 vendor
 Gemfile
 Gemfile.lock
+.png.icloud
+.mp4.icloud
+.webm.icloud
