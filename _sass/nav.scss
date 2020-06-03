@@ -32,6 +32,12 @@ body > header h1 {
     @media screen and (min-width: $screen-m) {
         margin: 0;
     }
+    
+    a:hover,
+    a:focus,
+    a:active {
+        box-shadow: none;
+    }
 
     @media (max-width: floor($screen-m - 1)) {
         a {
@@ -46,15 +52,15 @@ body > header h1 {
         background-image: url(../images/header/normal@3x.png);
         background-image: 
             -webkit-image-set(
-                url(../images/header/normal@2x.png) 2x,
                 url(../images/header/normal@1x.png) 1x,
+                url(../images/header/normal@2x.png) 2x,
                 url(../images/header/normal@3x.png) 3x,
             );
         background-image: 
             image-set(
-                url(../images/header/normal@1x.webp) 1x,
-                url(../images/header/normal@2x.webp) 2x,
-                url(../images/header/normal@3x.webp) 3x,
+                url(../images/header/normal@1x.png) 1x,
+                url(../images/header/normal@2x.png) 2x,
+                url(../images/header/normal@3x.png) 3x,
             );
         display: inline-block;
         margin-right: var(--spacing-s);
@@ -65,10 +71,12 @@ body > header h1 {
         background-position: center;
         vertical-align: middle;
         background-repeat: no-repeat;
-        margin-top: -0.2rem;
+        margin-top: -0.5rem;
         border-radius: 100%;
     }
 
+    &:active::before,
+    &:focus::before,
     &:hover::before {
         animation: backgroundColorLoop 2s ease-in-out infinite;
     }
