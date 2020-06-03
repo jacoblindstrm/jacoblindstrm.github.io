@@ -51,6 +51,37 @@ layout: default
                     </li>
                 </ol>
             </div>
+
+            <figure>
+                <picture>
+                    <source 
+                        type="image/webp"
+                        srcset="{{ "/assets/cases/hoodin/hoodin-m.webp" | relative_url }} 768w,
+                                {{ "/assets/cases/hoodin/hoodin-l.webp" | relative_url }} 1440w"
+                        sizes="(min-width: 1440px) 1440px,100vw"
+                        src="{{ "/assets/cases/hoodin/hoodin-l.webp" | relative_url }}" 
+                    />
+                    <source 
+                        type="image/png" 
+                        srcset="{{ "/assets/cases/hoodin/hoodin-m.png" | relative_url }} 768w,
+                                {{ "/assets/cases/hoodin/hoodin-l.png" | relative_url }} 1440w"
+                        sizes="(min-width: 1440px) 1440px,100vw"
+                        src="{{ "/assets/cases/hoodin/hoodin-l.png" | relative_url }}" 
+                        src="{{ "/assets/images/profile/profile@1x.jpg" | relative_url }}" 
+                    />
+                    <img 
+                        srcset="{{ "/assets/cases/hoodin/hoodin-m.png" | relative_url }} 768w,
+                                {{ "/assets/cases/hoodin/hoodin-l.png" | relative_url }} 1440w"
+                        sizes="(min-width: 1440px) 1440px,100vw"
+                        src="{{ "/assets/cases/hoodin/hoodin-l.png" | relative_url }}" 
+                        alt="" 
+                        loading="eager"
+                    />
+                </picture>
+                <figcaption>
+                  <p>The final navigation with clear seperation of user and project, improved hierarchy and fewer navigaton links. </p>
+                </figcaption>
+              </figure>
         
             <section class="content">
                 {{ content }}   

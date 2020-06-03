@@ -2,6 +2,7 @@
 .case {
     min-height: 100vh;
     background: var(--pale-green);
+    max-width: 1440px;
 
     h2, h1 {
         grid-column: 1 / 5;
@@ -113,7 +114,36 @@
         background: var(--blue);
     }
 
-    
+    figure {
+        
+        background: var(--soft-lemon);
+        grid-row: 60 / 78;
+        grid-column: 1 / -1;
+        padding: var(--spacing-m);
+        width: 100%;
+        margin: 0;  
+        aspect-ratio: 72 / 43;
+        
+        img {
+            box-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.25);
+        }
+
+        @media (min-width: 600px) {
+            grid-row: 45 / 75;
+        }
+
+        @media (min-width: $screen-m) {
+            grid-row: 50 / 73;
+            grid-column: 2 / -1;
+            padding: var(--spacing-l);
+        }
+
+        @media (min-width: $screen-l) {
+            grid-row: 40 / 84;
+            grid-column: 4 / 13;
+            padding: var(--spacing-xl);
+        }
+    }
 
     svg {
         grid-row: 50 / 72;
@@ -125,11 +155,11 @@
 
     .content {
 
-        grid-row: 60 / 500;
+        grid-row: 80 / 540;
         grid-column: 1 / 5;
 
         @media (min-width: 650px) {
-            grid-row: 50 / 380;
+            grid-row: 80 / 410;
         }
 
         hr {
@@ -142,12 +172,12 @@
         }
 
         @media (min-width: $screen-m) {
-            grid-row: 50 / 400;
+            grid-row: 80 / 380;
             grid-column: 4 / 9;
         }
 
         @media (min-width: $screen-l) {
-            grid-row: 41 / 400;
+            grid-row: 88 / 400;
             grid-column: 6 / 11;
         }
     }
