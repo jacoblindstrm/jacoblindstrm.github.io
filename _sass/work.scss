@@ -155,7 +155,7 @@
 
     .content {
 
-        grid-row: 80 / 540;
+        grid-row: 80 / auto;
         grid-column: 1 / 5;
 
         @media (min-width: 650px) {
