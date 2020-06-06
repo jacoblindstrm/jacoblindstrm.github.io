@@ -22,7 +22,7 @@ permalink: /about/resume/
     <p>Building and testing prototypes. Exploring interactions and visual styles.</p>
     <h3>YouCruit</h3>
     <p>YouCruit redefines the way you hire. With the goal of converting jobseekers into awesome colleagues. Their recruitment suite helps you hire great people on your own terms.</p>
-    <h4>Web Designer</h4>
+    <h4>Interaction Designer</h4>
     <time datetime="2015-05">May</time><time datetime="2015-06"> - June 2015</time>
     <p>For a brief but exiting time I was helping out the team at Youcruit with interaction design and HTML/CSS development. Including a rework of their landing page, and mapping the backstage flow of a feature connecting companies to applicants, which turned out quite successful.</p>
 </section>    
