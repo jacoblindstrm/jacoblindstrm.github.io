@@ -8,12 +8,12 @@
 
     article .body {
         grid-column: 1 / 5;
-        grid-row-start: 16;
+        grid-row-start: 20;
     }
 
     article .picture-wrapper {
         grid-column: 2 / 4;
-        grid-row-start: 18;
+        grid-row-start: 22;
 
         @media (max-width: floor($screen-m - 1)) {
             grid-column: 1 / -1;
@@ -53,10 +53,10 @@
         padding: 50vw var(--spacing-m) var(--spacing-xl);
         color: var(--color-base);
         grid-column: 1 / end;
-        grid-row-start: 18;
+        grid-row-start: 22;
             -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
-        margin: 0 -1rem 0;
+        margin: var(--spacing-m) -1rem 0;
 
         @media (prefers-color-scheme: dark) { 
             background: linear-gradient(180deg, var(--darkcoral) -30%, var(--color-bg) 130%);
