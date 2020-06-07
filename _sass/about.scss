@@ -9,6 +9,7 @@
     article .body {
         grid-column: 1 / 5;
         grid-row-start: 28;
+        margin-top: var(--spacing-xl);
     }
 
     article .picture-wrapper {
@@ -217,9 +218,8 @@
         }
 
         article .body {
-            margin-top: 0;
             grid-column: 2 / 7;
-            grid-row-start: 25;
+            grid-row-start: 29;
         }
 
         article .picture-wrapper {
