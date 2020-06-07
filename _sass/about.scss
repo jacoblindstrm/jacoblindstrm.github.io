@@ -218,6 +218,7 @@
         }
 
         article .body {
+            margin-top: var(--spacing-xl);
             grid-column: 2 / 7;
             grid-row-start: 29;
         }
