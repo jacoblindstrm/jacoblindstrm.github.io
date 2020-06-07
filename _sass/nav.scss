@@ -37,6 +37,7 @@ body > header h1 {
     a:focus,
     a:active {
         box-shadow: none;
+        animation: none;
     }
 
     @media (max-width: floor($screen-m - 1)) {
@@ -78,7 +79,7 @@ body > header h1 {
     &:active::before,
     &:focus::before,
     &:hover::before {
-        animation: backgroundColorLoop 2s ease-in-out infinite;
+        animation: backgroundColorLoop 4s ease-in-out infinite;
     }
 }
 

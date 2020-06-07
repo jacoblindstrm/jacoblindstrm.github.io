@@ -140,7 +140,7 @@
     }
 
     svg {
-        grid-row-start: 36;
+        grid-row: 36 / 64;
         grid-column: 1 / 5;
         max-width: 100%;
         fill: var(--color-base);
@@ -176,7 +176,7 @@
 
         aside {
             grid-row-start: 28;
-            grid-column: 2 / 6 ;
+            grid-column: 2 / 6;
         }
 
         .summary {
@@ -185,8 +185,8 @@
         }
 
         svg {
-            grid-row-start: 34;
-            grid-column: 1 / -1;
+            grid-row: 34 / 64;
+            grid-column: 2 / -2;
         }
 
         .content {
@@ -213,8 +213,7 @@
         }
 
         svg {
-            grid-row-start: 28 / 64;
-            grid-column: 2 / -2;
+            grid-row: 28 / 64;
         }
     }
 }
