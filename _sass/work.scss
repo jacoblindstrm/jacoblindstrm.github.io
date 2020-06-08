@@ -359,15 +359,15 @@
 
             &:before {
                 width: 64.8vw;
-                height: 38rem;
+                height: 30rem;
                 top: 16rem;
-                left: -16.7vw;
+                left: -26.9vw;
             }
         }
 
         .summary {
             grid-column: 2 / 8;
-            grid-row: 34 / 50;            
+            grid-row: 20 / auto;            
         }
         
         h2 {
@@ -377,7 +377,7 @@
 
         aside {
             grid-column: 2 / 6;
-            grid-row: 22;
+            grid-row: 15 / auto;
         }
 
         iframe,
