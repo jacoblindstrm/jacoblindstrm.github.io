@@ -145,6 +145,10 @@
         max-width: 100%;
         fill: var(--color-base);
         z-index: -1;
+
+        path {
+            fill: var(--color-base);
+        }
     }
 
     .content {
@@ -154,11 +158,16 @@
 
         hr {
             border: 0;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTc3IiB2aWV3Qm94PSIwIDAgMTQgMTc3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICA8cGF0aCBkPSJNMTEuODE5IDE2OS4yMjdsMS4yNzQgMS4yNzQtNi4yNjEgNi4yNmgtLjU3MUwwIDE3MC41MDFsMS4yNzQtMS4yNzQgNC4zOTQgNC40MzdWMGgxLjczNXYxNzMuNjg2bDQuNDE2LTQuNDU5eiIgZmlsbD0iIzAwMCIvPgogICAgICAgICAgPC9zdmc+');
-            background-size: contain;
+                -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTc3IiB2aWV3Qm94PSIwIDAgMTQgMTc3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICA8cGF0aCBkPSJNMTEuODE5IDE2OS4yMjdsMS4yNzQgMS4yNzQtNi4yNjEgNi4yNmgtLjU3MUwwIDE3MC41MDFsMS4yNzQtMS4yNzQgNC4zOTQgNC40MzdWMGgxLjczNXYxNzMuNjg2bDQuNDE2LTQuNDU5eiIgZmlsbD0iIzAwMCIvPgogICAgICAgICAgPC9zdmc+');
+            mask-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTc3IiB2aWV3Qm94PSIwIDAgMTQgMTc3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICA8cGF0aCBkPSJNMTEuODE5IDE2OS4yMjdsMS4yNzQgMS4yNzQtNi4yNjEgNi4yNmgtLjU3MUwwIDE3MC41MDFsMS4yNzQtMS4yNzQgNC4zOTQgNC40MzdWMGgxLjczNXYxNzMuNjg2bDQuNDE2LTQuNDU5eiIgZmlsbD0iIzAwMCIvPgogICAgICAgICAgPC9zdmc+');
+                -webkit-mask-size: contain;
+            mask-size: contain;
+                -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
             height: 12rem;
-            background-repeat: no-repeat;
-            margin: 1rem 0 5rem;          
+           
+            margin: 1rem 0 5rem;
+            background: var(--color-base);      
         }
 
         @media (min-width: $screen-l) {
@@ -207,7 +216,7 @@
         }
 
         .summary {
-            grid-row-start: 26;
+            grid-row-start: 22;
             grid-column: 6 / 12;
             margin-top: 2rem;
         }
