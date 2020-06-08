@@ -2,7 +2,6 @@
 .case {
     min-height: 100vh;
     background: var(--pale-green);
-    max-width: 1440px;
     padding-bottom: var(--spacing-xl);
 
     h2, h1 {
@@ -152,7 +151,6 @@
     }
 
     .content {
-
         grid-row-start: 40;
         grid-column: 1 / 5;
 
@@ -173,6 +171,10 @@
         @media (min-width: $screen-l) {
             grid-row-start: 42;
             grid-column: 6 / 11;
+        }
+
+        @media (min-width: $screen-xl) {
+            grid-column: 7 / 11;
         }
     }
 
@@ -223,6 +225,18 @@
 
         svg {
             grid-row: 28 / 64;
+        }
+    }
+
+    @media (min-width: $screen-xl) {
+
+        .summary {
+            grid-column: 7 / 12;
+            grid-row-start: 28;
+        }
+
+        svg {
+            grid-column: 2 / 6;
         }
     }
 }
@@ -395,6 +409,20 @@
             grid-row: 10 / span 6;
             width: 47.5vw;
             height: 27.6vw;
+        }
+    }
+
+    @media (min-width: $screen-xl) {
+        .summary {
+            grid-column: 2 / 7;          
+        }
+
+        picture {
+
+            &:before {
+                width: 51.8vw;
+                height: 35rem;
+            }
         }
     }
 
