@@ -97,7 +97,7 @@
     
     .table-of-content {
         font-size: var(--scale-1);
-        grid-row: 30 / 500;
+        grid-row: 30 / auto;
         grid-column: 2 / 4;
         line-height: 2rem;
     }
