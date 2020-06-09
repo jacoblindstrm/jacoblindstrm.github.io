@@ -74,12 +74,7 @@ body > header h1 {
         background-repeat: no-repeat;
         margin-top: -0.5rem;
         border-radius: 100%;
-    }
-
-    &:active::before,
-    &:focus::before,
-    &:hover::before {
-        animation: backgroundColorLoop 4s ease-in-out infinite;
+        animation: morphBorders ease-in-out 5s alternate-reverse infinite;
     }
 }
 

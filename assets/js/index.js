@@ -49,7 +49,7 @@ document.addEventListener('swup:contentReplaced', event => {
     }
 
     function handleClick(event) {
-        for(var i = 0; i < 6; i++) {
+        for(var i = 0; i < 8; i++) {
             createElement(event);
         }
         
@@ -89,9 +89,11 @@ document.addEventListener('swup:contentReplaced', event => {
         const size = getRandomSize();
         const pos = getMousePosition(event);
 
+        const limitSpread = (event.type === 'click' ? 150 : 40);
+        console.log(limitSpread);
         div.style.cssText = `background: var(${color}); border-radius: 100%; width: ${size}rem; height: ${size}rem; opacity: 0;`;
         div.classList.add(`cursor_sparks`);
-        div.style.transform = `translateX(${pos.pageX + randomIntFromInterval(1,40)}px) translateY(${pos.pageY - scrollYPos  + randomIntFromInterval(1,40)}px)`;
+        div.style.transform = `translateX(${pos.pageX + randomIntFromInterval(1,limitSpread)}px) translateY(${pos.pageY - scrollYPos  + randomIntFromInterval(1,limitSpread)}px)`;
 
         // append
         terrazzo.appendChild(div);
@@ -160,7 +162,7 @@ document.addEventListener('swup:contentReplaced', event => {
     }
 
     function getRandomSize() {
-        const sizes = ["0.8", "1", "1.2", "0.6"];
+        const sizes = ["0.8", "1", "1.4", "0.6"];
         return sizes[Math.floor(Math.random() * sizes.length)];
 
     }
