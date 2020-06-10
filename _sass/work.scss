@@ -448,16 +448,16 @@
         font-size: var(--scale2);
         font-weight: normal;
         grid-column: 1 / -1;
-        grid-row-start: 14;
+        grid-row-start: 16;
 
         &:nth-child(3) {
-            grid-row-start: 16;
-        }
-        &:nth-child(4) {
             grid-row-start: 18;
         }
-        &:nth-child(5) {
+        &:nth-child(4) {
             grid-row-start: 20;
+        }
+        &:nth-child(5) {
+            grid-row-start: 22;
         }
     }
 
