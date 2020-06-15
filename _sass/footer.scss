@@ -29,6 +29,7 @@ footer {
 main + footer {
   position: relative;
   padding-bottom: 8rem;
+  padding-top: 8rem;
 
   svg {
     position: absolute;
@@ -45,17 +46,24 @@ main + footer {
     }
   }
 
-  // svg:first-child {
-  //   top: -7rem;
-  //   bottom: auto;
-  //   height: 8rem;
+  svg:first-child {
+    top: 0;
+    bottom: auto;
+    transform: rotate(0);
 
-  //   path {
-  //     fill: var(--soft-green);
-  //   }
-  // }
+    path {
+      fill: var(--color-bg);
+    }
+  }
 }
 
+main[data-background-color="coral"] + footer svg:first-child path {
+  fill: var(--coral);
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--blue);
+  }
+}
 
 @media print {
   footer {
