@@ -5,6 +5,10 @@ footer {
 
   p {
     color: var(--midnight-green);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-base);
+    }
   }
 
   ul {
@@ -39,6 +43,7 @@ main + footer {
     display: block;
     transform: rotate(180deg);
     pointer-events: none;
+    width: 100%;
 
     path {
       fill: var(--vibrant-green);
@@ -62,6 +67,7 @@ main[data-background-color="coral"] + footer svg:first-child path {
   @media (prefers-color-scheme: dark) {
     background: var(--blue);
   }
+ 
 }
 
 @media print {
