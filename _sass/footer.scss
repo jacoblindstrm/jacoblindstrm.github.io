@@ -51,7 +51,7 @@ main + footer {
   }
 
   svg:first-child {
-    top: 0;
+    top: -1px;
     bottom: auto;
     transform: rotate(0);
 
