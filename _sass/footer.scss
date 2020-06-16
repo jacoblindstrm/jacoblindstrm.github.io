@@ -65,7 +65,7 @@ main[data-background-color="coral"] + footer svg:first-child path {
   fill: var(--coral);
 
   @media (prefers-color-scheme: dark) {
-    background: var(--blue);
+    fill: var(--blue);
   }
  
 }
