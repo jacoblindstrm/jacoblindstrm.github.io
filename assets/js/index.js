@@ -29,6 +29,8 @@ document.addEventListener('swup:contentReplaced', event => {
 
 (function() {
 
+    if (window.matchMedia('prefers-reduced-motion: reduced')) return;
+
     const terrazzo = document.getElementById('Terrazzo');
     const cursor = document.getElementById('Cursor');
     let scrollYPos = 0;
@@ -51,9 +53,7 @@ document.addEventListener('swup:contentReplaced', event => {
     function handleClick(event) {
         for(var i = 0; i < 8; i++) {
             createElement(event);
-        }
-        
-
+        }     
     }
 
     function getScrollYPosition() {
@@ -90,7 +90,7 @@ document.addEventListener('swup:contentReplaced', event => {
         const pos = getMousePosition(event);
 
         const limitSpread = (event.type === 'click' ? 150 : 40);
-        console.log(limitSpread);
+        
         div.style.cssText = `background: var(${color}); border-radius: 100%; width: ${size}rem; height: ${size}rem; opacity: 0;`;
         div.classList.add(`cursor_sparks`);
         div.style.transform = `translateX(${pos.pageX + randomIntFromInterval(1,limitSpread)}px) translateY(${pos.pageY - scrollYPos  + randomIntFromInterval(1,limitSpread)}px)`;
