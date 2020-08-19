@@ -17,7 +17,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I have designed and built websites and products for the past ten years. Now I’m leading UX and Product Design at&nbsp;Hoodin.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacoblindstrom.design" # the base hostname & protocol for your site, e.g. http://example.com
-figma: "https://figma.com/@jacoblindstrom"
+figma: "https://figma.com/@jacoblindstrm"
 dribbble:  "https://dribbble.com/jacoblindstrom"
 github: "https://github.com/jacoblindstrm"
 ixd: "https://www.interaction-design.org/jacob-svensson"
