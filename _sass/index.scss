@@ -76,6 +76,8 @@
             z-index: -1;
             overflow: hidden;
             position: relative;
+            display: none;
+            visibility: hidden;
 
             img {
                 max-width: none;
@@ -96,6 +98,8 @@
             }
 
             @media (min-width: $screen-l) {
+                display: none;
+                visibility: hidden;
                 grid-column: 8 / -3;
                 grid-row: 4 / span 10;
             }
