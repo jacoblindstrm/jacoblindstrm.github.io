@@ -29,7 +29,7 @@ document.addEventListener('swup:contentReplaced', event => {
 
 (function() {
 
-    if (window.matchMedia('prefers-reduced-motion: reduced')) return;
+    if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 
     const terrazzo = document.getElementById('Terrazzo');
     const cursor = document.getElementById('Cursor');

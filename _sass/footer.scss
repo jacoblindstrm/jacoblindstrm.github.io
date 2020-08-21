@@ -1,10 +1,8 @@
 footer {
   text-align: center;
   margin-top: var(--spacing-xl);
-  background: var(--soft-green);
 
   p {
-    color: var(--midnight-green);
 
     @media (prefers-color-scheme: dark) {
       color: var(--color-base);
@@ -49,25 +47,6 @@ main + footer {
       fill: var(--vibrant-green);
     }
   }
-
-  svg:first-child {
-    top: -1px;
-    bottom: auto;
-    transform: rotate(0);
-
-    path {
-      fill: var(--color-bg);
-    }
-  }
-}
-
-main[data-background-color="coral"] + footer svg:first-child path {
-  fill: var(--coral);
-
-  @media (prefers-color-scheme: dark) {
-    fill: var(--blue);
-  }
- 
 }
 
 @media print {
