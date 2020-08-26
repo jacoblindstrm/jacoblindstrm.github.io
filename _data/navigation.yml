@@ -4,3 +4,5 @@
 #   url: /blog/
 - text: Information
   url: /about/
+- text: CV
+  url: /about/resume/
