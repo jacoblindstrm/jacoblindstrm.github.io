@@ -1,4 +1,8 @@
 <header role="banner">
-    <h1><a href="/" title="">{{ site.fname }}</a></h1>
+    <ul class="social">
+        <p>{{ site.email }}</p>
+        <li class="twitter"><a href="{{ site.twitter }}" rel="author noopener">Twitter</a></li>
+        <li class="dribbble"><a href="{{ site.dribbble }}" rel="author noopener">Dribbble</a></li>
+    </ul>
     {% include nav.html %}
 </header>
