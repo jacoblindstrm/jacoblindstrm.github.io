@@ -2,10 +2,10 @@
     <ul class="social">
         <p>{{ site.email }}</p>
         <li><a href="{{ site.twitter }}" title="Twitter profile" rel="author noopener">
-            <img src="{{ "/assets/icons/twitter.svg" | relative_path" }} alt="Twitter logotype"/>    
+            <img src="{{ "./assets/icons/twitter.svg" | relative_path" }} alt="Twitter logotype"/>    
         </a></li>
-        <li class="dribbble"><a href="{{ site.dribbble }}" title="Dribbble profile" rel="author noopener">
-            <img src="{{ "/assets/icons/dribbble.svg" | relative_path" }} alt="Dribbble logotype"/> 
+        <li><a href="{{ site.dribbble }}" title="Dribbble profile" rel="author noopener">
+            <img src="{{ "./assets/icons/dribbble.svg" | relative_path" }} alt="Dribbble logotype"/> 
         </a></li>
     </ul>
     {% include nav.html %}
