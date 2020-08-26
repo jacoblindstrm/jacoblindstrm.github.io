@@ -4,45 +4,9 @@ hideHeader: true
 background: green
 ---
 <section class="jacoblindstrom_introduction grid">
-    <p>Hello, I'm Jacob and I'm an</p>
-    <h1>Interaction Designer</h1>
+    <h1>Hello/<sup>I'm</sup>Jacob/<sub>an</sub>Interaction Designer/</h1>
     <h2>
         {{ site.description }}
         <a href="{{ "/about/resume" | relative_url }}" alt="">My resume in detail →</a>
     </h2>
-    <picture>
-        <source 
-            type="image/webp"
-            srcset="{{ "/assets/images/profile/profile@1x.webp" | relative_url }} 896w,
-                {{ "/assets/images/profile/profile@2x.webp" | relative_url }} 1792w"
-            sizes="(min-width: 700px) 35vw,
-                (min-width: 1280px) 500px,
-                100vw"
-            src="{{ "/assets/images/profile/profile@1x.webp" | relative_url }}" 
-        />
-        <source 
-            type="image/jpg" 
-            srcset="{{ "/assets/images/profile/profile.jpg" | relative_url }} 375w,
-                {{ "/assets/images/profile/profile@1x.jpg" | relative_url }} 896w,
-                {{ "/assets/images/profile/profile@2x.jpg" | relative_url }} 1792w,
-                {{ "/assets/images/profile/profile@3x.jpg" | relative_url }} 2688w" 
-            sizes="(min-width: 700px) 35vw,
-                (min-width: 1280px) 500px,
-                100vw"
-            src="{{ "/assets/images/profile/profile@1x.jpg" | relative_url }}" 
-        />
-        <img 
-            itemprop="image"
-            srcset="{{ "/assets/images/profile/profile.jpg" | relative_url }} 375w,
-                    {{ "/assets/images/profile/profile@1x.jpg" | relative_url }} 896w,
-                    {{ "/assets/images/profile/profile@2x.jpg" | relative_url }} 1792w,
-                    {{ "/assets/images/profile/profile@3x.jpg" | relative_url }} 2688w"
-            sizes="(min-width: 700px) 35vw,
-                    (min-width: 1280px) 500px,
-                    100vw"
-            src="{{ "/assets/images/profile/profile@1x.jpg" | relative_url }}" 
-            alt="a photo of myself" 
-            loading="eager"
-        />
-    </picture>
 </section>
