@@ -5,9 +5,14 @@ article.resume {
     display: flex;
     flex-flow: column;
     margin-top: 15rem;
+    
+    @media screen {
+        display: none;
+        visibility: hidden;
+    }
 
     @media screen and (min-width: 768px) {
-          margin-top: 11.5rem;
+        margin-top: 11.5rem;
     }
 
     @media screen and (min-width: 1400px) {
