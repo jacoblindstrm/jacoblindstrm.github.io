@@ -111,16 +111,18 @@ nav {
         z-index: var(--z-menu);
         overflow: hidden;
         
-        ul {
+        ul,
+        nav {
             width: 100%;            
             text-align: center; 
         }
         
-        nav {
+        nav ul {
             flex-flow: column;
             align-items: center;
             line-height: 3;
-            margin: 0 0 2rem;   
+            margin: 0 0 2rem;
+            
         }
         
         .social {            
