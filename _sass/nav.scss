@@ -75,6 +75,7 @@ nav {
         right: 1rem;
         border: 0;
         background: transparent;
+        z-index: var(--z-index-nav-button);
         
         &::before,
         &::after {
@@ -102,6 +103,7 @@ nav {
         flex-flow: column-reverse;
         justify-content: center; 
         transition: all ease-in-out 300ms;
+        z-index: var(--z-menu);
         
         ul {
             width: 100%;            
