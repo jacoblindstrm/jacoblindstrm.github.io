@@ -1,46 +1,41 @@
-const toggleMenuBtn = document.getElementById('toggle-menu');
-const menu = document.querySelector('header[role="banner"]');
-
-document.addEventListener('swup:enabled', event => {
-    //import Swup from 'swup';
-    const swup = new Swup(); // only this line when included with script tag
-
-});
-
-document.addEventListener('swup:contentReplaced', event => {
-
-    window.scrollTo(0,0);
-    if (menu.classList.has('open') {
-        toggleMenu();
-    }
-
-    // 1. remove active class from all links
-    const navLi = document.querySelectorAll('header nav li');
-    const navLinks = document.querySelectorAll('header nav li a');
-
-    //navLi.classList.remove('active');
-    navLi.forEach(li => {
-        if (li.classList.contains('active')) {
-            li.classList.remove('active');
-        }
-    });
-
-    // 2. go through all links and add active class if href == current URL
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === window.location.pathname) {
-            link.closest('li').classList.add('active');
-        }
-    });
-});
-
-function toggleMenu() {
-    menu.classList.toggle('open');
-}
-
 (function() {
+    const toggleMenuBtn = document.getElementById('toggle-menu');
+    const menu = document.querySelector('header[role="banner"]');
     
     toggleMenuBtn.addEventListener('click', event => {
         toggleMenu();
+    });
+
+    document.addEventListener('swup:enabled', event => {
+        //import Swup from 'swup';
+        const swup = new Swup(); // only this line when included with script tag
+
+    });
+
+    document.addEventListener('swup:contentReplaced', event => {
+
+        window.scrollTo(0,0);
+        if (menu.classList.has('open') {
+            toggleMenu();
+        }
+
+        // 1. remove active class from all links
+        const navLi = document.querySelectorAll('header nav li');
+        const navLinks = document.querySelectorAll('header nav li a');
+
+        //navLi.classList.remove('active');
+        navLi.forEach(li => {
+            if (li.classList.contains('active')) {
+                li.classList.remove('active');
+            }
+        });
+
+        // 2. go through all links and add active class if href == current URL
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === window.location.pathname) {
+                link.closest('li').classList.add('active');
+            }
+        });
     });
 
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
@@ -68,6 +63,10 @@ function toggleMenu() {
         for(var i = 0; i < 8; i++) {
             createElement(event);
         }     
+    }
+    
+    function toggleMenu() {
+        menu.classList.toggle('open');
     }
 
     function getScrollYPosition() {
