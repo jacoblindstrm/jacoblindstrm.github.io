@@ -69,6 +69,28 @@ nav {
 }
 
 @media screen and (max-width: floor($screen-m - 1)) {
+    #toggle-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: 0;
+        background: transparent;
+        
+        &::before,
+        &::after {
+            content: "";
+            height: 2px;
+            width: 2rem;
+            background: var(--color-base);
+            display: block;
+        }
+        
+        &::after {
+            width: 1.5rem;
+            margin-top: 1rem;
+        }
+    }
+    
     body > header.fake {
         position: absolute;
         top: 0;
