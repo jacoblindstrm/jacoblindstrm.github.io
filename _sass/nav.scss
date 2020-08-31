@@ -88,6 +88,8 @@ nav {
             position: absolute;
             top: 0;
             right: 0;
+            width: 2.5rem;
+            height: 2.5rem;
         }
         
         &::after {
@@ -110,6 +112,8 @@ nav {
         transition: all ease-in-out 300ms;
         z-index: var(--z-menu);
         overflow: hidden;
+        border-bottom: 1px solid: black;
+        color: white;
         
         ul,
         nav {
