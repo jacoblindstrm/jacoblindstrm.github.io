@@ -28,6 +28,14 @@ document.addEventListener('swup:contentReplaced', event => {
 });
 
 (function() {
+    
+    const toggleMenuBtn = document.getElementById('toggle-menu');
+    const menu = document.querySelector('header[role="banner"]');
+    
+    toggleMenuBtn.addEventListener('click', event => {
+        menu.classList.toggle('open');
+    });
+    
 
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 
