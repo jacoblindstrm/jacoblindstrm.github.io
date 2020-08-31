@@ -84,6 +84,8 @@ nav {
         text-indent: -1000px;
         display: block;
         visibility: visible;
+        width: 2.5rem;
+        height: 2.5rem;
         
         &::before,
         &::after {
@@ -95,8 +97,6 @@ nav {
             position: absolute;
             top: 0;
             right: 0;
-            width: 2.5rem;
-            height: 2.5rem;
             transition: all ease-in-out 300ms;
         }
         
