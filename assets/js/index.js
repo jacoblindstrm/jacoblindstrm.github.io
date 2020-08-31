@@ -1,9 +1,5 @@
 const toggleMenuBtn = document.getElementById('toggle-menu');
 const menu = document.querySelector('header[role="banner"]');
-    
-toggleMenuBtn.addEventListener('click', event => {
-    toggleMenu();
-});
 
 document.addEventListener('swup:enabled', event => {
     //import Swup from 'swup';
@@ -42,6 +38,10 @@ function toggleMenu() {
 }
 
 (function() {
+    
+    toggleMenuBtn.addEventListener('click', event => {
+        toggleMenu();
+    });
 
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 
