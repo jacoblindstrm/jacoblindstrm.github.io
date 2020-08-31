@@ -46,6 +46,8 @@
     let globalAcceleration = 0;
     var prevEvent, currentEvent;
     var prevSpeed = 0;
+    
+    cursor.style = "display: none";
 
     document.documentElement.onmousemove=function(event){
         currentEvent=event;
