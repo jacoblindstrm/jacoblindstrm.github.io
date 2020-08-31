@@ -68,6 +68,11 @@ nav {
     }
 }
 
+#toggle-menu {
+    display: none;
+    visibility: hidden;
+}
+
 @media screen and (max-width: floor($screen-m - 1)) {
     #toggle-menu {
         position: absolute;
@@ -77,6 +82,8 @@ nav {
         background: transparent;
         z-index: var(--z-index-nav-button);
         text-indent: -1000px;
+        display: block;
+        visibility: visible;
         
         &::before,
         &::after {
