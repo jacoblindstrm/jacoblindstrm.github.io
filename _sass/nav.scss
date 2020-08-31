@@ -152,6 +152,18 @@ nav {
         width: 100vw;
         height: 100vh;
         border-radius: 0;
+        
+        + #toggle-menu {
+            &::before {
+                transform: rotate(45deg);
+            }
+            
+            &::after {
+                transform: rotate(-45deg); 
+                margin-top: 0;
+                width: 2rem;
+            }
+        }
     }
 }
 
