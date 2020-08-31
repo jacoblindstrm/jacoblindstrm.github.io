@@ -1,3 +1,10 @@
+const toggleMenuBtn = document.getElementById('toggle-menu');
+const menu = document.querySelector('header[role="banner"]');
+    
+toggleMenuBtn.addEventListener('click', event => {
+    toggleMenu();
+});
+
 document.addEventListener('swup:enabled', event => {
     //import Swup from 'swup';
     const swup = new Swup(); // only this line when included with script tag
@@ -7,6 +14,9 @@ document.addEventListener('swup:enabled', event => {
 document.addEventListener('swup:contentReplaced', event => {
 
     window.scrollTo(0,0);
+    if (menu.classList.has('open') {
+        toggleMenu();
+    }
 
     // 1. remove active class from all links
     const navLi = document.querySelectorAll('header nav li');
@@ -27,15 +37,11 @@ document.addEventListener('swup:contentReplaced', event => {
     });
 });
 
+function toggleMenu() {
+    menu.classList.toggle('open');
+}
+
 (function() {
-    
-    const toggleMenuBtn = document.getElementById('toggle-menu');
-    const menu = document.querySelector('header[role="banner"]');
-    
-    toggleMenuBtn.addEventListener('click', event => {
-        menu.classList.toggle('open');
-    });
-    
 
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 
