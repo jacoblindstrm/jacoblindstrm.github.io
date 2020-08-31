@@ -15,7 +15,7 @@
     document.addEventListener('swup:contentReplaced', event => {
 
         window.scrollTo(0,0);
-        if (menu.classList.has('open')) {
+        if (menu.classList.contains('open')) {
             toggleMenu();
         }
 
