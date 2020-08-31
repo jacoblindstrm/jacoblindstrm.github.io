@@ -76,6 +76,7 @@ nav {
         border: 0;
         background: transparent;
         z-index: var(--z-index-nav-button);
+        text-indent: -1000px;
         
         &::before,
         &::after {
