@@ -84,11 +84,14 @@ nav {
             width: 2rem;
             background: var(--color-base);
             display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         
         &::after {
             width: 1.5rem;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
         }
     }
     
