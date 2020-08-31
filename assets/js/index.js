@@ -37,7 +37,14 @@
             }
         });
     });
+    
+    function toggleMenu() {
+        menu.classList.toggle('open');
+    }
 
+    
+    
+    
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 
     const terrazzo = document.getElementById('Terrazzo');
@@ -65,10 +72,6 @@
         for(var i = 0; i < 8; i++) {
             createElement(event);
         }     
-    }
-    
-    function toggleMenu() {
-        menu.classList.toggle('open');
     }
 
     function getScrollYPosition() {
