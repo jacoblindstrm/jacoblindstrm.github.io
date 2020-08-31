@@ -122,6 +122,8 @@ nav {
         overflow: hidden;
         border-bottom: 1px solid black;
         color: white;
+        box-sizing: border-box;
+        padding: 0;
         
         ul,
         nav {
