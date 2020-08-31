@@ -107,6 +107,7 @@ nav {
         justify-content: center; 
         transition: all ease-in-out 300ms;
         z-index: var(--z-menu);
+        overflow: hidden;
         
         ul {
             width: 100%;            
