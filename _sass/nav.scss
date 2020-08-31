@@ -117,7 +117,7 @@ nav {
         background: black;
         flex-flow: column-reverse;
         justify-content: center; 
-        transition: all ease-in-out 300ms;
+        transition: all ease-in-out 0.3s;
         z-index: var(--z-menu);
         overflow: hidden;
         border-bottom: 1px solid black;
@@ -128,7 +128,9 @@ nav {
         ul,
         nav {
             width: 100%;            
-            text-align: center; 
+            text-align: center;
+            opacity: 0;
+            transition: opacity ease-in 0.2s 0.3s;
         }
         
         nav ul {
@@ -162,7 +164,12 @@ nav {
         width: 100vw;
         height: 100vh;
         border-radius: 0;
-        
+
+        ul,
+        nav {
+           opacity: 1;
+        }
+      
         + #toggle-menu {
             &::before {
                 transform: rotate(45deg);
