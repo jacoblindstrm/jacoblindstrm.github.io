@@ -7,7 +7,7 @@
         h1 {
             font-family: var(--font-heading);
             font-weight: normal;
-            font-size: 22vw;
+            font-size: 18vw;
             text-align: justify;
             margin: 0;
             grid-column: 1 / -1;
@@ -22,9 +22,6 @@
 
             sub {
                 vertical-align: baseline;
-            }
-
-            @media (max-width: 375px) {
             }
 
             @media (min-width: $screen-m) {
@@ -49,12 +46,8 @@
                 margin-top: 1em;
             }
 
-            grid-column: 2 / -1;
+            grid-column: 1 / -1;
             grid-row: 11;
-
-            @media (max-width: 375px) {
-                grid-column: 1 / -1;
-            }
 
             @media (min-width: $screen-m) {
                 grid-column: 4 / span 3;
