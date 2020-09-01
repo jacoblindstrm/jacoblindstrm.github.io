@@ -130,8 +130,8 @@ nav {
             width: 100%;            
             text-align: center;
             opacity: 0;
-            transform: translateY(-150px);
-            transition: opacity ease-in 0.2s 0.3s, transform  ease-in-out 0.2s 0.35s;
+            transform: translateY(-50px);
+            transition: opacity ease-in 0.2s 0.3s, transform ease-in-out 0.25s 0.25s;
         }
         
         nav ul {
