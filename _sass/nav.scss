@@ -92,7 +92,7 @@ nav {
             content: "";
             height: 2px;
             width: 2rem;
-            background: var(--color-base);
+            background: var(--pale-green);
             display: block;
             position: absolute;
             top: 0;
@@ -121,7 +121,7 @@ nav {
         z-index: var(--z-menu);
         overflow: hidden;
         border-bottom: 1px solid black;
-        color: white;
+        color: var(--pale-green);
         box-sizing: border-box;
         padding: 0;
         
