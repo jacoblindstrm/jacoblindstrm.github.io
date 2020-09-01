@@ -92,7 +92,7 @@ nav {
             content: "";
             height: 2px;
             width: 2rem;
-            background: var(--pale-green);
+            background: var(--color-base);
             display: block;
             position: absolute;
             top: 0;
@@ -175,8 +175,10 @@ nav {
         }
       
         + #toggle-menu {
-            &::before {
+            &::before,
+            &::after {
                 transform: rotate(45deg);
+                background: var(--pale-green);
             }
             
             &::after {
