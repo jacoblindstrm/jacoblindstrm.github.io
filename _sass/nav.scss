@@ -165,6 +165,10 @@ nav {
         height: 100vh;
         border-radius: 0;
 
+        svg path {
+           fill: var(--pale-green);
+        }
+
         ul,
         nav {
            opacity: 1;
