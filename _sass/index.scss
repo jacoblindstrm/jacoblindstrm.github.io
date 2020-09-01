@@ -23,6 +23,7 @@
             sub {
                 vertical-align: baseline;
                 line-break: anywhere;
+                white-space: break-spaces;
             }
 
             @media (min-width: $screen-m) {
