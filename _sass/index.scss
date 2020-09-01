@@ -12,7 +12,7 @@
             margin: 0;
             grid-column: 1 / -1;
             grid-row: 10;
-            margin-top: 18vh;
+            margin-top: clamp(var(--spacing-xl), 16vh, 12rem);
 
             sup,
             sub {
