@@ -14,7 +14,7 @@ workTitle: Product Designer
 phone: +4673 53 55 921
 excerpt_separator: <!--more-->
 description: >- # this means to ignore newlines until "baseurl:"
-  I have ten years experience designing and building digital things. Now I’m leading UX and Product Design at&nbsp;Hoodin.
+  For ten years I’ve made digital things beautiful and accessible for humans. Now I’m leading UX and Product Design at&nbsp;Hoodin.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jacoblindstrom.design" # the base hostname & protocol for your site, e.g. http://example.com
 figma: "https://figma.com/@jacoblindstrm"
