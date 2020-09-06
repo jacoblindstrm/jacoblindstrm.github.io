@@ -75,7 +75,7 @@ nav {
 
 @media screen and (hover) and (min-width: $screen-m) { 
     body > header {
-        opacity: 0.5;
+        opacity: 0.75;
         transition: opacity ease-in 0.3s;
         
         &:hover,
