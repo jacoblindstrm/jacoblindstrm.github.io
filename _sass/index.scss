@@ -41,9 +41,11 @@
             margin: 0;
             font-size: var(--font-default);
             font-weight: normal;
+            display: flex;
+            flex-flow: column;
 
             a {
-                display: block;
+                align-self: flex-start
                 margin-top: 1em;
             }
 
