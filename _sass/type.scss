@@ -13,7 +13,8 @@ article.post h1 {
 }
 
 h2 {
-    font-size: var(--font-l);
+    font-size: var(--font-l);    
+    margin-bottom: var(--spacing-s);
 }
 h3 {
     font-size: var(--font-default);
@@ -22,7 +23,6 @@ h4 {
     font-size: var(--font-default);
 }
 
-h2,
 h3,
 h4 {
     margin-top: var(--spacing-l);
