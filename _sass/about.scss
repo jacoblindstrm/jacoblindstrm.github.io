@@ -1,17 +1,12 @@
 .bio {
     
     h1 {
-        font-family: var(--font-heading);
-        font-weight: normal;
-        font-size: 18vw;
         margin: 0;
         grid-column: 1 / -1;
         grid-row: 10;
-        margin-top: clamp(var(--spacing-xl), 20vh, 12rem);   
         
         @media (min-width: $screen-m) {
             grid-column: 2 / -2;
-            font-size: 9.1vw;
         }
 
         @media (min-width: $screen-l) {
