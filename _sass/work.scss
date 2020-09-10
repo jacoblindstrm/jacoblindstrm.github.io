@@ -426,6 +426,10 @@
     h1, h2 {
         grid-column: 1 / -1;
         grid-row: 5;
+        
+        sup {
+            font-size: 40%;
+        }
     }
     
     h2 {
