@@ -427,6 +427,10 @@
         grid-column: 1 / -1;
         grid-row: 5;
     }
+    
+    h2 {
+        grid-row: auto;
+    }
 }
 
 .topography::before {
