@@ -422,6 +422,11 @@
 .other {
     margin: 0 0 -4rem;
     background: var(--color-bg);
+    
+    h1, h2 {
+        grid-column: 1 / -1;
+        grid-row: 5;
+    }
 }
 
 .topography::before {
