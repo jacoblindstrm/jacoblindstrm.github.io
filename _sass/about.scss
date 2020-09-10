@@ -66,35 +66,10 @@
     }
     
     h2 {
-        @media (max-width: floor($screen-l - 1)) {
-            display: flex;
-            font-size: var(--scale2);
-            transform: rotate(-90deg);
-            margin-right: -2rem;
-        }
-
         .www {
-            @media (max-width: floor($screen-l - 1)) {
-                position: relative;
-                transform: rotate(90deg);
-                line-height: 1.3;
-            }
-
             &::before,
             &::after {
                 content: "w";
-
-                @media (max-width: floor($screen-l - 1)) {
-                    position: absolute;
-                    top: 0;
-                    left: -0.8em;
-                }
-            }
-
-            &::after {
-                @media (max-width: floor($screen-l - 1)) {
-                    left: -1.6em;
-                }
             }
         }
     }
@@ -102,16 +77,11 @@
     ul.external-links li {
         line-height: 2;
         transition: 0.15s ease;
-
-        @media (max-width: floor($screen-m - 1)) {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            max-width: 55vw;
-        }
     }
     
-    ul.external-links li:hover {
+    ul.external-links li:hover,
+    ul.external-links li:active,
+    ul.external-links li:focus {
         margin-left: -0.5rem;
     }    
 }
