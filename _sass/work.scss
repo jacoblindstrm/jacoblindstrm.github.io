@@ -138,18 +138,6 @@
         }
     }
 
-    svg {
-        grid-row: 36 / 64;
-        grid-column: 1 / 5;
-        max-width: 100%;
-        fill: var(--color-base);
-        z-index: -1;
-
-        path {
-            fill: var(--color-base);
-        }
-    }
-
     .content {
         grid-row-start: 40;
         grid-column: 1 / 5;
@@ -195,7 +183,7 @@
             grid-column: 4 / 9;
         }
 
-        svg {
+        figure {
             grid-row: 34 / 64;
             grid-column: 2 / -2;
         }
@@ -223,7 +211,7 @@
             margin-top: 2rem;
         }
 
-        svg {
+        figure {
             grid-row: 28 / 64;
         }
     }
@@ -235,7 +223,7 @@
             grid-row-start: 28;
         }
 
-        svg {
+        figure {
             grid-column: 2 / 6;
         }
     }
