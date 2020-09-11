@@ -4,14 +4,14 @@ background: green
 ---
 <article class="grid post" itemscope itemtype="http://schema.org/Article">
     <h1 itemprop="headline">{{ page.title }}</h1>
-    <div class="body" itemprop="articleBody">
-        <time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-        {{ page.content }}
-        <ul class="keywords" itemprop="keywords">
+    <time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    <ul class="keywords" itemprop="keywords">
             {% for tag in page.tags  %}
             <li>{{ tag }}</li>
             {% endfor %}
         </ul>
+    <div class="body" itemprop="articleBody">        
+        {{ page.content }}        
     </div>
     <footer>Any thoughts or comments? Please, <a href="{{ site.twitter }}" alt="" rel="noopener">tweet</a> or send me an <a href="mailto:conversation@jacoblindstrom.design?subject={{ page.title }}" alt="">email</a>!</footer>
 </article>
