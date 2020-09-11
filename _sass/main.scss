@@ -11,7 +11,8 @@ h1 {
     }
 }
 
-article .body {
+article .body,
+article footer {
     grid-column: 1 / -1;
     grid-row-start: 12;
 
@@ -24,8 +25,8 @@ article .body {
     }
 }
 
-.keywords,
-time {
+article .keywords,
+article time {
     grid-column: 1 / -1;
     grid-row-start: 11;
 
@@ -75,6 +76,10 @@ article .picture-wrapper {
     @media (min-width: $screen-l) {
         margin-top: 5rem;
     }
+}
+
+article footer {
+    grid-row-start: 14;
 }
 
 ::selection {
