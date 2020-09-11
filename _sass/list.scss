@@ -9,6 +9,15 @@
   ol {
     font-variant-numeric: tabular-nums;
   }
+  
+  p + ul li {
+     margin-top: 0.5em;   
+
+     em {
+       font-size: var(--scale-1);
+       display: block;
+     }
+  }
 
   .fullpage-list {
     width: 100vw;
