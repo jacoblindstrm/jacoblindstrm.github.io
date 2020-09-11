@@ -7,18 +7,7 @@ permalink: /reading
 ---
 <h1>What I'm reading.</h1>
 
-<h2>Books</h2>
-<p>A selection of the books on design and related subjects I've read.</p>
-
-<ul>
-{% for book in site.data.books %}
-    <li>
-        <a href="{{ book.url }}" title="">{{ book.title }}</a> <em> by {{ book.author }}</em>
-    </li>
-{% endfor %}
-</ul>
-
-<h2>Articles, pappers, and talks</h2>
+<h2>Bookmarks</h2>
 <p>This is a growing selection of content I can recommend reading.</p>
 
 <ul>
@@ -29,27 +18,13 @@ permalink: /reading
 {% endfor %}
 </ul>
 
-<!---
+<h2>Books</h2>
+<p>A selection of books on design and related subjects I've read and appreciate.</p>
 
-- Nothing to see here
-- “The stories we tell and the stories other tell us shape our work, our beliefs, and that’s what shapes us, as designers and people.”
-
-- An interview with Facebook product designer Debashish Paul
-- A Framework for Making Better Product Decisions
-- How to write case studies for your online portfolio
-
-- 📺 Complexity & Experience in Design
-
-- A Modern Typographic Scale
-- 5 online graphic design exercises to boost your skills
-- Smoother & sharper shadows with layered box-shadows
-- The best tips for giving formal feedback
-
-
-
-- Insanely fast redesign exercises
-- A checklist to improve your product UI
-- The Art of Emotion — Norman’s 3 Levels of Emotional Design
-- Designing teamwork: How our customers helped shape the future of Slack
-
---->
+<ul>
+{% for book in site.data.books %}
+    <li>
+        <a href="{{ book.url }}" title="">{{ book.title }}</a> <em> by {{ book.author }}</em>
+    </li>
+{% endfor %}
+</ul>
