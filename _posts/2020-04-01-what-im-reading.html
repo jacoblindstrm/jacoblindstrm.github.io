@@ -7,24 +7,26 @@ permalink: /reading
 ---
 <h1>What I'm reading.</h1>
 
-<h2>Bookmarks</h2>
-<p>This is a growing selection of content I can recommend reading.</p>
+<div class="article-wrapper">
+    <h2>Bookmarks</h2>
+    <p>This is a growing selection of content I can recommend reading.</p>
 
-<ul>
-{% for article in site.data.articles %}
-    <li>
-        <a href="{{ article.url }}" title="">{{ article.title }}</a> <em> by {{ article.author }}</em>
-    </li>
-{% endfor %}
-</ul>
+    <ul>
+    {% for article in site.data.articles %}
+        <li>
+            <a href="{{ article.url }}" title="">{{ article.title }}</a> <em> by {{ article.author }}</em>
+        </li>
+    {% endfor %}
+    </ul>
 
-<h2>Books</h2>
-<p>A selection of books on design and related subjects I've read and appreciate.</p>
+    <h2>Books</h2>
+    <p>A selection of books on design and related subjects I've read and appreciate.</p>
 
-<ul>
-{% for book in site.data.books %}
-    <li>
-        <a href="{{ book.url }}" title="">{{ book.title }}</a> <em> by {{ book.author }}</em>
-    </li>
-{% endfor %}
-</ul>
+    <ul>
+    {% for book in site.data.books %}
+        <li>
+            <a href="{{ book.url }}" title="">{{ book.title }}</a> <em> by {{ book.author }}</em>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
