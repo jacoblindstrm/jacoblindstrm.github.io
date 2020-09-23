@@ -293,19 +293,25 @@
         top: 0;
     }
     
-    body > header .home {
-        height: 1rem;
-        width: 1rem;
-        border-radius: 100%;
-        border: 1px solid var(--color-base);
-        text-indent: -1000px;
+    body > header .logotype {
+        height: 2rem;   
     }
     
-    body > header .home:hover,
-    body > header .home:active,
-    body > header .home:focus {
-        animation: morphBorders 3s ease-in-out infinite alternate both;   
+    body > header .logotype svg {
+        height: 180%;  
     }
+    
+    body > header .logotype svg path {
+        fill: var(--color-main);  
+    }
+    
+    body > header a:hover,
+    body > header a:focus,
+    body > header a:active {
+        box-shadow: none;
+        animation: none;
+    }
+    
     
     footer {
         padding-bottom: 2rem;
