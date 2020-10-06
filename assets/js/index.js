@@ -1,6 +1,6 @@
 (function() {
     const toggleMenuBtn = document.getElementById('toggle-menu');
-    const menu = document.querySelector('header[role="banner"]');
+    const menu = document.querySelector('body > header');
     
     toggleMenuBtn.addEventListener('click', event => {
         toggleMenu();
