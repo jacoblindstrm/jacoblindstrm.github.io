@@ -1,5 +1,4 @@
-nav ul,
-body > header {
+body > footer {
     display: flex;
     align-items: flex-start;
 
@@ -8,7 +7,7 @@ body > header {
     }
 }
 
-body > header {
+body > footer {
     justify-content: space-between;
 
     a,
@@ -17,19 +16,22 @@ body > header {
     }
 }
 
-body > header,
+body > footer,
 body > header h1 {
     font-size: var(--scale0);
 }
 
 nav {
     ul {
+        display: flex;
         list-style: none;
         padding: 0;
         flex-flow: column;
-        align-items: flex-end;
-        line-height: 2;
+        align-items: center;
+        justify-content: center;
+        line-height: 3;
         margin: 0;
+        height: 100%;
 
         @media screen and (min-width: $screen-m) {
             flex-flow: row; 
@@ -74,8 +76,8 @@ nav {
 }
 
 @media screen and (hover) and (min-width: $screen-m) { 
-    body > header {
-        opacity: 0.75;
+    body > footer {
+        opacity: 0.85;
         transition: opacity ease-in 0.3s;
         
         &:hover,
@@ -85,114 +87,120 @@ nav {
    }
 }
 
-@media screen and (max-width: floor($screen-m - 1)) {
-    #toggle-menu {
-        position: absolute;
-        top: 2rem;
-        right: 1rem;
-        border: 0;
-        background: transparent;
-        z-index: var(--z-index-nav-button);
-        text-indent: -100000px;
+#toggle-menu {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    border: 0;
+    background: transparent;
+    z-index: var(--z-index-nav-button);
+    text-indent: -100000px;
+    display: block;
+    visibility: visible;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @media (min-width: $screen-l) {
+        right: 8.4vw;
+        top: 4rem;
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        height: 1px;
+        width: 2rem;
+        background: var(--color-base);
         display: block;
-        visibility: visible;
-        width: 2.5rem;
-        height: 2.5rem;
-        
-        &::before,
-        &::after {
-            content: "";
-            height: 2px;
-            width: 2rem;
-            background: var(--color-base);
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            transition: all ease-in-out 300ms;
-        }
-        
-        &::after {
-            width: 1.5rem;
-            margin-top: 0.5rem;
-        }
-    }
-    
-    body > header {
         position: absolute;
-        top: -1rem;
+        top: 0;
         right: 0;
-        left: 100vw;
-        width: 0px;
-        height: 100vh;
-        border-radius: 10% 0 0 10%/ 50% 0 0 50%;
-        background: black;
-        flex-flow: column-reverse;
-        justify-content: center; 
         transition: all ease-in-out 0.3s;
-        z-index: var(--z-menu);
-        overflow: hidden;
-        border-bottom: 1px solid black;
-        color: var(--pale-green);
-        box-sizing: border-box;
-        padding: 0;
-        
-        ul,
-        nav {
-            width: 100%;            
-            text-align: center;
-            opacity: 0;
-            transform: translateY(25px);
-            transition: opacity ease-in 0.2s 0.3s, transform ease-in-out 0.25s 0.25s;
-        }
-        
-        nav ul {
-            flex-flow: column;
-            align-items: center;
-            line-height: 3;
-            margin: 0 0 2rem;
-        }
-        
-        .home {
-            align-self: center;
-            order: 1;
-            margin-bottom: 6rem;
-        }
-        
-        .social {
-            display: block;
-            
-            p {
-                width: 100%;
-                text-align: center;
-                line-height: 3;
-            }
-            
-            li {
-                display: inline-flex;
-            }
-        }
+        cursor: pointer;
     }
     
-    body > header.open,
-    body > header:focus-within {
+    &::after {
+        width: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    &:hover::after {
+        width: 2rem;
+    }
+}
+
+body > header nav {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    left: 100vw;
+    width: 0px;
+    height: 100vh;
+    border-radius: 10% 0 0 10%/ 50% 0 0 50%;
+    background: black;
+    flex-flow: column-reverse;
+    justify-content: center; 
+    transition: all ease-in-out 0.3s;
+    z-index: var(--z-menu);
+    overflow: hidden;    
+    color: var(--pale-green);
+    box-sizing: border-box;
+    padding: 0;
+    opacity: 0;
+
+    @media (min-width: $screen-m) {
+        background: transparent;
+        transition: opacity ease-in-out 0.3s;
+        color: var(--color-base);
+
+        ul {
+            height: 2rem;
+        }
+    }
+
+    @media (min-width: $screen-l) {
+        margin-top: 2rem;
+    }
+}
+
+body > header.open {
+    nav,
+    nav:focus-within {
         bottom: 0;
         right: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
         border-radius: 0;
+        opacity: 1;
 
-        svg path {
-           fill: var(--pale-green);
+        .logotype svg {
+            fill: var(--pale-green);
         }
 
-        ul,
-        nav {
-           opacity: 1;
-           transform: translateY(0);
+        ul {
+            opacity: 1;
+            transform: translateY(0);
         }
-      
+
+        @media (min-width: $screen-m) {
+            bottom: auto;
+            right: 5rem;
+            left: auto;
+            width: auto;
+            height: auto;
+
+            ul {
+                height: 4rem;
+            }
+        }
+
+        @media (min-width: $screen-l) {
+            right: calc(5rem + 8.4vw);
+        }
+    }
+
+    @media (max-width: floor($screen-m - 1)) {
         + #toggle-menu {
             &::before,
             &::after {
@@ -204,6 +212,15 @@ nav {
                 transform: rotate(-45deg); 
                 margin-top: 0;
                 width: 2rem;
+            }
+        }
+    }
+
+    @media (min-width: $screen-m) {
+        + #toggle-menu {
+            &::before,
+            &::after {
+                margin-top: 0.05rem;
             }
         }
     }
