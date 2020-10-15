@@ -2,12 +2,16 @@
 version: 2.1
 # Use a package of configuration called an orb.
 orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
+  lighthouse-check: foo-software/lighthouse-check@0.0.8
 # Orchestrate or schedule a set of jobs
+jobs:
+  test: 
+    executor: lighthouse-check/default
+    steps:
+      - lighthouse-check/audit:
+          urls: https://jacoblindstrom.design,https://jacoblindstrom.design/work,https://jacoblindstrom.design/about,https://jacoblindstrom.design/resume
 workflows:
   # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
+    test:
     jobs:
-      - welcome/run
+      - test
