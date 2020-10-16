@@ -8,6 +8,8 @@ jobs:
     executor: lighthouse-check/default
     steps:
       - lighthouse-check/audit:
+          prCommentAccessToken: $LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN
+          prCommentUrl: https://api.github.com/repos/jacoblindstrm/jacoblindstrm.github.io/pulls/${CIRCLE_PULL_REQUEST##*/}/reviews
           urls: https://jacoblindstrom.design,https://jacoblindstrom.design/about,https://jacoblindstrom.design/work,https://jacoblindstrom.design/resume
 
 workflows:
