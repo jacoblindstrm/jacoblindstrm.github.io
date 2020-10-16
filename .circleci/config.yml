@@ -11,7 +11,6 @@ jobs:
           urls: https://jacoblindstrom.design,https://jacoblindstrom.design/about,https://jacoblindstrom.design/work,https://jacoblindstrom.design/about/resume
       - lighthouse-check/validate-status:
           minAccessibilityScore: "95"
-          minBestPracticesScore: "90"
           minPerformanceScore: "90"
           minSeoScore: "85"
 
