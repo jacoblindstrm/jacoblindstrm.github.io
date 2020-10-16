@@ -12,8 +12,8 @@ jobs:
       - lighthouse-check/validate-status:
           minAccessibilityScore: "95"
           minBestPracticesScore: "90"
-          minPerformanceScore: "95"
-          minSeoScore: "90"
+          minPerformanceScore: "90"
+          minSeoScore: "85"
 
 workflows:
   test:
