@@ -4,7 +4,7 @@ orbs:
   lighthouse-check: foo-software/lighthouse-check@0.0.8
 
 jobs:
-  test: 
+  audit: 
     executor: lighthouse-check/default
     steps:
       - lighthouse-check/audit:
@@ -13,4 +13,4 @@ jobs:
 workflows:
   test:
     jobs:
-      - Accessibility and Performance audit
+      - audit
