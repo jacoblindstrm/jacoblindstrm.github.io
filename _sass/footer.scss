@@ -18,33 +18,19 @@ footer {
   ul + p {
     margin-bottom: var(--spacing-s);
   }
+  
+  @media (max-width: $screen-m) {
+      nav {
+        display: none;
+        visibility: hidden;
+      }
+  }
 
   @media (min-width: $screen-m) {
     text-align: left;
 
     ul + p {
       margin-left: -2ch;
-    }
-  }
-}
-
-main + footer {
-  position: relative;
-  padding-bottom: 8rem;
-  padding-top: 8rem;
-
-  svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    transform: rotate(180deg);
-    pointer-events: none;
-    width: 100%;
-
-    path {
-      fill: var(--vibrant-green);
     }
   }
 }
