@@ -70,11 +70,6 @@ nav {
     }
 }
 
-#toggle-menu {
-    display: none;
-    visibility: hidden;
-}
-
 @media screen and (hover) and (min-width: $screen-m) { 
     body > footer {
         opacity: 0.85;
@@ -95,10 +90,9 @@ nav {
     background: transparent;
     z-index: var(--z-index-nav-button);
     text-indent: -100000px;
-    display: block;
-    visibility: visible;
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
 
     @media (min-width: $screen-l) {
         right: 8.4vw;
