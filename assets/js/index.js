@@ -40,10 +40,13 @@
     
     function toggleMenu() {
         menu.classList.toggle('open');
+        
+        if (menu.classList.contains('open') {
+            toggleMenuBtn.setAttribute('aria-expanded', 'true');
+        } else {
+            toggleMenuBtn.setAttribute('aria-expanded', 'false');
+        }
     }
-
-    
-    
     
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 
