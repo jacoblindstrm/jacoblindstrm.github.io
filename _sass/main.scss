@@ -83,16 +83,13 @@ article.grid footer {
 }
 
 ::selection {
-  background: var(--coral); /* WebKit/Blink Browsers */
+  background: var(--pale-lemon); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: var(--coral); /* Gecko Browsers */
+  background: var(--pale-lemon); /* Gecko Browsers */
 }
 
-:lang('ja') {
-  writing-mode: vertical-rl;
-}
 
 .shadow_dreamer {
   box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
