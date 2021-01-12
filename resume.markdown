@@ -6,6 +6,9 @@ permalink: /about/resume/
 ---
 <section>
     <h2>Work Highlights</h2>
+    <h3>Osynlig</h3>
+    <h4>UX Designer</h4>
+    <time datetime="2020-12">December 2020</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"> - current</time>
     <h3>Hoodin</h3>
     <time datetime="2013-11">November 2013</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"> - <time datetime="2020-11">November 2020</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"</time>
     <p>Hoodin is a SaaS company that offers solutions for monitoring and insights with automate digital content monitoring.</p>
