@@ -7,6 +7,7 @@ permalink: /about/resume/
 <section>
     <h2>Work Highlights</h2>
     <h3>Osynlig</h3>
+    <p>Osynlig is a design agency working at the full spectrum from strategy, research, design, to development.</p>
     <h4>UX Designer</h4>
     <time datetime="2020-12">December 2020</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"> - current</time>
     <h3>Hoodin</h3>
