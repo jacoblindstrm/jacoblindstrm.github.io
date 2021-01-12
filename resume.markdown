@@ -10,10 +10,10 @@ permalink: /about/resume/
     <h4>UX Designer</h4>
     <time datetime="2020-12">December 2020</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"> - current</time>
     <h3>Hoodin</h3>
-    <time datetime="2013-11">November 2013</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"> - <time datetime="2020-11">November 2020</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"</time>
+    <time datetime="2013-11">November 2013</time> <time datetime="2020-11"> - November 2020</time>
     <p>Hoodin is a SaaS company that offers solutions for monitoring and insights with automate digital content monitoring.</p>
     <h4>Product Designer</h4>
-    <time datetime="2017-01">January 2017</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"> - <time datetime="2020-11">November 2020</time><time datetime="{{ 'now' | date: '%Y-%m-%d %H:%M' }}"</time></time>
+    <time datetime="2017-01">January 2017</time><time datetime="2020-11"> - November 2020</time>
     <p>Build, test, and explore concepts and align them with business goals, user needs, and technical feasibility. Deliver detailed prototypes and design documentation to development along with copy. Analyze user behaviour and needs.</p>
     <p>Projects vary from small interactions to product wide redesigns.</p>
     <h4>Product Manager</h4>
