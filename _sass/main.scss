@@ -5,8 +5,7 @@ header {
 
     h2 {
         @media (max-width: $screen-m) {
-            transform: rotate(-90deg);
-            transform-origin: bottom right;
+            writing-mode: vertical-rl;
             margin-block-end: 0;
             margin-block-start: 0;
             white-space: nowrap;
