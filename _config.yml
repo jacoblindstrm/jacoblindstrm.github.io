@@ -1,14 +1,14 @@
 url: "https://jacoblindstrom.design" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
-title: "hello@jacoblindstrom.design" # the name of your site, e.g. ACME Corp.
+title: "its@jacoblindstrom.design" # the name of your site, e.g. ACME Corp.
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: hi@jacoblindstrom.design
-email: hi@jacoblindstrom.design
+title: its@jacoblindstrom.design
+email: its@jacoblindstrom.design
 fname: Jacob Lindström
 workTitle: Interaction Designer
 phone: +4673 53 55 921
