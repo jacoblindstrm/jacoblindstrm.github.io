@@ -63,12 +63,20 @@ main {
 footer {
     font-family: var(--font-heading);
 
-    ul {
+    ul, .external-links {
         padding-left: 0;
         list-style: none;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 1rem;
+
+        @media (min-width: $screen-m) {            
+            flex-direction: row;
+        }
+    }
+
+    .external-links {
+        flex-direction: row;
     }
 }
 
