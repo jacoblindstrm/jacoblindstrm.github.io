@@ -3,29 +3,17 @@
 
 // Screen sizes as Sass vars because native dont work.
 $screen-s: 375px;
-$screen-m: 768px;
+$screen-m: 60em;
 $screen-l: 1400px;
 $screen-xl: 1900px;
 $screen-xxl: 2600px;
 
 // Helpers
 @import "animations";
-@import "icons";
+@import "main";
 
 // Commons
-@import "main";
-@import "type";
-@import "nav";
-@import "footer";
-@import "button";
-@import "keywords";
 @import "print";
 
 // Pages
-@import "index";
-@import "work";
-@import "about";
-@import "blog";
-@import "post";
 @import "resume";
-@import "list";

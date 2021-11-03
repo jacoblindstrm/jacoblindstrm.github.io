@@ -1,16 +1,14 @@
 ---
-layout: list
+layout: default
 title: "What I'm reading"
 date: 2020-02-19 00:00:00 +0100   
 categories: list
+classes: flex-start
 permalink: /reading
 ---
-<h1>What I'm reading.</h1>
 
-<div class="body">
+<div class="bio">
     <h2>Bookmarks</h2>
-    <p>This is a growing selection of content I can recommend reading.</p>
-
     <ul>
     {% for article in site.data.articles %}
         <li>
@@ -18,10 +16,10 @@ permalink: /reading
         </li>
     {% endfor %}
     </ul>
+</div>
 
+<div class="bio books">
     <h2>Books</h2>
-    <p>A selection of books on design and related subjects I've read and appreciate.</p>
-
     <ul>
     {% for book in site.data.books %}
         <li>

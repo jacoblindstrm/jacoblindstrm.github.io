@@ -1,0 +1,168 @@
+
+<!doctype html>
+<html lang="en-EU" itemscope itemtype="http://schema.org/WebPage">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>hello@jacobsvensson.com</title>
+        <meta name="description" content="I'm a Malmö based designer who believe in design through iterative processes with users and prototypes.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <style>
+            :root {
+                --light: hsl(0, 73%, 97%);
+                --coral: hsl(0, 79%, 72%);
+                --dark: hsl(0, 33%, 7%);
+                --maxWidth: 550px;
+        
+                --line-height: 1.45;
+            }
+        
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --dark: hsl(0, 73%, 97%);
+                    --light: hsl(0, 32%, 14%);
+                }
+            }
+        
+            * {
+                line-height: var(--line-height);
+                margin-top: 0;
+                margin-bottom: var(--line-height);
+            }
+        
+            html,
+            body {
+                font-size: 112.5%;
+                margin: 0;
+                padding: 0;
+            }
+        
+            body {
+                font-family: "jaf-facitweb", "facitweb", helvetica, sans-serif;
+                background: var(--light);
+                color: var(--dark);
+                box-sizing: border-box;
+                padding: 0 1rem;
+                kerning: auto;
+            }
+
+            article {
+                margin-bottom: 10vh;
+                animation: show .75s ease-in-out;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                article {
+                    animation: none;
+                }
+            }
+
+            @media (min-width: 700px) {
+                body {
+                    padding: 0 2rem;
+                }
+            }
+        
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: var(--line-height);
+                max-width: var(--maxWidth);
+            }
+
+            p + p {
+                text-indent: 1rem;
+            }
+
+            @media (min-width: 768px) {
+                p + p {
+                    text-indent: 0;
+                    margin-top: 1rem;
+                }
+            }
+        
+            header {
+                margin-top: 45vh;
+                margin-bottom: 3rem;
+            }
+
+            @media (min-width: 768px) {
+                header {
+                    margin-bottom: 6rem;
+                }
+            }
+        
+            header h1 {
+                font-weight: 800;
+                font-size: 2.5rem;
+                letter-spacing: -0.04rem;
+                line-height: calc(var(--line-height) * 1);
+        
+                margin-top: calc(var(--line-height) * 3);
+                margin-bottom: 0;
+            }
+        
+            header h1::after {
+                content: ".";
+                color: var(--coral);
+            }
+        
+            header p {
+                font-weight: 700;
+            }
+        
+            @media (min-width: 700px) {
+                header h1 {
+                    font-size: 5rem;
+                }
+        
+                header p {
+                    font-size: 1.3rem;
+                }
+            }
+        
+            @media (min-width: 820px) {
+        
+                header h1 {
+                    font-size: 8rem;
+                }
+        
+                header p {
+                    font-size: 1.3rem;
+                }
+            }
+
+            @keyframes show {
+                0% {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(200px);
+                }
+                30% {
+                    visibility: visible;
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <article id="about">
+                <header class="introduction">
+                    <h1>Hi, i'm Jacob</h1>
+                    <p>Seems like you're offline! :/</p>
+                </header>
+            </article>
+        </main>
+        <link rel="stylesheet" href="https://use.typekit.net/hhb3mgk.css">
+        <script async src="/dist/main.js"></script>
+    </body>
+</html>

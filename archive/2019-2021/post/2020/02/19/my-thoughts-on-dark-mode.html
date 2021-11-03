@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="The past ten years I’ve made digital things beautiful and accessible for humans. Now I’m leading UX and Product Design at&nbsp;Hoodin.">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="hello@jacoblindstrom.design">
+<meta itemprop="description" content="The past ten years I’ve made digital things beautiful and accessible for humans. Now I’m leading UX and Product Design at&nbsp;Hoodin.">
+<meta itemprop="image" content="og-image.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://jacoblindstrom.design">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hello@jacoblindstrom.design">
+<meta property="og:description" content="The past ten years I’ve made digital things beautiful and accessible for humans. Now I’m leading UX and Product Design at&nbsp;Hoodin.">
+<meta property="og:image" content="og-image.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="hello@jacoblindstrom.design">
+<meta name="twitter:description" content="The past ten years I’ve made digital things beautiful and accessible for humans. Now I’m leading UX and Product Design at&nbsp;Hoodin.">
+<meta name="twitter:image" content="og-image.png">
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+
+    <title>My thoughts on designing for dark mode - hi@jacoblindstrom.design</title>
+    <style>
+
+    @font-face {
+        font-family: "Moderat";
+        src: url("/assets/fonts/Moderat-Regular.woff2") format("woff2");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Moderat";
+        src: url("/assets/fonts/Moderat-Bold.woff2") format("woff2");
+        font-weight: bold;
+    }    
+    @font-face {
+        font-family: "Casta";
+        src: url("/assets/fonts/Casta-Thin.woff2") format("woff2");
+    }
+
+    :root {
+        --font-default: clamp(18px, 1.4vw, 22px);
+        --font-s: 0.87rem;
+        --font-l: 1.4rem;
+        --font-line-height: 1.5;
+        --spacing-s: 0.2rem;
+        --spacing-m: 1rem;
+        --spacing-l: 2rem;
+        --spacing-xl: 4rem;
+        --spacing-max-width: 35rem;
+
+        /* --color-bg: #63696E;
+        --color-base: #EDE6E3;
+        --color-mid: #EDE6E3;
+        --color-dim: #72767e; */
+
+
+        --coral: hsl(5, 99%, 71%);
+        --soft-coral: hsl(5, 100%, 89%);   
+        --pale-coral: hsl(5, 100%, 98%);     
+        --darkcoral: hsl(5, 62%, 51%);
+        
+        --vibrant-green: hsl(183, 100%, 32%);
+        --midnight-green: hsl(183, 50%, 20%);
+        --soft-green: hsl(183, 23%, 80%);
+        --pale-green: hsl(183, 23%, 95%);
+
+        --lemon: hsl(52, 100%, 78%);
+        --soft-lemon: hsl(52, 100%, 85%);
+        --pale-lemon: hsl(52, 100%, 98%);
+
+        --blue: hsl(222, 100%, 32%);
+        --dark: hsl(0, 33%, 7%);
+
+        --pale: hsl(1, 100%, 89%);
+
+        --color-base: black;
+        --color-bg: var(--pale-green);
+
+        --padding-page-bottom: 10vh;
+        --button-padding: 0.2rem 0.5rem;
+        
+        --z-index-menu: 90;
+        --z-index-nav-button: 100;
+
+        /* Type scale */
+        --int: 1.333;
+        --scale0: 1.03rem;
+        --scale-1: calc(var(--scale0) / 1.125);
+        --scale-2: calc(var(--scale-1) / 1.125);
+        --scale1: calc(var(--scale0) * var(--int));
+        --scale2: calc(var(--scale1) * var(--int));
+        --scale3: calc(var(--scale2) * var(--int));
+        --scale4: calc(var(--scale3) * var(--int));
+        --scale5: calc(var(--scale4) * var(--int));
+        --line-height: 1.6;
+        --font: "Moderat",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+        --font-heading: "Casta", serif;
+        --text-GRAD: 400;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --color-base: var(--pale-green);
+            --color-bg: hsl(183, 23%, 5%);
+
+            --blue: hsl(222, 100%, 20%);
+            --pale: hsl(222, 100%, 32%);
+
+            --soft-green: var(--midnight-green);
+            --text-GRAD: 480;
+        }
+    }
+
+    @media (prefers-contrast: high) {
+        :root {
+            --color-bg: white;
+            --color-base: black
+        }
+    }
+
+    @media (prefers-contrast: high) and (prefers-color-scheme: dark){
+        :root {
+            --color-bg: black;
+            --color-base: white
+        }
+    }
+
+    @media print {
+        :root {
+            --color-bg: transparent;
+            --color-base: black;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html { font-size: 100%; }     /* 1rem = 16px */
+
+    @media screen and (min-width: 768px) {
+        :root {
+            --padding-page-bottom: 20vh;
+        }
+
+       html { font-size: 112.5%; } /* 1rem = 18px */
+    }
+
+    @media screen and (min-width: 1900px) {
+        html { font-size: 137.5%; } /* 1rem = 22px */
+    }
+
+    body {
+        background: var(--color-bg);
+        transition: background-color 0.25s ease;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: var(--color-base);
+        font-family: var(--font);
+        line-height: var(--line-height);
+        font-size: var(--font-default);
+        font-kerning: normal;
+        font-variant-ligatures: discretionary-ligatures;        
+        font-variation-settings: "GRAD" var(--text-GRAD);
+        /* font-variant-numeric: diagonal-fractions tabular-nums; */
+
+        --cursor-stroke: var(--color-base);
+        --cursor-size: 3rem;
+        --cursor-position: -1.5rem;
+        --cursor-stroke-width: 2px;
+    }    
+
+    @media (any-pointer: fine) {
+        .cursor {
+            pointer-events: none;
+            background: transparent;
+            border: var(--cursor-stroke-width) solid var(--cursor-stroke);
+            border-radius: 100%;
+            height: var(--cursor-size);
+            width: var(--cursor-size);
+            position: fixed;
+            top: var(--cursor-position);
+            left: var(--cursor-position);
+            z-index: 10;
+            opacity: 0;
+            transition: transform ease 0.25s, opacity ease 0.25s;
+            transform: scale(0);           
+            transform-origin: center;
+            animation: morphBorders 3s ease-in-out infinite alternate both;
+        }
+    }
+
+    .terrazzo {
+        pointer-events: none;
+        transform: scale(0);           
+        transform-origin: center;
+    }
+
+    main {
+        padding-top: 1px; /* hack */
+        height: 100%;
+        min-height: calc(100vh - 4rem);
+        z-index: 1;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, calc((100% - 4rem) / 4));
+        grid-auto-rows: fit-content(0.5rem);
+        padding: 0 1rem;
+        gap: 0.5rem 1rem;
+        max-width: 100vw;
+    }
+
+    .grid > * {
+        grid-row-end: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(8, calc((100% - 12rem) / 8));
+            gap: 0.5rem 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .grid {
+            grid-template-columns: repeat(12, calc((100% - 18rem) / 12));
+            padding: 0;
+        }
+    }
+
+    @media screen and (min-width: 2600px) {
+        .grid {
+            grid-template-columns: repeat(16, calc((100% - 24rem) / 16));
+        }
+    }
+
+    body > footer,
+    body > header {
+        z-index: 100;
+        width: 100%;
+        padding: 0 1rem 0.8rem;
+        margin: 1rem 0;
+    }
+
+    body > footer {
+        border-top: 1px solid var(--color-base);
+        padding: 1rem 1rem 0.8rem;
+    }
+    
+    body > header svg path,
+    body > footer svg path {
+        fill: var(--color-base); 
+    }
+    
+    body > header .social,
+    body > footer .social {
+        display: flex;
+        margin: 0;
+    }
+    
+    body > header .social p,
+    body > footer .social p {
+        margin: 0;
+    }
+    
+    body > header .social p,
+    body > header .social li,
+    body > footer .social p,
+    body > footer .social li {
+        margin-right: 1rem;
+    }
+    
+    body > header .social li::before,
+    body > footer .social li::before {
+        content: none;
+    }
+    
+    body > header .social svg,
+    body > footer .social svg {
+        height: 1rem;
+        width: auto;
+        max-width: 1.1rem;
+        vertical-align: middle;
+        transform-origin: center;
+    }
+    
+    body > header .social a svg,
+    body > footer .social a svg {
+        transition: all ease-in-out 0.15s;
+    }
+    
+    body > header .social a:hover svg,
+    body > header .social a:active svg,
+    body > header .social a:focus svg,
+    body > footer .social a:hover svg,
+    body > footer .social a:active svg,
+    body > footer .social a:focus svg {
+        transform: scale(1.15);
+    }
+
+
+    @media screen and (min-width: 1400px) {
+        body > header,
+        body > footer {
+            width: 100%;
+            padding: 2rem 8.4vw 0.8rem;
+        }
+
+        body > footer {
+            padding-top: 1rem;
+        }
+    }
+
+    body > header {
+        position: absolute;
+        top: 0;
+    }
+
+    body > footer {
+        margin-top: var(--spacing-xl);
+    }
+    
+    body > header .logotype svg,
+    body > footer .logotype svg {
+        height: 3rem;
+        fill: var(--color-base);
+    }
+
+    a,
+    a:visited {
+        box-shadow: inset 0 -0.1rem 0 transparent;
+        transition: all ease-in-out 0.15s;
+        text-decoration-color: var(--vibrant-green);
+        text-decoration-thickness: 0.15rem;
+        color: inherit;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+        color: var(--vibrant-green);
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+    h1 {        
+        margin-bottom: var(--spacing-m);
+    }
+
+    h1,
+    h2 {
+        margin-top: var(--spacing-xl);
+        line-height: 1.35;
+    }
+    
+    article > h1 {
+        font-family: var(--font-heading);
+        font-weight: normal;
+        font-size: 18vw;
+        margin: 0;
+        margin-top: clamp(var(--spacing-xl), 20vh, 12rem); 
+    }
+    
+    @media (min-width: 768px) {
+         article > h1 {        
+            font-size: 9.1vw;
+        }
+    }  
+
+    .transition-fade {
+       opacity: 1;
+       transition: opacity 0.25s ease-in, background-color 0.3s ease-in-out;
+    }
+
+    .transition-up {
+        transform: translateY(0);
+        transition: transform 0.6s ease-out;
+        animation: appearUp 0.6 ease-out;
+    }
+
+    .ani-from-right {
+        transform: translateX(0);
+        transition: transform 0.6s ease-out;
+    }
+
+    .ani-scale-1 {
+        transform: scale(1);
+        transition: transform 0.3s ease-out;
+        animation: appearUp 0.6 ease-out;
+    }
+
+    .ani-scale-2 {
+        transform: scale(1);
+        transition: transform 0.3s 0.25s ease-out;
+    }
+    
+    .is-animating .transition-up {  
+        transform: translateY(20vh);
+    }
+
+    .is-animating .ani-from-right {  
+        transform: translateX(40vw);
+    }
+
+    .is-animating.is-leaving .transition-up {
+        transform: translateY(40vh);
+    }
+
+    .is-animating.is-leaving .ani-from-right {  
+        transform: translateX(60vw);
+    }
+
+
+    .is-animating .transition-fade {        
+        opacity: 0;
+    }
+
+    .is-animating.is-leaving .transition-fade {
+        opacity: 0;
+    }
+
+    .is-animating .ani-scale-1,
+    .is-animating .ani-scale-2 {        
+        transform: scale(0.5);
+    }
+
+    .is-animating.is-leaving .ani-scale-1,
+    .is-animating.is-leaving .ani-scale-2 {
+        transform: scale(0.2);
+    }
+
+    header h1,
+    header {
+        animation: freeze 0.75s linear;
+    }
+
+    .bio aside {
+        animation: invert 0.75s 0.15s linear;
+    }
+
+    @keyframes appearUp {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20vh);
+        }
+
+        30% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes freeze {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes scale {
+        0% {
+            transform: scale(0.4);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes invert {
+        0% {
+            transform: translateY(-20vh);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes anchorPulse {
+        0% {
+            box-shadow: inset 0 -0.3rem 0 var(--coral);
+        }
+
+        100% {
+            box-shadow: inset 0 -0.4rem 0 var(--coral);
+        }
+    }
+
+</style>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <main id="swup" class="transition-fade" >    
+        <article class="grid post" itemscope itemtype="http://schema.org/Article">
+    <h1 itemprop="headline">My thoughts on designing for dark mode</h1>
+    <time itemprop="datePublished" datetime="2020-02-19 00:00:00 +0100">February 19, 2020</time>
+    <ul class="keywords" itemprop="keywords">
+            
+            <li>visual design</li>
+            
+            <li>ui</li>
+            
+            <li>css</li>
+            
+        </ul>
+    <div class="body" itemprop="articleBody">        
+        <p>Right now I do most my reading and writing on my phone in bed at night when the rest of the family is sleeping. This make me really appreciate dark mode and Safari Reader Mode which I gave a dark palette and use on all sites not providing a dark alternative. But what should one consider when designing for dark mode? I’ll cover a few things such as color and type here. I’m also touching on high contrast modes.</p>
+
+<h2 id="context">Context</h2>
+<p>What’s your light mode context? Does your light mode follow any guidelines, such as Apples <a href="https://developer.apple.com/design/human-interface-guidelines/">Human Interface Guidelines</a> or Googles <a href="https://material.io/design/">Material Design</a>? It’s probably a good idea to follow suite for your dark mode.</p>
+
+<p>If you’re designing for a website or an app by following any internal or brand guidelines I believe it’s a good idea to design a dark alternative to those guidelines. Is it possible to have a dark version of your light palette and keep the same emotion? Remember that not all colors work very well as a tinted black. Be creative!</p>
+
+<p>And always always keep contrast and accessibility in mind. Use tools as <a href="https://www.getstark.co">Stark</a> to make sure all your users can access your content and that you comply with the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a> guidelines.</p>
+
+<p>Other services, such as Netflix, already have a dark UI to fit their context - should they provide a light mode?</p>
+
+<!--more-->
+
+<h2 id="type">Type</h2>
+<p>I find bolder fonts slightly easier to read on a dark background. Variable fonts can be effective when designing for dark palettes. It’s possible to use <em>grad</em> to thicken the font without causing the text to reflow. However, I’ve only found a limited number of fonts supporting this today, one is Apples system font San Francisco. You could use this technique to increase the contrast in high contrast mode too (Microsoft Edge only at the time of writing).</p>
+
+<p><img src="/assets/posts/darkmode-GRAD.png" alt="darkmode-GRAD" class="center" /></p>
+
+<p>The image above shows Apples San Fransisco in light mode with <em>grad</em> 400 and dark mode with <em>grad</em> 480.</p>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Edit_fonts">Firefox has a great tool</a> which let you inspect the font and make changes to it in real time.</p>
+
+<h2 id="colors">Colors</h2>
+<p>We never have full control over color. Color shift with ambient sensors, night shift, screens and the physical environment. Black might not be 100% black.</p>
+
+<p>And should your 100% black (RGB 0) actually be 95% black (RGB 5)? Maybe, Vidit Bhargava suggests in his <a href="https://medium.com/lookup-design/designing-a-dark-theme-for-oled-iphones-e13cdfea7ffe">Designing a Dark Theme for OLED iPhones</a>.</p>
+
+<h3 id="depth-or-elevation">Depth or elevation</h3>
+<p><img src="/assets/posts/spotify.jpeg" alt="spotify" class="right" />
+In dark mode the darkest color should be at the bottom, and each new layer is brighter. We move from dark to light.</p>
+
+<p>Spotify’s iOS app is a great example of using colors to increase the depth of the UI. They use a gradient or image at the top that turns to black when information is presented. The navigation and controls is a dark grey which make them appear above the rest of the UI. The control panel makes this even clearer with a top border in lighter grey (which also indicate the tracks progression).</p>
+
+<h2 id="contrast">Contrast</h2>
+<p>As I mentioned above, make sure all of your modes have enough contrast to make your content accessible to all. However, some user might require or prefer higher contrast.</p>
+
+<p>Maybe <a href="https://drafts.csswg.org/mediaqueries-5/#prefers-contrast">prefers-contrast</a> could be that black and white color scheme many argue for that dark mode is? The (currently) experimental media query has three different values, including color scheme preferences. I think we could combine <em><a href="https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme">prefers-color-scheme</a></em> and <em>prefers-contrast</em> media queries instead.</p>
+
+<p>Soon we’ll might be able to adjust our contrast and colors based on the ambient light. <a href="https://drafts.csswg.org/mediaqueries-5/#descdef-media-light-level">Light-level</a> is in media queries 5.</p>
+
+<h2 id="implementing-on-the-web">Implementing on the web</h2>
+<p>Implementing dark mode on the web is pretty easy, especially if you have a rigid system and are using CSS custom properties. Warp your mode specific styles inside the <em>prefers-color-scheme</em> media query. The media query takes three values:</p>
+
+<ul>
+  <li>no-preference</li>
+  <li>light</li>
+  <li>dark</li>
+</ul>
+
+<p>The same goes for <em>prefers-contrast</em>. Warp your styles with <em>prefers-contrast</em> media query. It has three values:</p>
+
+<ul>
+  <li>no-preference</li>
+  <li>high</li>
+  <li>low</li>
+</ul>
+
+<p>And <em>light-level</em> also has three values:</p>
+
+<ul>
+  <li>normall</li>
+  <li>dim</li>
+  <li>washed</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--color-bg</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="py">--color</span><span class="p">:</span> <span class="no">darkblue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--color-bg</span><span class="p">:</span> <span class="no">darkblue</span><span class="p">;</span>
+    <span class="py">--color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-contrast</span><span class="p">:</span> <span class="nb">high</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--color-bg</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="py">--color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="nt">You</span> <span class="nt">could</span> <span class="nt">propably</span> <span class="nt">do</span> <span class="nt">this</span><span class="o">:</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">)</span> <span class="n">and</span> <span class="p">(</span><span class="n">prefers-contrast</span><span class="p">:</span> <span class="nb">high</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nd">:root</span> <span class="p">{</span>
+    <span class="py">--color-bg</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+    <span class="py">--color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h2 id="into-the-dark">Into the dark</h2>
+<p>The following resources are worth diving into.</p>
+
+<p>🎧 <a href="https://spec.fm/podcasts/design-details/310206">Design Details: 317: Designing for Dark Mode</a></p>
+
+<p>📄 <a href="https://www.uxmatters.com/mt/archives/2020/01/dark-isnt-just-a-mode.php">UX Matters: Dark Isn’t Just a Mode</a></p>
+
+<p>📃 <a href="https://24ways.org/2019/an-introduction-to-variable-fonts/">24ways: An Introduction to Variable Fonts</a></p>
+        
+    </div>
+    <footer>Any thoughts or comments? Please, <a href="https://twitter.com/jacoblindstr_m" alt="" rel="noopener">tweet</a> or send me an <a href="mailto:conversation@jacoblindstrom.design?subject=My thoughts on designing for dark mode" alt="">email</a>!</footer>
+</article>
+
+
+    </main>
+    <header>
+    <a class="home" href="/" title="Back home">
+        <div class="logotype">
+  <svg viewBox="0 0 210 243" xmlns="http://www.w3.org/2000/svg">
+    <path d="M207.013.95c-.582.55-1.715 2.435-2.517 4.19-1.572 3.434-8.599 23.391-8.6 24.42 0 .343-2.073 6.694-4.607 14.115-5.029 14.724-14.1 41.93-17.18 51.521-1.067 3.326-2.361 6.52-2.874 7.1-1.058 1.194-6.064 3.594-7.498 3.594-.521 0-1.125.212-1.342.47-.524.624-8.923 1.307-8.916.726.003-.245.388-1.908.856-3.695.468-1.786.96-5.08 1.093-7.32.227-3.813.161-4.282-1.038-7.359-1.689-4.338-3.073-5.429-6.587-5.191-4.844.326-8.222 4.682-8.293 10.691-.031 2.68-.203 3.306-1.369 4.997-.734 1.064-1.822 3.125-2.417 4.581-.713 1.741-1.526 2.913-2.377 3.426-.712.429-2.233 1.544-3.381 2.479-1.61 1.311-2.952 1.886-5.865 2.514-4.388.948-6.281.672-7.682-1.12-.812-1.04-.985-1.744-.915-3.726.107-2.994 1.423-6.813 2.94-8.532 2.354-2.668 5.083-3.6 5.083-1.738 0 1.013 1.997 2.8 3.128 2.8 2.165 0 3.124-5.57 1.411-8.187-1.52-2.321-2.944-2.895-5.808-2.341-4.309.833-7.424 4.061-9.621 9.967a260.095 260.095 0 01-1.537 4.059c-.742 1.819-6.393 4.045-12.166 4.791-1.851.24-3.689-1.279-3.689-3.049 0-.65-.163-1.304-.362-1.452-.2-.148-.477-.958-.617-1.8-.192-1.151-.623-1.717-1.734-2.274-1.35-.678-1.631-.66-3.23.196-.963.516-2.536 1.704-3.495 2.638-2.966 2.892-6.481 5.767-8.654 7.079-2.522 1.521-5.272 2.479-5.686 1.981-.49-.588 1.224-4.654 3.103-7.36.954-1.374 1.856-2.564 2.003-2.644.147-.08 1.239-1.016 2.425-2.08 2.89-2.59 7.534-5.295 10.833-6.308 2.576-.792 6.294-.782 7.96.02.882.426 2.03-.974 2.03-2.478 0-1.507-1.704-3.942-3.323-4.747-.816-.406-2.47-.547-4.688-.399-2.863.19-3.976.538-6.755 2.11-1.83 1.036-4.544 2.853-6.03 4.04-2.482 1.977-7.738 8.017-9.175 10.541-.33.578-1.723 1.906-3.095 2.948-1.373 1.043-3.367 2.863-4.432 4.045-3.766 4.18-18.172 14.943-18.868 14.096-.07-.085.353-1.504.94-3.153 1.015-2.854 3.172-9.887 5.363-17.49.555-1.924.956-4.285.892-5.247-.1-1.51-.277-1.771-1.297-1.912-1.573-.216-2.564.942-4.2 4.91-.736 1.787-1.563 3.698-1.836 4.248-.273.549-2.323 6.229-4.554 12.621-4.479 12.83-4.432 12.753-9.233 15.095a137.3 137.3 0 00-4.367 2.245c-1.144.62-3.917 1.892-6.162 2.824-2.245.932-4.678 2.291-5.407 3.019-1.297 1.295-1.323 1.404-1.248 5.214.043 2.139.35 4.804.683 5.922 1.695 5.688 2.231 23.31.973 32.015-.918 6.352-2.843 14.241-7.68 31.482C2.148 229.958 0 238.81 0 241.135c0 1.388 1.39 2.26 2.69 1.686.888-.391 1.28-1.446 4.187-11.252 2.19-7.387 8.823-28.774 11.649-37.56 1.04-3.233 2.461-7.228 3.159-8.876.697-1.649 2.01-5.255 2.92-8.014 1.7-5.163 3.466-10.136 5.153-14.511.753-1.953 6.28-17.943 10.374-30.012.354-1.042 1.428-2.199 3.38-3.639a358.337 358.337 0 005.774-4.371c1.601-1.242 3.549-2.602 4.327-3.02 1.68-.904 8.268-6.151 10.689-8.514 1.822-1.777 2.245-1.988 2.245-1.116 0 1.557 1.503 4.128 2.792 4.774 1.26.633 1.703.596 4.399-.367 4.927-1.761 9.177-4.68 12.53-8.606 2.03-2.378 3.956-3.499 4.714-2.742.286.284.52.727.52.983 0 .864 2.277 3.949 3.708 5.025 2.763 2.076 7.265 2.047 11.042-.073.923-.518 2.375-1.086 3.226-1.262 1.485-.307 1.573-.244 2.203 1.568.831 2.388 2.072 3.989 4.025 5.193 2.606 1.606 9.981 1.135 11.98-.764.344-.326 1.467-.996 2.496-1.491 1.766-.847 3.63-1.806 4.214-2.168.144-.09.381.405.525 1.099.435 2.083 2.663 4.713 4.496 5.305 3.49 1.13 6.984-.492 10.218-4.744l2.112-2.777 4.087.562c3.813.525 4.253.49 6.582-.524 4.236-1.844 8.177-2.97 7.954-2.272-.108.339-.588 2.138-1.066 3.999-.78 3.035-.806 3.5-.255 4.511.434.796.544 1.848.373 3.582-.793 8.045 5.687 8.804 14.766 1.729 3.008-2.344 6.902-7.386 8.299-10.747.894-2.151 1.079-2.31 3.322-2.848 6.213-1.489 9.305-3.147 8.562-4.591-.113-.219-2.346-.399-4.963-.399h-4.759v-2.024c0-4.55-2.317-6.973-6.655-6.958-3.491.012-5.573 1.153-8.752 4.796-1.362 1.562-2.477 2.679-2.477 2.484 0-.891 10.996-33.32 12.09-35.657.677-1.446 1.771-4.262 2.431-6.26.66-1.995 2.045-5.76 3.077-8.364 3.716-9.38 12.393-35.068 14.385-42.587 1.375-5.192 1.546-6.863.86-8.405-.549-1.231-1.266-1.222-2.595.034zM55.185 64.553c-.574 1.177-1.174 2.976-1.334 3.998-.16 1.023-.472 1.86-.695 1.86-.222 0-.328.274-.234.61.093.337-.073 1.175-.37 1.862-.61 1.41-.394 1.69 1.725 2.226 1.194.303 1.302.183 2.496-2.779.886-2.2 1.578-3.247 2.391-3.617.629-.286 1.144-.893 1.144-1.347 0-.694-3.355-4.951-3.903-4.951-.097 0-.647.962-1.22 2.138zm95.238 25.718c.814 2.34.588 7.646-.499 11.746-.889 3.353-1.437 3.559-3.397 1.277-1.55-1.805-1.723-2.699-.606-3.126.989-.377 2.39-2.223 2.739-3.608.195-.771.001-1.39-.667-2.139-.775-.867-1.255-.996-2.721-.732-1.991.36-2.157.032-1.159-2.285.868-2.017 2.204-3.004 4.067-3.004 1.447 0 1.652.171 2.243 1.871zm40.215 9.614c.196.228.224 1.576.061 2.994-.228 1.994-.498 2.672-1.188 2.987-5.806 2.646-8.26 3.743-9.835 4.397-1.029.426-2.199 1.114-2.599 1.527-2.402 2.479 2.031-5.1 4.953-8.47 2.732-3.15 4.943-4.494 6.796-4.133.801.157 1.617.471 1.812.698zM143.46 106.6c.52.664 1.488 1.479 2.152 1.809.663.33 1.207.775 1.207.988 0 .572-4.013 2.989-4.963 2.989-1.613 0-1.796-2.92-.385-6.121.513-1.163.864-1.105 1.989.335zm43.703 6.161c-4.097 6.313-9.188 10.618-12.557 10.619-3.313.001-2.317-2.129 3.074-6.578 3.894-3.215 6.317-4.708 8.235-5.078 2.111-.408 2.16-.368 1.248 1.037zM32.285 136.997c-.472 2.153-13.958 42.097-13.96 41.352-.003-.412.183-1.725.412-2.918.865-4.507-.663-20.809-2.623-27.983-.617-2.257-.75-3.419-.458-3.977.228-.433 2.647-1.715 5.376-2.847 2.73-1.132 5.43-2.366 6.003-2.742 1.157-.762 4.059-1.924 4.931-1.975.386-.023.487.324.32 1.09z"/>
+  </svg>
+</div>
+
+    </a>
+    
+    <nav>
+    <ul>
+        
+        <li>
+            <a href="/work/" title="" rel="prefetch">Work</a>
+        </li>
+        
+        <li>
+            <a href="/about/" title="" rel="prefetch">Information</a>
+        </li>
+        
+        <li>
+            <a href="/about/resume/" title="" rel="prefetch">CV</a>
+        </li>
+        
+    </ul>
+</nav>
+
+</header>
+<button aria-expanded="false" id="toggle-menu" type="button">Toggle Navigation</button>
+
+    <footer>
+    <ul class="social">
+    <li>hi@jacoblindstrom.design</li>
+    <li><a href="https://twitter.com/jacoblindstr_m" title="Twitter profile" rel="author noopener">
+        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.66 14.812c6.793 0 10.508-5.627 10.508-10.507 0-.16 0-.319-.01-.478A7.515 7.515 0 0018 1.916a7.404 7.404 0 01-2.121.582A3.706 3.706 0 0017.502.454a7.4 7.4 0 01-2.345.896 3.697 3.697 0 00-6.293 3.37A10.484 10.484 0 011.254.86a3.696 3.696 0 001.142 4.93A3.665 3.665 0 01.72 5.328v.047a3.694 3.694 0 002.963 3.62 3.689 3.689 0 01-1.668.063 3.697 3.697 0 003.45 2.565A7.41 7.41 0 010 13.153a10.455 10.455 0 005.66 1.656" fill="#F9FBFB"/>
+        </svg>    
+    </a></li>
+    <li><a href="https://dribbble.com/jacoblindstrom" title="Dribbble profile" rel="author noopener">
+        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9 .5c-4.969 0-9 4.031-9 9s4.031 9 9 9c4.959 0 9-4.031 9-9s-4.041-9-9-9zm5.945 4.148a7.66 7.66 0 011.738 4.784c-.255-.049-2.793-.566-5.35-.244-.059-.127-.107-.263-.166-.4-.16-.376-.329-.747-.508-1.114 2.831-1.15 4.12-2.81 4.286-3.025zM9 1.828a7.67 7.67 0 015.095 1.932c-.136.195-1.298 1.747-4.03 2.773-1.26-2.314-2.656-4.207-2.87-4.5A7.816 7.816 0 019 1.828zm-3.27.721A48.538 48.538 0 018.58 6.99c-3.592.957-6.764.938-7.106.938A7.725 7.725 0 015.73 2.549zM1.308 9.51v-.233c.332.01 4.06.058 7.897-1.094.224.43.43.869.624 1.308-.097.03-.205.058-.302.088-3.963 1.279-6.072 4.774-6.247 5.067A7.67 7.67 0 011.308 9.51zM9 17.193a7.638 7.638 0 01-4.715-1.62c.137-.284 1.699-3.29 6.033-4.803.02-.01.03-.01.049-.02a31.764 31.764 0 011.64 5.828A7.56 7.56 0 019 17.192zm4.285-1.318c-.078-.469-.488-2.714-1.494-5.476 2.412-.38 4.52.244 4.784.332a7.623 7.623 0 01-3.29 5.144z" fill="#F9FBFB"/>
+        </svg>        
+    </a></li>
+</ul>
+
+    <nav>
+    <ul>
+        
+        <li>
+            <a href="/work/" title="" rel="prefetch">Work</a>
+        </li>
+        
+        <li>
+            <a href="/about/" title="" rel="prefetch">Information</a>
+        </li>
+        
+        <li>
+            <a href="/about/resume/" title="" rel="prefetch">CV</a>
+        </li>
+        
+    </ul>
+</nav>
+
+</footer>
+
+    <div id="Cursor" class="cursor"></div>
+    <div id="Terrazzo"></div>
+    <script src="/assets/js/swup.js"></script> 
+    <script src="/assets/js/index.js"></script>
+    <!-- <script>
+      if (navigator.serviceWorker) {
+          navigator.serviceWorker.register('/serviceworker.js');
+      }
+    </script> -->
+    
+
+  </body>
+</html>

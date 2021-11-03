@@ -6,21 +6,18 @@
     {% include style.html %}
     <link rel="stylesheet" href="{{ "./assets/css/main.css" | relative_url }}">
   </head>
-  <body>
-    <main id="swup" class="transition-fade" {% if page.background %} data-background-color="{{ page.background }}"{% endif %}>    
-        {{ content }}
-    </main>
-    {% include header.html %}
-    {% include footer.html %}
+  <body> 
+    <main id="swup" class="transition-fade">  
+        {% include header.html %}     
+        <section {% if page.classes %} class="{{ page.classes }}"{% endif %}> 
+          {{ content }}
+          {% include footer.html %}
+        </section>  
+    </main>   
     <div id="Cursor" class="cursor"></div>
     <div id="Terrazzo"></div>
     <script src="{{ "./assets/js/swup.js" | relative_url }}"></script> 
     <script src="{{ "./assets/js/index.js" | relative_url }}"></script>
-    <!-- <script>
-      if (navigator.serviceWorker) {
-          navigator.serviceWorker.register('{{ "./serviceworker.js" | relative_url }}');
-      }
-    </script> -->
     {% include analytics.html %}
   </body>
 </html>

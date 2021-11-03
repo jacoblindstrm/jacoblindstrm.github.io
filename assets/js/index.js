@@ -1,11 +1,6 @@
 (function() {
-    const toggleMenuBtn = document.getElementById('toggle-menu');
     const menu = document.querySelector('body > header');
     
-    toggleMenuBtn.addEventListener('click', event => {
-        toggleMenu();
-    });
-
     document.addEventListener('swup:enabled', event => {
         //import Swup from 'swup';
         const swup = new Swup(); // only this line when included with script tag
@@ -37,16 +32,6 @@
             }
         });
     });
-    
-    function toggleMenu() {
-        menu.classList.toggle('open');
-        
-        if (menu.classList.contains('open')) {
-            toggleMenuBtn.setAttribute('aria-expanded', 'true');
-        } else {
-            toggleMenuBtn.setAttribute('aria-expanded', 'false');
-        }
-    }
     
     if (window.matchMedia('(prefers-reduced-motion)').matches) return;
 

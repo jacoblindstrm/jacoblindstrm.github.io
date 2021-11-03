@@ -1,36 +1,31 @@
 <style>
 
     @font-face {
-        font-family: "Moderat";
-        src: url("/assets/fonts/Moderat-Regular.woff2") format("woff2");
+        font-family: "Grivel";
+        src: url("/assets/fonts/Grivel-Regular.woff2") format("woff2");
         font-weight: 400;
     }
     @font-face {
-        font-family: "Moderat";
-        src: url("/assets/fonts/Moderat-Bold.woff2") format("woff2");
-        font-weight: bold;
-    }    
-    @font-face {
-        font-family: "Casta";
-        src: url("/assets/fonts/Casta-Thin.woff2") format("woff2");
-    }
+        font-family: "Bariol Serif";
+        src: url("/assets/fonts/bariol_serif_regular-webfont.woff2") format("woff2");
+        font-weight: 400;
+    } 
 
     :root {
-        --font-default: clamp(18px, 1.4vw, 22px);
-        --font-s: 0.87rem;
-        --font-l: 1.4rem;
-        --font-line-height: 1.5;
-        --spacing-s: 0.2rem;
-        --spacing-m: 1rem;
-        --spacing-l: 2rem;
-        --spacing-xl: 4rem;
-        --spacing-max-width: 35rem;
+        --font-body: 0.875rem;
+        --body-line-height: 1.5rem;
+        --font-large: 2.5rem;
+        --font-large-line-height: 3rem;
+        --letter-spacing: -0.052em;
 
-        /* --color-bg: #63696E;
-        --color-base: #EDE6E3;
+        --gutter: 2rem;
+
+        --color-bg: hsla(48, 14%, 93%, 1);
+        --color-fg: hsla(195, 48%, 14%, 1);
+        --color-interaction: hsla(222, 100%, 32%, 1);
+        /* --color-fg: #EDE6E3;
         --color-mid: #EDE6E3;
         --color-dim: #72767e; */
-
 
         --coral: hsl(5, 99%, 71%);
         --soft-coral: hsl(5, 100%, 89%);   
@@ -51,62 +46,39 @@
 
         --pale: hsl(1, 100%, 89%);
 
-        --color-base: black;
-        --color-bg: var(--pale-green);
 
-        --padding-page-bottom: 10vh;
-        --button-padding: 0.2rem 0.5rem;
-        
-        --z-index-menu: 90;
-        --z-index-nav-button: 100;
+        --font: "Bariol Serif",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+        --font-heading: "Grivel", sans-serif;
 
-        /* Type scale */
-        --int: 1.333;
-        --scale0: 1.03rem;
-        --scale-1: calc(var(--scale0) / 1.125);
-        --scale-2: calc(var(--scale-1) / 1.125);
-        --scale1: calc(var(--scale0) * var(--int));
-        --scale2: calc(var(--scale1) * var(--int));
-        --scale3: calc(var(--scale2) * var(--int));
-        --scale4: calc(var(--scale3) * var(--int));
-        --scale5: calc(var(--scale4) * var(--int));
-        --line-height: 1.6;
-        --font: "Moderat",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
-        --font-heading: "Casta", serif;
-        --text-GRAD: 400;
+        --logo-height: 4rem;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --color-base: var(--pale-green);
-            --color-bg: hsl(183, 23%, 5%);
-
-            --blue: hsl(222, 100%, 20%);
-            --pale: hsl(222, 100%, 32%);
-
-            --soft-green: var(--midnight-green);
-            --text-GRAD: 480;
+            --color-fg: hsla(48, 14%, 93%, 1);
+            --color-bg: hsla(195, 48%, 14%, 1);
+            --color-interaction: hsla(212, 92%, 79%, 1);
         }
     }
 
     @media (prefers-contrast: high) {
         :root {
             --color-bg: white;
-            --color-base: black
+            --color-fg: black
         }
     }
 
     @media (prefers-contrast: high) and (prefers-color-scheme: dark){
         :root {
             --color-bg: black;
-            --color-base: white
+            --color-fg: white
         }
     }
 
     @media print {
         :root {
             --color-bg: transparent;
-            --color-base: black;
+            --color-fg: black;
         }
     }
 
@@ -118,14 +90,15 @@
 
     @media screen and (min-width: 768px) {
         :root {
-            --padding-page-bottom: 20vh;
+            --font-body: 1rem;
+            --body-line-height: 1.75rem;
+            --gutter: 4rem;
+            --logo-height: 8.75rem;
         }
-
-       html { font-size: 112.5%; } /* 1rem = 18px */
     }
 
     @media screen and (min-width: 1900px) {
-        html { font-size: 137.5%; } /* 1rem = 22px */
+        
     }
 
     body {
@@ -133,21 +106,46 @@
         transition: background-color 0.25s ease;
         min-height: 100vh;
         margin: 0;
-        padding: 0;
-        color: var(--color-base);
+        padding: var(--gutter);
+        color: var(--color-fg);
         font-family: var(--font);
-        line-height: var(--line-height);
-        font-size: var(--font-default);
+        line-height: var(--body-line-height);
+        font-size: var(--font-body);
         font-kerning: normal;
-        font-variant-ligatures: discretionary-ligatures;        
-        font-variation-settings: "GRAD" var(--text-GRAD);
+        font-variant-ligatures: discretionary-ligatures; 
         /* font-variant-numeric: diagonal-fractions tabular-nums; */
 
-        --cursor-stroke: var(--color-base);
+        --cursor-stroke: var(--color-fg);
         --cursor-size: 3rem;
         --cursor-position: -1.5rem;
         --cursor-stroke-width: 2px;
-    }    
+    }  
+
+    main {
+        padding-top: 1px;
+        height: 100%;
+        min-height: calc(100vh - (var(--gutter)*2));;
+        z-index: 1;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: var(--font-heading);
+        font-size: var(--font-large);
+        line-height: var(--font-large-line-height);
+        letter-spacing: var(--letter-spacing);
+    }  
+
+    p {
+        margin: 1rem 0 0;
+    }
+
+    .logotype svg {
+       height: var(--logo-height);
+    }
+
+    .hidden {
+        display: none;
+    }
 
     @media (any-pointer: fine) {
         .cursor {
@@ -174,182 +172,20 @@
         transform: scale(0);           
         transform-origin: center;
     }
-
-    main {
-        padding-top: 1px; /* hack */
-        height: 100%;
-        min-height: calc(100vh - 4rem);
-        z-index: 1;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, calc((100% - 4rem) / 4));
-        grid-auto-rows: fit-content(0.5rem);
-        padding: 0 1rem;
-        gap: 0.5rem 1rem;
-        max-width: 100vw;
-    }
-
-    .grid > * {
-        grid-row-end: auto;
-    }
-
-    @media screen and (min-width: 768px) {
-        .grid {
-            grid-template-columns: repeat(8, calc((100% - 12rem) / 8));
-            gap: 0.5rem 1.5rem;
-        }
-    }
-
-    @media screen and (min-width: 1400px) {
-        .grid {
-            grid-template-columns: repeat(12, calc((100% - 18rem) / 12));
-            padding: 0;
-        }
-    }
-
-    @media screen and (min-width: 2600px) {
-        .grid {
-            grid-template-columns: repeat(16, calc((100% - 24rem) / 16));
-        }
-    }
-
-    body > footer,
-    body > header {
-        z-index: 100;
-        width: 100%;
-        padding: 0 1rem 0.8rem;
-        margin: 1rem 0;
-    }
-
-    body > footer {
-        border-top: 1px solid var(--color-base);
-        padding: 1rem 1rem 0.8rem;
-    }
     
-    body > header svg path,
-    body > footer svg path {
-        fill: var(--color-base); 
+    svg path {
+        fill: var(--color-fg); 
     }
-    
-    body > header .social,
-    body > footer .social {
+    .social{
         display: flex;
         margin: 0;
     }
     
-    body > header .social p,
-    body > footer .social p {
-        margin: 0;
+    a, a:visited {
+        color: var(--color-interaction);
+        text-decoration: none;
     }
-    
-    body > header .social p,
-    body > header .social li,
-    body > footer .social p,
-    body > footer .social li {
-        margin-right: 1rem;
-    }
-    
-    body > header .social li::before,
-    body > footer .social li::before {
-        content: none;
-    }
-    
-    body > header .social svg,
-    body > footer .social svg {
-        height: 1rem;
-        width: auto;
-        max-width: 1.1rem;
-        vertical-align: middle;
-        transform-origin: center;
-    }
-    
-    body > header .social a svg,
-    body > footer .social a svg {
-        transition: all ease-in-out 0.15s;
-    }
-    
-    body > header .social a:hover svg,
-    body > header .social a:active svg,
-    body > header .social a:focus svg,
-    body > footer .social a:hover svg,
-    body > footer .social a:active svg,
-    body > footer .social a:focus svg {
-        transform: scale(1.15);
-    }
-
-
-    @media screen and (min-width: 1400px) {
-        body > header,
-        body > footer {
-            width: 100%;
-            padding: 2rem 8.4vw 0.8rem;
-        }
-
-        body > footer {
-            padding-top: 1rem;
-        }
-    }
-
-    body > header {
-        position: absolute;
-        top: 0;
-    }
-
-    body > footer {
-        margin-top: var(--spacing-xl);
-    }
-    
-    body > header .logotype svg,
-    body > footer .logotype svg {
-        height: 3rem;
-        fill: var(--color-base);
-    }
-
-    a,
-    a:visited {
-        box-shadow: inset 0 -0.1rem 0 transparent;
-        transition: all ease-in-out 0.15s;
-        text-decoration-color: var(--vibrant-green);
-        text-decoration-thickness: 0.15rem;
-        color: inherit;
-    }
-
-    a:hover,
-    a:active,
-    a:focus {
-        color: var(--vibrant-green);
-    }
-
-    img {
-        max-width: 100%;
-    }
-    
-    h1 {        
-        margin-bottom: var(--spacing-m);
-    }
-
-    h1,
-    h2 {
-        margin-top: var(--spacing-xl);
-        line-height: 1.35;
-    }
-    
-    article > h1 {
-        font-family: var(--font-heading);
-        font-weight: normal;
-        font-size: 18vw;
-        margin: 0;
-        margin-top: clamp(var(--spacing-xl), 20vh, 12rem); 
-    }
-    
-    @media (min-width: 768px) {
-         article > h1 {        
-            font-size: 9.1vw;
-        }
-    }  
-
+   
     .transition-fade {
        opacity: 1;
        transition: opacity 0.25s ease-in, background-color 0.3s ease-in-out;
@@ -411,15 +247,7 @@
     .is-animating.is-leaving .ani-scale-2 {
         transform: scale(0.2);
     }
-
-    header h1,
-    header {
-        animation: freeze 0.75s linear;
-    }
-
-    .bio aside {
-        animation: invert 0.75s 0.15s linear;
-    }
+    
 
     @keyframes appearUp {
         0% {
