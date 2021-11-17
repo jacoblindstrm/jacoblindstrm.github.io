@@ -187,7 +187,7 @@
         position: relative;
     }
 
-    a::before {
+    :not(.social) a::before {
         content: "";
         position: absolute;
         display: block;
@@ -201,7 +201,7 @@
         transition: all 0.2s ease;
     }
 
-    a:active::before, a:focus::before, a:hover::before {
+    :not(.social) a:active::before, :not(.social) a:focus::before, :not(.social) a:hover::before {
         transform: scale(1);
         opacity: 1;
     }
