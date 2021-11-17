@@ -121,8 +121,13 @@ footer {
   }
   
   ul.social li {
-    transition: 0.15s ease;
-  
+    transition: 0.15s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+        transform: scale(1.2);
+    }
   }
   
   ul.social li a::before {
