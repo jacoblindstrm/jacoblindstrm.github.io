@@ -46,6 +46,13 @@
 
         --pale: hsl(1, 100%, 89%);
 
+        /* Display-P3 color, when supported. */
+        @supports (color: color(display-p3 1 1 1)) {
+            :root {
+                --coral: color(display-p3 0.931 0.501 0.445);
+            }
+        }
+
 
         --font: "Bariol Serif",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
         --font-heading: "Grivel", sans-serif;
