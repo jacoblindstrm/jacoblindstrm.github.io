@@ -49,11 +49,11 @@
         /* Display-P3 color, when supported. */
         @supports (color: color(display-p3 1 1 1)) {
             :root {
-                --coral: color(display-p3 0.931 0.501 0.445);
-                --vibrant-green: color(display-p3 0.268 0.599 0.633);
-                --lemon: color(display-p3 0.99 0.943 0.609);
-                --blue: color(display-p3 0.065 0.189 0.615);
-                --color-interaction: color(display-p3 0.065 0.189 0.615);
+                --coral: color(display-p3 0.975 0.431 0.356);
+                --vibrant-green: color(display-p3 0.148 0.58 0.506);
+                --lemon: color(display-p3 1 0.928 0.415);
+                --blue: color(display-p3 0.011 0.133 0.56);
+                --color-interaction: color(display-p3 0.011 0.133 0.56);
             }
         }
 
@@ -69,6 +69,10 @@
             --color-fg: hsla(48, 14%, 93%, 1);
             --color-bg: hsla(195, 47%, 0%, 1);
             --color-interaction: hsla(211, 54%, 70%, 1);
+
+            @supports (color: color(display-p3 1 1 1)) {
+                --color-interaction: color(display-p3 0.36 0.639 1)
+            }
         }
     }
 
