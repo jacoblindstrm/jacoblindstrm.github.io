@@ -4,12 +4,11 @@ header {
     justify-content: space-between;
 
     h2 {
-        @media (max-width: $screen-m) {
-            writing-mode: vertical-rl;
-            margin-block-end: 0;
-            margin-block-start: 0;
-            white-space: nowrap;
-        }
+        writing-mode: vertical-rl;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        white-space: nowrap;
+        margin-inline-end: 4rem;
     }
 }
 
