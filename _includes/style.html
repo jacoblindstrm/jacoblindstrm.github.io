@@ -283,8 +283,51 @@
     .is-animating.is-leaving .ani-scale-2 {
         transform: scale(0.2);
     }
-    
 
+    section article {
+        animation: 1s ease-in-out 1s 1 appearUp;
+    }
+
+    section footer {
+        animation: 1s ease-in-out 1.5s 1 appearUp;
+    }
+/*     
+    .home {
+
+        transform-origin: center;
+        animation: 400ms ease-in 200ms 1 appearUpFromRigh;
+    }
+
+    header h2 {
+
+        transform-origin: center;
+        animation: 400ms ease-in 200ms 1 appearUpFromLeft;
+    } */
+
+    /* .external-links li.figma {
+        animation: 250ms ease-in-out 1.5s 1 showLinks;
+    }
+
+    .external-links li.github {
+        animation: 250ms ease-in-out 1.7s 1 showLinks;
+    }
+
+    .external-links li.dribbble {
+        animation: 250ms ease-in-out 1.9s 1 showLinks;
+    }
+
+    .external-links li.twitter {
+        animation: 250ms ease-in-out 2.1s 1 showLinks;
+    }
+
+    .external-links li.linkedin {
+        animation: 250ms ease-in-out 2.3s 1 showLinks;
+    }
+
+    .external-links li.spotify {
+        animation: 250ms ease-in-out 2.5s 1 showLinks; 
+    }
+*/
     @keyframes appearUp {
         0% {
             opacity: 0;
@@ -300,6 +343,59 @@
         100% {
             opacity: 1;
             transform: translateY(0);
+        }
+    }
+    
+    @keyframes appearUpFromRigh {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.9) translateX(5vw);
+        }
+
+        30% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1) translateX(0);
+        }
+    }
+
+    @keyframes appearUpFromLeft {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.9) translateX(-5vw);
+        }
+
+        30% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1) translateX(0);
+        }
+    }
+
+    @keyframes showLinks {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.9);
+        }
+        5% {
+            visibility: visible;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
         }
     }
 
