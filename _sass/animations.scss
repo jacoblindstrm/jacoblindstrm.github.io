@@ -58,9 +58,11 @@
 
 @keyframes morphBorders{ 
   // from 14islands.com - to learn
-  0% { border-radius: 54% 46% 55% 45%/56% 50% 50% 44%}
+  0% {opacity: 0;border-radius: 44% 56% 60% 40%/49% 55% 45% 51%}
+  10% { opacity: 1; border-radius: 54% 46% 55% 45%/56% 50% 50% 44%}
   25% {border-radius: 45% 55%}
   50% {border-radius: 54% 46% 55% 45%/56% 50% 50% 44%}
   75%{border-radius: 52% 48% 40% 60%/58% 56% 44% 42%}
-  to{border-radius: 44% 56% 60% 40%/49% 55% 45% 51%}
+  90%{opacity: 1; border-radius: 44% 56% 60% 40%/49% 55% 45% 51%}
+  to{opacity: 0;border-radius: 54% 46% 55% 45%/56% 50% 50% 44%}
 }
