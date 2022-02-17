@@ -12,15 +12,23 @@ header {
     }
 }
 
+::selection {
+    background: var(--vibrant-green);
+    color: white;
+}
+
 h1, h2, h3, h4, h5, h6 {
     &::selection {
         text-shadow: 0.05em 0.15em var(--coral);
         background: transparent;
+        color: var(--color-fg);
     }
 }
 
-p::selection {
-    background: var(--coral);
+p::selection,
+aside::selection {
+    background: var(--vibrant-green);
+    color: white;
 }
 
 main {
