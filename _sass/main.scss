@@ -12,6 +12,10 @@ header {
     }
 }
 
+p::selection {
+    background: var(--coral);
+}
+
 main {
     display: flex;
     justify-content: space-between;
