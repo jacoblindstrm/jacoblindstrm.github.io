@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/jacoblindstrm.github.io/static/css/main.a6331447.css",
+    "main.js": "/jacoblindstrm.github.io/static/js/main.6f70a425.js",
+    "static/js/787.1ed0c42c.chunk.js": "/jacoblindstrm.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/A2ZFaucet-Regular.woff2": "/jacoblindstrm.github.io/static/media/A2ZFaucet-Regular.67e91f1b25a77745b40f.woff2",
+    "static/media/A2ZFaucet-Bold.woff2": "/jacoblindstrm.github.io/static/media/A2ZFaucet-Bold.a1a69d5c52acc8136016.woff2",
+    "static/media/noise.png": "/jacoblindstrm.github.io/static/media/noise.e239db8484108d714bb1.png",
+    "index.html": "/jacoblindstrm.github.io/index.html",
+    "main.a6331447.css.map": "/jacoblindstrm.github.io/static/css/main.a6331447.css.map",
+    "main.6f70a425.js.map": "/jacoblindstrm.github.io/static/js/main.6f70a425.js.map",
+    "787.1ed0c42c.chunk.js.map": "/jacoblindstrm.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6331447.css",
+    "static/js/main.6f70a425.js"
+  ]
+}
