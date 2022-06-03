@@ -276,12 +276,11 @@ function Sparks(x, y) {
 
   function createElement() {
       const div = document.createElement('div');       
-      const color = getRandomColor();
+      const color = getColor();
       const size = getRandomSize();
 
       const limitSpread = 100;
-      
-      div.style.cssText = `background: var(${color}); border-radius: 100%; width: ${size}rem; height: ${size}rem; opacity: 0;`;
+      div.style.cssText = `background: ${color}; border-radius: 100%; width: ${size}rem; height: ${size}rem; opacity: 0;`;
       div.classList.add(`cursor_sparks`);
       div.style.transform = `translateX(${x + randomIntFromInterval(1,limitSpread)}px) translateY(${y  + randomIntFromInterval(1,limitSpread)}px)`;
 
@@ -293,10 +292,9 @@ function Sparks(x, y) {
       });
   }
 
-  function getRandomColor() {
-      const colors = ["--color-interaction", "--color-purple", "--color-coral", "--color-green"];
-      return colors[Math.floor(Math.random() * colors.length)];
-
+  function getColor() {
+      const hue = Math.round((x / window.screen.width) * 360 + 30);
+      return `hsla(${hue}, 100%, 50%, 0.5)`;
   }
 
   function getRandomSize() {
