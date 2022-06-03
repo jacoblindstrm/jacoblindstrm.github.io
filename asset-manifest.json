@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jacoblindstrm.github.io/static/css/main.392e00c5.css",
-    "main.js": "/jacoblindstrm.github.io/static/js/main.3a3a44a3.js",
-    "static/js/787.1ed0c42c.chunk.js": "/jacoblindstrm.github.io/static/js/787.1ed0c42c.chunk.js",
-    "static/media/A2ZFaucet-Regular.woff2": "/jacoblindstrm.github.io/static/media/A2ZFaucet-Regular.67e91f1b25a77745b40f.woff2",
-    "static/media/A2ZFaucet-Bold.woff2": "/jacoblindstrm.github.io/static/media/A2ZFaucet-Bold.a1a69d5c52acc8136016.woff2",
-    "static/media/noise.png": "/jacoblindstrm.github.io/static/media/noise.e239db8484108d714bb1.png",
-    "index.html": "/jacoblindstrm.github.io/index.html",
-    "main.392e00c5.css.map": "/jacoblindstrm.github.io/static/css/main.392e00c5.css.map",
-    "main.3a3a44a3.js.map": "/jacoblindstrm.github.io/static/js/main.3a3a44a3.js.map",
-    "787.1ed0c42c.chunk.js.map": "/jacoblindstrm.github.io/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/static/css/main.804799f8.css",
+    "main.js": "/static/js/main.bf39e102.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/A2ZFaucet-Regular.woff2": "/static/media/A2ZFaucet-Regular.67e91f1b25a77745b40f.woff2",
+    "static/media/A2ZFaucet-Bold.woff2": "/static/media/A2ZFaucet-Bold.a1a69d5c52acc8136016.woff2",
+    "static/media/noise.png": "/static/media/noise.e239db8484108d714bb1.png",
+    "index.html": "/index.html",
+    "main.804799f8.css.map": "/static/css/main.804799f8.css.map",
+    "main.bf39e102.js.map": "/static/js/main.bf39e102.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.392e00c5.css",
-    "static/js/main.3a3a44a3.js"
+    "static/css/main.804799f8.css",
+    "static/js/main.bf39e102.js"
   ]
 }
