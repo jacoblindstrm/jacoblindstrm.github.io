@@ -294,7 +294,7 @@ function Sparks(x, y) {
 
   function getColor() {
       const hue = Math.round((x / window.screen.width) * 360 + 30);
-      return `hsla(${hue}, 100%, 50%, 0.5)`;
+      return `hsla(${hue}, 100%, 50%, 0.2)`;
   }
 
   function getRandomSize() {
