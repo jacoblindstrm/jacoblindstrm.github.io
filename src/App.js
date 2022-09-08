@@ -50,7 +50,7 @@ function App() {
               bounce: 0.5,
               delay: 0.1,
             },
-          }}>I’m an interaction designer
+          }}>I’m a design technologist
           <motion.span 
             initial={{ 
               opacity: 0, 
@@ -88,7 +88,7 @@ function App() {
             },
           }}
         >
-          <p className="font--formal">I’ve had over 10 years of industry experience working with digital products in various environments. I specialize in design systems and prototyping.</p>
+          <p className="font--formal">I’ve had over 10 years of industry experience working with digital products in various environments. I thrive in design systems and prototyping.</p>
           <p className="font--casual color--purple">Husband and dad. I like to drink natural wine and to race bikes.</p>
         </motion.div>
       </section>
