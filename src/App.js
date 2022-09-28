@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   animate,
   motion,
@@ -5,16 +6,20 @@ import {
 import { useRef } from "react";
 
 import { AnimatedGradient } from "./components/AnimatedGradient";
+import { Glass } from "./components/Glass";
 import './App.css';
+
+import Clock from './components/Clock';
 
 function App() {
   const constraintsRef = useRef(null);
+  const time = useTime();
 
   return (
     <div className="App" onMouseMove={(e) => Sparks(e.clientX, e.clientY)} ref={constraintsRef}>
+      <Glass />
       <AnimatedGradient />
-      <section className="start">
-        <motion.h1 
+      <motion.h1 
           className="font--size-body color--purple"
           initial={{ 
             rotate: 0,
@@ -22,7 +27,6 @@ function App() {
           }}
           animate={{ 
             opacity: 1, 
-            rotate: "2deg",
             transition: {
               type: "spring",
               duration: 1,
@@ -31,11 +35,12 @@ function App() {
             },
           }}
           drag
-          whileDrag={{ scale: 1.25, textShadow: '2px 2px 15px rgba(0,0,0,0.3)' }}
+          whileDrag={{ scale: 1.25, rotate: "4deg", textShadow: '2px 2px 15px rgba(0,0,0,0.3)' }}
           dragConstraints={constraintsRef}
         >
-          Jacob Lindstrõm<br/>↲
+          Jacob Lindstrõm ↲
         </motion.h1>
+      <section className="start">
         <motion.h2 
           initial={{ 
             y: "35%",
@@ -50,7 +55,7 @@ function App() {
               bounce: 0.5,
               delay: 0.1,
             },
-          }}>I’m a design technologist
+          }}>I am an experienced UX Engineer
           <motion.span 
             initial={{ 
               opacity: 0, 
@@ -68,9 +73,9 @@ function App() {
                 delay: 0.3,
               },
             }}          
-            className="font--super color--green">
+            className="font--super">
               ➀
-          </motion.span> living in Nykōping,<span className="font--super alt color--coral">➁</span> <span className="font--small">Sweden.</span> I work at <a href="https://osynlig.se">Osynlig</a></motion.h2>
+          </motion.span> specializing in design systems and prototyping. I work at <a href="https://osynlig.se">Osynlig</a></motion.h2>
         <motion.div
           className="bio"
           initial={{ 
@@ -88,11 +93,10 @@ function App() {
             },
           }}
         >
-          <p className="font--formal">I’ve had over 10 years of industry experience working with digital products in various environments. I thrive in design systems and prototyping.</p>
-          <p className="font--casual color--purple">Husband and dad. I like to drink natural wine and to race bikes.</p>
+          <p className="font--casual">Husband and dad living in Nykōping, Sweden. I like to drink natural wine and to race bikes.</p>
         </motion.div>
-      </section>
-      <aside>
+
+        <aside>
         <motion.p 
           className="font--super"
           initial={{ 
@@ -113,7 +117,7 @@ function App() {
           whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
           dragConstraints={constraintsRef}
         >
-            <span className="color--green">➀</span> Among many things
+            ➀ Designer + Developer
         </motion.p>
         <motion.p 
           className="font--super alt"
@@ -135,9 +139,55 @@ function App() {
           whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
           dragConstraints={constraintsRef}
         >
-          <span className="color--coral">➁</span> Moved from Malmö in 2022
+          ○ Studied Interaction Design at Malmö University
+        </motion.p>
+        <motion.p 
+          className="font--super alt"
+          initial={{ 
+            x: "-5%",
+            opacity: 0 
+          }}
+          animate={{ 
+            opacity: 1, 
+            x: 0,
+            transition: {
+              type: "spring",
+              duration: 0.8,
+              bounce: 0.35,
+              delay: 1.4,
+            },
+          }}
+          drag
+          whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
+          dragConstraints={constraintsRef}
+        >
+          △ Product Designer, PM, Developer at <a href="https://hoodin.com">Hoodin</a>
+        </motion.p>
+        <motion.p 
+          className="font--super alt"
+          initial={{ 
+            x: "-5%",
+            opacity: 0 
+          }}
+          animate={{ 
+            opacity: 1, 
+            x: 0,
+            transition: {
+              type: "spring",
+              duration: 0.8,
+              bounce: 0.35,
+              delay: 1.6,
+            },
+          }}
+          drag
+          whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
+          dragConstraints={constraintsRef}
+        >
+          △ Interaction Designer at <a href="https://youcruit.com">Youcruit</a>
         </motion.p>
       </aside>
+      </section>
+      
       <motion.footer>
         <ul className="social">
           <motion.li
@@ -264,6 +314,7 @@ function App() {
           </ul>
         </ul>
       </motion.footer>
+      <Clock time={time} />
       <div id="Sparks"></div>
     </div>
   );
@@ -312,6 +363,22 @@ function Sparks(x, y) {
   } 
 
   createElement();
+}
+
+function useTime() {
+  const [time, setTime] = React.useState(new Date());
+  
+  React.useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+  
+    return () => {
+      window.clearInterval(intervalId);
+    }
+  }, []);
+  
+  return time;
 }
 
 export default App;

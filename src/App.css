@@ -10,13 +10,13 @@
 }
 
 :root {
-  --font-body: clamp(1.2rem, 0.55vw + 1.06rem, 1.5rem);
+  --font-body: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --body-line-height: 1.5;
-  --font-large: clamp(2.25rem, 4.09vw + 1.23rem, 4.5rem);
-  --font-large-line-height: 1.2;
+  --font-large: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-large-line-height: 1.3;
   --letter-spacing: -0.052em;
 
-  --gutter: 2rem 1rem;
+  --gutter: 1.5rem;
 
   --color-bg: hsla(48, 56, 98, 1);
   --color-fg: hsla(195, 48%, 14%, 1);
@@ -51,8 +51,8 @@
       --color-fg: hsla(48, 14%, 93%, 1);
       --color-bg: hsla(195, 47%, 0%, 1);
       --color-interaction: hsla(211, 54%, 70%, 1);
-      --gradient: radial-gradient(94% 94% at 10% 0%, #0f0e0e 63.15%, rgba(253, 252, 248, 0.1) 70%), 
-      radial-gradient(74% 131% at 25% 80%, #020202 0%, #0b0b0c 30%, #010101 66%, #0c0c0a 90%);
+      --gradient: radial-gradient(94% 94% at 10% 0%, hsl(250, 100%, 2%) 63.15%, rgba(7, 83, 59, 0.1) 70%), 
+      radial-gradient(74% 131% at 25% 80%, hsl(0, 100%, 1%) 0%, hsl(0, 100%, 1%) 30%, hsl(160, 67%, 4%) 66%, hsl(141, 100%, 3%) 90%);
   }
 
   @supports (color: color(display-p3 1 1 1)) {
@@ -87,12 +87,6 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 60em) {
-  :root {
-      --gutter: 2rem 1rem;
-  }
-}
-
 .App {
   background: url("./assets/img/noise.png") repeat;
   min-height: 100vh;
@@ -106,8 +100,16 @@
 @media (min-width: 60em) {
   .App {
     flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
   }
 }
+/* 
+@media (min-width: 120em) {
+  .App {
+    padding-left: 45vw;
+  }
+} */
 
 body {
   margin: 0;
@@ -129,7 +131,7 @@ body {
 }
 
 .font--super {
-  font-size: clamp(0.75rem, 0.45vw + 0.64rem, 1rem);
+  font-size: 0.75rem;
   font-feature-settings: "ss01" off;
 }
 
@@ -180,34 +182,38 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--font-large);
   line-height: var(--font-large-line-height);
   letter-spacing: var(--letter-spacing);
-  margin: 0 auto;
-  max-width: 55.625rem;
+  margin: 0;
 }
 
 section.start {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  max-width: 55.625rem;
-  margin: auto;
-  padding-block-start: 14vh;
+  align-items: flex-start;
+  margin: 0;
+  padding-block-start: 10vh;
+  gap: 2.5rem;
+  width: 100%;
 }
 
-section.start h1 {
-  width: 100%;
-  display: block;
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
+section.start h2 {
+  text-indent: 6ch;
+  max-width: 29ch;
+}
+
+.bio {
+  max-width: 30ch;
+}
+
+h1 {
+  position: absolute;
+  top: var(--gutter);
+  left: var(--gutter);
   cursor: move;
 }
 
 @media (min-width: 60em) {
   section.start {
     padding-block-start: 20vh;
-  }
-
-  section.start h1 {
-    text-align: right;
   }
 }
 
@@ -218,31 +224,18 @@ section.start h1 {
 }
 
 .bio {
-  text-align: justify;
   margin-bottom: 2rem;
-}
-
-@media (min-width: 60em) {
-  section.start h1,
-  .bio {
-    max-width: 22rem;
-    margin-inline-end: 6rem;
-  }
-
-  aside {
-    order: -1;
-    align-self: flex-end;
-  }
 }
 
 aside p {
   cursor: move;
   white-space: nowrap;
+  font-size: var(--font-small);
 }
 
 footer {  
   padding-bottom: var(--gutter);
-  border-block-start: 1px solid var(--color-fg);
+  /* border-block-start: 1px solid var(--color-fg); */
 }
 
 footer ul {
@@ -277,6 +270,43 @@ footer > ul {
   }
 }
 
+.clock {  
+  display: none;
+}
+
+@media (min-width: 60em) {
+  .clock {
+    position: absolute;
+    bottom: var(--gutter);
+    left: var(--gutter);
+    margin: 0;
+    display: block;
+  }
+}
+
+
+
+/* 
+@media (min-width: 60em) {
+  footer {
+    writing-mode: vertical-lr;
+    padding-inline-start: 1ch;
+    padding-inline-end: 1ch;
+  }
+
+  footer > ul {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-height: 40em) and (min-width: 60em) {
+  footer {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+} */
+
 .cursor_sparks {
   position: fixed;
   top: 0;
@@ -295,7 +325,7 @@ a, a:visited {
   transition: all 0.2s ease-in-out;
 }
 
-a::after {
+h2 a::after {
   content: "↗";
   font-size: 1rem;
   vertical-align: super;
@@ -331,9 +361,9 @@ ul.social .external-links li:hover {
 ul.external-links li a::before {
   content: '';
   display: inline-block;
-  height: 1.25rem;
-  min-width: 1.25rem;        
-  margin-right: 0.5em;
+  height: 1rem;
+  min-width: 1rem;        
+  /* margin-right: 0.5em; */
   vertical-align: middle;
   background: var(--color-fg);
       -webkit-mask-size: contain;
