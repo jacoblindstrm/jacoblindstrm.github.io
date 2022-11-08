@@ -1,12 +1,11 @@
 import React from 'react';
 import {
-  animate,
   motion,
 } from "framer-motion";
 import { useRef } from "react";
 
-import { AnimatedGradient } from "./components/AnimatedGradient";
-import { Glass } from "./components/Glass";
+// import { AnimatedGradient } from "./components/AnimatedGradient";
+// import { Glass } from "./components/Glass";
 import './App.css';
 
 import Clock from './components/Clock';
@@ -17,33 +16,10 @@ function App() {
 
   return (
     <div className="App" onMouseMove={(e) => Sparks(e.clientX, e.clientY)} ref={constraintsRef}>
-      <Glass />
-      <AnimatedGradient />
-      <motion.h1 
-          className="font--size-body color--purple"
+      <div class="Layout">
+        <motion.section
           initial={{ 
-            rotate: 0,
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            transition: {
-              type: "spring",
-              duration: 1,
-              bounce: 0.5,
-              delay: 0.5,
-            },
-          }}
-          drag
-          whileDrag={{ scale: 1.25, rotate: "4deg", textShadow: '2px 2px 15px rgba(0,0,0,0.3)' }}
-          dragConstraints={constraintsRef}
-        >
-          Jacob Lindstrõm ↲
-        </motion.h1>
-      <section className="start">
-        <motion.h2 
-          initial={{ 
-            y: "35%",
+            y: "10%",
             opacity: 0 
           }}
           animate={{ 
@@ -51,270 +27,105 @@ function App() {
             y: 0,
             transition: {
               type: "spring",
-              duration: 2,
+              duration: 1.2,
               bounce: 0.5,
-              delay: 0.1,
+              delay: 0.25,
             },
-          }}>I am an experienced UX Engineer
-          <motion.span 
-            initial={{ 
-              opacity: 0, 
-              scale: 2,
-              rotate: "-25deg"
+          }}
+          >
+          <h1>I am Jacob Lindström, an experienced Design Technologist specializing in design systems and prototyping. I work at <a href="https::/osynlig.se" rel="author noopener" title="Osynlig">Osynlig.</a></h1>
+          <h2> Husband and dad living in Nyköping, Sweden. I like to drink natural wine and to race bikes.</h2>
+        </motion.section>
+        <motion.footer>
+          <motion.a initial={{ 
+              scale: 0.95,
+              opacity: 0,
+              x: "-2%"
             }}
             animate={{ 
               opacity: 1, 
               scale: 1,
-              rotate: "0",
+              x: 0,
               transition: {
                 type: "spring",
-                duration: 1.8,
-                bounce: 0.5,
-                delay: 0.3,
+                duration: 0.2,
+                bounce: 0.25,
+                delay: 1.35,
               },
-            }}          
-            className="font--super">
-              ➀
-          </motion.span> specializing in design systems and prototyping. I work at <a href="https://osynlig.se">Osynlig</a></motion.h2>
-        <motion.div
-          className="bio"
-          initial={{ 
-            y: "35%",
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            y: 0,
-            transition: {
-              type: "spring",              
-              duration: 1.8,
-              bounce: 0.4,
-              delay: 0.3,
-            },
-          }}
-        >
-          <p className="font--casual">Husband and dad living in Nykōping, Sweden. I like to drink natural wine and to race bikes.</p>
-        </motion.div>
-
-        <aside>
-        <motion.p 
-          className="font--super"
-          initial={{ 
-            x: "-5%",
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            x: 0,
-            transition: {
-              type: "spring",
-              duration: 0.8,
-              bounce: 0.35,
-              delay: 1,
-            },
-          }}
-          drag
-          whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
-          dragConstraints={constraintsRef}
-        >
-            ➀ Designer + Developer
-        </motion.p>
-        <motion.p 
-          className="font--super alt"
-          initial={{ 
-            x: "-5%",
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            x: 0,
-            transition: {
-              type: "spring",
-              duration: 0.8,
-              bounce: 0.35,
-              delay: 1.2,
-            },
-          }}
-          drag
-          whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
-          dragConstraints={constraintsRef}
-        >
-          ○ Studied Interaction Design at Malmö University
-        </motion.p>
-        <motion.p 
-          className="font--super alt"
-          initial={{ 
-            x: "-5%",
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            x: 0,
-            transition: {
-              type: "spring",
-              duration: 0.8,
-              bounce: 0.35,
-              delay: 1.4,
-            },
-          }}
-          drag
-          whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
-          dragConstraints={constraintsRef}
-        >
-          △ Product Designer, PM, Developer at <a href="https://hoodin.com">Hoodin</a>
-        </motion.p>
-        <motion.p 
-          className="font--super alt"
-          initial={{ 
-            x: "-5%",
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            x: 0,
-            transition: {
-              type: "spring",
-              duration: 0.8,
-              bounce: 0.35,
-              delay: 1.6,
-            },
-          }}
-          drag
-          whileDrag={{ scale: 1.15, textShadow: '1px 1px 10px rgba(0,0,0,0.25)' }}
-          dragConstraints={constraintsRef}
-        >
-          △ Interaction Designer at <a href="https://youcruit.com">Youcruit</a>
-        </motion.p>
-      </aside>
-      </section>
-      
-      <motion.footer>
-        <ul className="social">
-          <motion.li
-              initial={{ 
-              y: "15%",
-              opacity: 0 
-            }}
-            animate={{ 
-              opacity: 1, 
-              y: 0,
-              transition: {
-                type: "spring",
-                duration: 0.8,
-                bounce: 0.35,
-                delay: 1.2,
-              },
-            }}
-          >
-            <a className="email" href="mailto:its@jacoblindstrom.design">its@jacoblindstrom.design</a>
-          </motion.li>
+            }} className="email" href="mailto:its@jacoblindstrom.design">its@jacoblindstrom.design</motion.a>
           <ul className="external-links">
-            <li className="figma">
-              <motion.a initial={{ 
-                  scale: 0.8,
-                  opacity: 0,
-                  y: '-5%',
-                }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    duration: 0.2,
-                    bounce: 0.25,
-                    delay: 1.5,
-                  },
-                }} href="https://figma.com/@jacoblindstrm" rel="author noopener" title="Figma"><span className="social-title">Figma</span></motion.a></li>
-            <li className="github">
-              <motion.a initial={{ 
-                  scale: 0.8,
-                  opacity: 0,
-                  y: '-5%',
-                }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    duration: 0.2,
-                    bounce: 0.25,
-                    delay: 1.6,
-                  },
-                }} href="https://github.com/jacoblindstrm" rel="author noopener" title="Github"><span className="social-title">Github</span></motion.a></li>
-            <li className="dribbble">
-              <motion.a initial={{ 
-                  scale: 0.8,
-                  opacity: 0,
-                  y: '-5%',
-                }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    duration: 0.2,
-                    bounce: 0.25,
-                    delay: 1.7,
-                  },
-                }} href="https://dribbble.com/jacoblindstrom" rel="author noopener" title="Dribbble"><span className="social-title">Dribbble</span></motion.a></li>
-            <li className="twitter">
-              <motion.a initial={{ 
-                  scale: 0.8,
-                  opacity: 0,
-                  y: '-5%',
-                }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    duration: 0.2,
-                    bounce: 0.25,
-                    delay: 1.8,
-                  },
-                }} href="https://twitter.com/jacoblindstr_m" rel="author noopener" title="Twitter"><span className="social-title">Twitter</span></motion.a></li>
-            <li className="linkedin">
-              <motion.a initial={{ 
-                  scale: 0.8,
-                  opacity: 0,
-                  y: '-5%',
-                }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    duration: 0.2,
-                    bounce: 0.25,
-                    delay: 1.9,
-                  },
-                }} href="https://www.linkedin.com/in/jacobsvensson-design/" rel="author noopener" title="LinkedIn"><span className="social-title">LinkedIn</span></motion.a></li>
-            <li className="spotify">
-              <motion.a initial={{ 
-                  scale: 0.8,
-                  opacity: 0,
-                  y: '-5%',
-                }}
-                animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    duration: 0.2,
-                    bounce: 0.25,
-                    delay: 2,
-                  },
-                }} href="https://open.spotify.com/user/z9v8we1abbpx7dej3vvsqj38t" rel="author noopener" title="Spotify"><span className="social-title">Spotify</span></motion.a></li>
-          </ul>
-        </ul>
-      </motion.footer>
-      <Clock time={time} />
+              <li className="read-cv">
+                <motion.a initial={{ 
+                    scale: 0.8,
+                    opacity: 0,
+                    y: '-5%',
+                  }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1,
+                    y: 0,
+                    transition: {
+                      type: "spring",
+                      duration: 0.2,
+                      bounce: 0.25,
+                      delay: 1.5,
+                    },
+                  }} href="https://read.cv/jacoblindstrm" rel="author noopener" title="Read Cv"><span className="social-title">Read CV</span></motion.a></li>
+              <li className="figma">
+                <motion.a initial={{ 
+                    scale: 0.8,
+                    opacity: 0,
+                    y: '-5%',
+                  }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1,
+                    y: 0,
+                    transition: {
+                      type: "spring",
+                      duration: 0.2,
+                      bounce: 0.25,
+                      delay: 1.65,
+                    },
+                  }} href="https://figma.com/@jacoblindstrm" rel="author noopener" title="Figma"><span className="social-title">Figma</span></motion.a></li>
+                   <li className="linkedin">
+                <motion.a initial={{ 
+                    scale: 0.8,
+                    opacity: 0,
+                    y: '-5%',
+                  }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1,
+                    y: 0,
+                    transition: {
+                      type: "spring",
+                      duration: 0.2,
+                      bounce: 0.25,
+                      delay: 1.75,
+                    },
+                  }} href="https://www.linkedin.com/in/jacobsvensson-design/" rel="author noopener" title="LinkedIn"><span className="social-title">LinkedIn</span></motion.a></li>
+              <li className="twitter">
+                <motion.a initial={{ 
+                    scale: 0.8,
+                    opacity: 0,
+                    y: '-5%',
+                  }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1,
+                    y: 0,
+                    transition: {
+                      type: "spring",
+                      duration: 0.2,
+                      bounce: 0.25,
+                      delay: 1.82,
+                    },
+                  }} href="https://twitter.com/jacoblindstr_m" rel="author noopener" title="Twitter"><span className="social-title">Twitter</span></motion.a></li>
+            </ul>
+        </motion.footer>
+        <Clock time={time} />
+      </div>
       <div id="Sparks"></div>
     </div>
   );
