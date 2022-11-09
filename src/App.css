@@ -222,19 +222,23 @@ ul {
   content: none;
 }
 
+img.logotype {
+  height: 5rem;
+  position: absolute;
+  bottom: calc(var(--gutter) / 2);
+  right: calc(var(--gutter) - 0.25rem);
+}
+
 .clock {  
-  display: none;
+  position: absolute;
+  bottom: var(--gutter);
+  right: var(--gutter);
+  margin: 0;
+  display: block;
+  font-size: 0.825rem;
 }
 
 @media (min-width: 60em) {
-  .clock {
-    position: absolute;
-    bottom: var(--gutter);
-    right: var(--gutter);
-    margin: 0;
-    display: block;
-  }
-
   ul {
     display: flex;
     flex-direction: row;

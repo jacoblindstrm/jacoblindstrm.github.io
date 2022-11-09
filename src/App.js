@@ -9,6 +9,7 @@ import { useRef } from "react";
 import './App.css';
 
 import Clock from './components/Clock';
+import Logo from './assets/img/logotype.svg';
 
 function App() {
   const constraintsRef = useRef(null);
@@ -33,7 +34,7 @@ function App() {
             },
           }}
           >
-          <h1>I am Jacob Lindström, an experienced Design Technologist specializing in design systems and prototyping. I work at <a href="https::/osynlig.se" rel="author noopener" title="Osynlig">Osynlig.</a></h1>
+          <h1>I am Jacob Lindström, an experienced Design Technologist specializing in design systems and prototyping. I work at <a href="https://osynlig.se" rel="author noopener" title="Osynlig">Osynlig.</a></h1>
           <h2> Husband and dad living in Nyköping, Sweden. I like to drink natural wine and to race bikes.</h2>
         </motion.section>
         <motion.footer>
@@ -124,6 +125,7 @@ function App() {
                   }} href="https://twitter.com/jacoblindstr_m" rel="author noopener" title="Twitter"><span className="social-title">Twitter</span></motion.a></li>
             </ul>
         </motion.footer>
+        <img src={Logo} alt="A signature spelling Jacob" className="logotype"/>
         <Clock time={time} />
       </div>
       <div id="Sparks"></div>
