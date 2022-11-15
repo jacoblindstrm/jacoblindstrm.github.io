@@ -11,6 +11,68 @@ import './App.css';
 import Clock from './components/Clock';
 import Logo from './assets/img/logotype.svg';
 
+// Animations Variants
+const list = {
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 1,
+    },
+  },
+};
+
+const item = {
+  hidden: { 
+    scale: 0.8,
+    opacity: 0,
+    x: -10, 
+  },
+  show: {
+    opacity: 1, 
+    scale: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      duration: 4,
+      bounce: 0.5,
+    },
+  },
+};
+
+const email = {
+  hidden: { 
+    opacity: 0,
+    x: -10, 
+  },
+  show: {
+    opacity: 1, 
+    scale: 1,
+    x: 0,
+    transition: {
+      type: "ease-in-out",
+      duration: 0.8,
+      delay: 1,
+    },
+  },
+};
+
+const intro = {
+  hidden: {
+    y: -100,
+    opacity: 0 
+  },
+  show: {
+    opacity: 1, 
+    y: 0,
+    transition: {
+      type: "spring",
+      duration: 2.2,
+      bounce: 0.5,
+      delay: 0.25,
+    },
+  }
+};
+
 function App() {
   const constraintsRef = useRef(null);
   const time = useTime();
@@ -18,111 +80,25 @@ function App() {
   return (
     <div className="App" onMouseMove={(e) => Sparks(e.clientX, e.clientY)} ref={constraintsRef}>
       <div class="Layout">
-        <motion.section
-          initial={{ 
-            y: "10%",
-            opacity: 0 
-          }}
-          animate={{ 
-            opacity: 1, 
-            y: 0,
-            transition: {
-              type: "spring",
-              duration: 1.2,
-              bounce: 0.5,
-              delay: 0.25,
-            },
-          }}
-          >
+        <motion.section variants={intro} initial='hidden' animate='show'>
           <h1>I am Jacob Lindström, an experienced Design Technologist specializing in design systems and prototyping. I work at <a href="https://osynlig.se" rel="author noopener" title="Osynlig">Osynlig.</a></h1>
           <h2> Husband and dad living in Nyköping, Sweden. I like to drink natural wine and to race bikes.</h2>
         </motion.section>
-        <motion.footer>
-          <motion.a initial={{ 
-              scale: 0.95,
-              opacity: 0,
-              x: "-2%"
-            }}
-            animate={{ 
-              opacity: 1, 
-              scale: 1,
-              x: 0,
-              transition: {
-                type: "spring",
-                duration: 0.2,
-                bounce: 0.25,
-                delay: 1.35,
-              },
-            }} className="email" href="mailto:its@jacoblindstrom.design">its@jacoblindstrom.design</motion.a>
+        <motion.footer
+          variants={list}
+          initial='hidden'
+          animate='show'
+        >
+          <motion.a variants={email} className="email" href="mailto:its@jacoblindstrom.design">its@jacoblindstrom.design</motion.a>
           <ul className="external-links">
               <li className="read-cv">
-                <motion.a initial={{ 
-                    scale: 0.8,
-                    opacity: 0,
-                    y: '-5%',
-                  }}
-                  animate={{ 
-                    opacity: 1, 
-                    scale: 1,
-                    y: 0,
-                    transition: {
-                      type: "spring",
-                      duration: 0.2,
-                      bounce: 0.25,
-                      delay: 1.5,
-                    },
-                  }} href="https://read.cv/jacoblindstrm" rel="author noopener" title="Read Cv"><span className="social-title">Read CV</span></motion.a></li>
+                <motion.a variants={item} href="https://read.cv/jacoblindstrm" rel="author noopener" title="Read Cv"><span className="social-title">Read CV</span></motion.a></li>
               <li className="figma">
-                <motion.a initial={{ 
-                    scale: 0.8,
-                    opacity: 0,
-                    y: '-5%',
-                  }}
-                  animate={{ 
-                    opacity: 1, 
-                    scale: 1,
-                    y: 0,
-                    transition: {
-                      type: "spring",
-                      duration: 0.2,
-                      bounce: 0.25,
-                      delay: 1.65,
-                    },
-                  }} href="https://figma.com/@jacoblindstrm" rel="author noopener" title="Figma"><span className="social-title">Figma</span></motion.a></li>
+                <motion.a variants={item} href="https://figma.com/@jacoblindstrm" rel="author noopener" title="Figma"><span className="social-title">Figma</span></motion.a></li>
                    <li className="linkedin">
-                <motion.a initial={{ 
-                    scale: 0.8,
-                    opacity: 0,
-                    y: '-5%',
-                  }}
-                  animate={{ 
-                    opacity: 1, 
-                    scale: 1,
-                    y: 0,
-                    transition: {
-                      type: "spring",
-                      duration: 0.2,
-                      bounce: 0.25,
-                      delay: 1.75,
-                    },
-                  }} href="https://www.linkedin.com/in/jacobsvensson-design/" rel="author noopener" title="LinkedIn"><span className="social-title">LinkedIn</span></motion.a></li>
+                <motion.a variants={item} href="https://www.linkedin.com/in/jacobsvensson-design/" rel="author noopener" title="LinkedIn"><span className="social-title">LinkedIn</span></motion.a></li>
               <li className="twitter">
-                <motion.a initial={{ 
-                    scale: 0.8,
-                    opacity: 0,
-                    y: '-5%',
-                  }}
-                  animate={{ 
-                    opacity: 1, 
-                    scale: 1,
-                    y: 0,
-                    transition: {
-                      type: "spring",
-                      duration: 0.2,
-                      bounce: 0.25,
-                      delay: 1.82,
-                    },
-                  }} href="https://twitter.com/jacoblindstr_m" rel="author noopener" title="Twitter"><span className="social-title">Twitter</span></motion.a></li>
+                <motion.a variants={item} href="https://twitter.com/jacoblindstr_m" rel="author noopener" title="Twitter"><span className="social-title">Twitter</span></motion.a></li>
             </ul>
         </motion.footer>
         <img src={Logo} alt="A signature spelling Jacob" className="logotype"/>

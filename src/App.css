@@ -188,15 +188,35 @@ a, a:visited {
 }
 
 a::after {
-  content: "↗";
-  font-size: 1rem;
+  content: "";
+  mask: url("./assets/img/arrow.svg") no-repeat bottom;
+  background-color: var(--color-fg);
+  height: 1rem;
   vertical-align: baseline;
   padding-inline-start: 0.5ch;
-  transform-origin: 50% 50%;
-  width: 1ch;
+  transform-origin: left 50%;
   display: inline-block;
   overflow: visible;
   transition: transform .15s ease-in-out;
+}
+
+h1 a::after {
+  transform: scale(1.5);
+}
+
+ul a::after {
+  mask-image: url("./assets/img/arrow-2.svg");
+  width: 1ch;
+}
+ul li:nth-child(2) a::after {
+  mask-image: url("./assets/img/arrow-3.svg");
+}
+ul li:nth-child(3) a::after {
+  transform: scaleY(-1);
+  mask-position: top;
+}
+ul li:nth-child(4) a::after {
+  mask-image: url("./assets/img/arrow.svg");
 }
 
 a:hover {
@@ -204,7 +224,7 @@ a:hover {
 }
 
 a:hover::after {
-  transform: rotate(45deg);
+  background-color: var(--color-interaction);
 }
 
 ul {
