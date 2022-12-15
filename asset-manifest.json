@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9af1ae48.css",
-    "main.js": "/static/js/main.f846d741.js",
+    "main.css": "/static/css/main.fcf64e47.css",
+    "main.js": "/static/js/main.08a64096.js",
     "static/js/787.dbd7be06.chunk.js": "/static/js/787.dbd7be06.chunk.js",
     "static/media/A2ZFaucet-Regular.woff2": "/static/media/A2ZFaucet-Regular.67e91f1b25a77745b40f.woff2",
     "static/media/A2ZFaucet-Bold.woff2": "/static/media/A2ZFaucet-Bold.a1a69d5c52acc8136016.woff2",
+    "static/media/SpaceMono-Regular.woff2": "/static/media/SpaceMono-Regular.5c073704dec556c1fba2.woff2",
     "static/media/noise.png": "/static/media/noise.e239db8484108d714bb1.png",
     "static/media/logotype.svg": "/static/media/logotype.87f3f392338a74a54f505991222e6964.svg",
     "index.html": "/index.html",
-    "main.9af1ae48.css.map": "/static/css/main.9af1ae48.css.map",
-    "main.f846d741.js.map": "/static/js/main.f846d741.js.map",
+    "main.fcf64e47.css.map": "/static/css/main.fcf64e47.css.map",
+    "main.08a64096.js.map": "/static/js/main.08a64096.js.map",
     "787.dbd7be06.chunk.js.map": "/static/js/787.dbd7be06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9af1ae48.css",
-    "static/js/main.f846d741.js"
+    "static/css/main.fcf64e47.css",
+    "static/js/main.08a64096.js"
   ]
 }
