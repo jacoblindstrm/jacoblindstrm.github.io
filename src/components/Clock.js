@@ -3,9 +3,17 @@ import format from 'date-fns/format';
 
 function Clock({ time }) {
   return (
-    <p className="clock">
-      {format(time, 'HH:mm:ss')}
-    </p>
+    <ul className="time">
+      <li>
+        {format(new Date(), 'MMMM Y') }
+      </li>
+      <li>
+        Nyköping
+      </li>
+      <li>
+        {format(time, 'HH:mm:ss')}
+      </li>
+    </ul>
   );
 }
 

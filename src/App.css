@@ -9,6 +9,12 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "SpaceMono";
+  src: url("./assets/fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
 :root {
   --font-body: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --body-line-height: 1.5;
@@ -28,6 +34,7 @@
 
   --font: "A2ZFaucet",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
   --font-heading: "A2ZFaucet", sans-serif;
+  --font-mono: "SpaceMono", monospace;
 
   --logo-height: 4rem;
 }
@@ -188,35 +195,14 @@ a, a:visited {
 }
 
 a::after {
-  content: "";
-  mask: url("./assets/img/arrow.svg") no-repeat bottom;
-  background-color: var(--color-fg);
-  height: 1rem;
+  content: "↗";
+  font-size: 1rem;
   vertical-align: baseline;
   padding-inline-start: 0.5ch;
-  transform-origin: left 50%;
+  transform-origin: center;
   display: inline-block;
   overflow: visible;
   transition: transform .15s ease-in-out;
-}
-
-h1 a::after {
-  transform: scale(1.5);
-}
-
-ul a::after {
-  mask-image: url("./assets/img/arrow-2.svg");
-  width: 1ch;
-}
-ul li:nth-child(2) a::after {
-  mask-image: url("./assets/img/arrow-3.svg");
-}
-ul li:nth-child(3) a::after {
-  transform: scaleY(-1);
-  mask-position: top;
-}
-ul li:nth-child(4) a::after {
-  mask-image: url("./assets/img/arrow.svg");
 }
 
 a:hover {
@@ -224,7 +210,8 @@ a:hover {
 }
 
 a:hover::after {
-  background-color: var(--color-interaction);
+  color: var(--color-interaction);
+  transform: rotate(45deg);
 }
 
 ul {
@@ -249,13 +236,20 @@ img.logotype {
   right: calc(var(--gutter) - 0.25rem);
 }
 
-.clock {  
+.time {  
   position: absolute;
   bottom: var(--gutter);
   right: var(--gutter);
   margin: 0;
+  text-align: right;
   display: block;
-  font-size: 0.825rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.072rem;
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 @media (min-width: 60em) {
