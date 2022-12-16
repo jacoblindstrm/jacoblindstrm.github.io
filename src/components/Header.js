@@ -24,7 +24,7 @@ const intro = {
 function Header() {
   return (
     <motion.section variants={intro} initial='hidden' animate='show'>
-         <h1>I am Jacob Lindström, an experienced Design Technologist specializing in design systems and prototyping. I work at <a href="https://osynlig.se" rel="author noopener" title="Osynlig">Osynlig.</a></h1>
+        <h1>I am Jacob Lindström, an experienced Design Technologist specializing in design systems and prototyping. I work at <a href="https://osynlig.se" rel="author noopener" title="Osynlig">Osynlig.</a></h1>
         <h2> Husband and dad living in Nyköping, Sweden. I like to drink natural wine and to race bikes.</h2>
     </motion.section>
   );

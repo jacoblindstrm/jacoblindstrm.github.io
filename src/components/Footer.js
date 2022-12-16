@@ -4,24 +4,6 @@ import {
     motion,
   } from "framer-motion";
 
-
-const email = {
-  hidden: { 
-    opacity: 0,
-    x: -10, 
-  },
-  show: {
-    opacity: 1, 
-    scale: 1,
-    x: 0,
-    transition: {
-      type: "ease-in-out",
-      duration: 0.8,
-      delay: 1,
-    },
-  },
-};
-
 // Animations Variants
 const list = {
   show: {
@@ -57,7 +39,6 @@ function Header() {
       initial='hidden'
       animate='show'
     >
-      <motion.a variants={email} className="email" href="mailto:its@jacoblindstrom.design">its@jacoblindstrom.design</motion.a>
       <ul className="external-links">
           <li className="read-cv">
             <motion.a variants={item} href="https://read.cv/jacoblindstrm" rel="author noopener" title="Read Cv"><span className="social-title">Read CV</span></motion.a></li>

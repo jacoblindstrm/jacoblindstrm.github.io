@@ -9,10 +9,26 @@ import { useRef } from "react";
 import './App.css';
 
 import Header from './components/Header';
+import Bio from './components/Bio';
 import Footer from './components/Footer';
 import Clock from './components/Clock';
-import Logo from './assets/img/logotype.svg';
 
+const email = {
+  hidden: { 
+    opacity: 0,
+    x: -10, 
+  },
+  show: {
+    opacity: 1, 
+    scale: 1,
+    x: 0,
+    transition: {
+      type: "ease-in-out",
+      duration: 0.8,
+      delay: 1,
+    },
+  },
+};
 
 function App() {
   const constraintsRef = useRef(null);
@@ -21,9 +37,21 @@ function App() {
   return (
     <div className="App" onMouseMove={(e) => Sparks(e.clientX, e.clientY)} ref={constraintsRef}>
       <div class="Layout">
-        <Header></Header>
-        <Footer></Footer>
-        <Clock time={time} />
+        <Header/>
+        <div class="Columns">
+          <Bio/>
+          <motion.a 
+            variants={email} 
+            initial='hidden'
+            animate='show' 
+            className="email" 
+            href="mailto:its@jacoblindstrom.design"
+          >
+            its@jacoblindstrom.design
+          </motion.a>
+          <Clock time={time} />
+        </div>
+        <Footer/>        
       </div>
       <div id="Sparks"></div>
     </div>
